@@ -8,7 +8,7 @@ h2{
   font-size: 30px;
 }
 p{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 nav#nav {
@@ -38,9 +38,6 @@ nav#nav a:hover {
     color: #E1E1E1;
   }
   
-/* #d4f5e5 */
-
-
 .main #home {
     padding: 50px;
     background-color:#817D7E;
@@ -81,8 +78,11 @@ section#contact {
   textarea, input.contact-form-input {
     margin: 10px 10px 10px -10px;
     width: 100%;
+    height: 15px;
   }
-
+  textarea.contact-form-input{
+  height: 40px;
+  }
   button{
     
     align-items: center;
@@ -94,7 +94,11 @@ section#contact {
     margin-left: -10px;
   }
 
-  label {
-    font-size: 1.5rem;
-  
+ .contact-form-label{
+    font-size: 20px;
+  }
+
+  footer p{
+    font-size: 10px;
+    text-align: right;
   }
