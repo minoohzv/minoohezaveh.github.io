@@ -16,116 +16,108 @@ h2{
 #contact h2{
   text-align: left;
 }
-/* section.section-title h2{
-  text-align: left;
-} */
+
 p{
   font-size: 25px;
 }
 
+/* width: 100% it will also add in padding, border, margin
+width: 100% = width + padding + margin */
 nav#nav {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0px auto;
-    padding: 0px;
-    border: 5px solid #90B488;
-    background-color: #90B488;
-    color: #E1E1E1;
-    box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  border: 5px solid #90B488;
+  background-color: #90B488;
+  color: #E1E1E1;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav#nav a{
-font-size: 15px;
-padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  padding: 0px 20px 0px 20px;
 }
 
 nav#nav a:hover {
-    padding: 10px;
-    background-color: #495D63;
-    color: #90B488;
+  padding: 10px;
+  background-color: #495D63;
+  color: #90B488;
 }
 
 /* unvisited link */
 nav#nav a{
   color: #817D7E;
 }
-  /* visited link */
+/* visited link */
 nav#nav a:visited {
-    color: #E1E1E1;
-  }
+  color: #E1E1E1;
+}
   
 .main #home {
-    padding: 50px;
-    background-color:#495D63;
-    text-align: left;
+  padding: 50px;
+  background-color:#495D63;
+  text-align: left;
   }
 #home h1{
   text-align: left;
   font-size: 40px;
 }
 section#about {
-    padding: 50px 50px;
-    background-color: #90B488;
-    color: black;
+  padding: 50px 50px;
+  background-color: #90B488;
+  color: black;
 
-  }
+}
 
 section#contact {
-    padding: 50px 50px;
-    max-width: 1200px;
-    margin: 0px auto;
-    background-color: #495D63;
-  }
-
-
-   /* form.contact-form {
-    padding: 30px;
-    background-color: #E1E1E1;
-    width: 800px;
-    margin: 0px auto;
-    margin-top: 5em;
-  } */
-
+  padding: 50px 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: #495D63;
+}
  
+/* width: auto = width of containing block (i.e. the parent)
+width: auto; is telling it to fit into the width of the parent */
 form.contact-form {
-    padding: 30px;
-    background-color: #E1E1E1;
-    width: 800px;
-    margin: 0px auto;
-    margin-top: 5em;
-    width: auto;
+  padding: 30px;
+  background-color: #E1E1E1;
+  width: 800px;
+  margin: 0px auto;
+  margin-top: 5em;
+  width: auto;
 }
 
 section#home {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-  }
+}
 
 textarea, input.contact-form-input {
-    margin: 10px 10px 10px -10px;
-    width: 100%;
-    height: 15px;
-  }
+  margin: 10px 10px 10px -10px;
+  width: 100%;
+  height: 15px;
+}
 textarea.contact-form-input{
   height: 40px;
-  }
+}
 button{
-    align-items: center;
-    background-color:#495D63;
-    font-size: 15px;
-    padding: 10px;
-    border: 1px solid black;
-    color: #817D7E;
-    margin-left: -10px;
-  }
+  align-items: center;
+  background-color:#495D63;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  color: #817D7E;
+  margin-left: -10px;
+}
 
 .contact-form-label{
-    font-size: 20px;
-  }
+  font-size: 20px;
+}
 
 footer p{
-    font-size: 10px;
-    text-align: right;
-  }
+  font-size: 10px;
+  text-align: right;
+}
