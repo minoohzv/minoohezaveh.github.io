@@ -6,7 +6,19 @@ html body{
 h1,
 h2{
   font-size: 30px;
+  margin-top: 0px;
 }
+
+#about h2{
+  text-align: left;
+}
+
+#contact h2{
+  text-align: left;
+}
+/* section.section-title h2{
+  text-align: left;
+} */
 p{
   font-size: 25px;
 }
@@ -20,8 +32,8 @@ nav#nav {
     background-color: #90B488;
     color: #E1E1E1;
     box-sizing: border-box;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav#nav a{
