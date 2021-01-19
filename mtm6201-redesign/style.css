@@ -11,16 +11,6 @@ p{
   font-size: 25px;
 }
 
-/* nav#nav {
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 10px;
-    border: 5px solid #90B488;
-    background-color:#90B488;
-    color: #E1E1E1;
-    align-items: center;
-  } */
-
 nav#nav {
     max-width: 1200px;
     width: 100%;
@@ -46,10 +36,12 @@ nav#nav a:hover {
 }
 
 /* unvisited link */
-
+nav#nav a{
+  color: #817D7E;
+}
   /* visited link */
-  nav#nav a:visited {
-    color: #817D7E;
+nav#nav a:visited {
+    color: #E1E1E1;
   }
   
 .main #home {
@@ -85,7 +77,7 @@ section#contact {
   } */
 
  
-  form.contact-form {
+form.contact-form {
     padding: 30px;
     background-color: #E1E1E1;
     width: 800px;
@@ -94,35 +86,34 @@ section#contact {
     width: auto;
 }
 
-  section#home {
+section#home {
     font-family: Arial, Helvetica, sans-serif;
 
   }
 
-  textarea, input.contact-form-input {
+textarea, input.contact-form-input {
     margin: 10px 10px 10px -10px;
     width: 100%;
     height: 15px;
   }
-  textarea.contact-form-input{
+textarea.contact-form-input{
   height: 40px;
   }
-  button{
-    
+button{
     align-items: center;
     background-color:#495D63;
     font-size: 15px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid black;
     color: #817D7E;
     margin-left: -10px;
   }
 
- .contact-form-label{
+.contact-form-label{
     font-size: 20px;
   }
 
-  footer p{
+footer p{
     font-size: 10px;
     text-align: right;
   }
