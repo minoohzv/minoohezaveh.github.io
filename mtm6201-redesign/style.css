@@ -27,7 +27,7 @@ padding: 0px 20px 0px 20px;
 
 nav#nav a:hover {
     padding: 10px;
-    background-color: #E1E1E1;
+    background-color: #495D63;
     color: #90B488;
 }
 
@@ -35,12 +35,12 @@ nav#nav a:hover {
 
   /* visited link */
   nav#nav a:visited {
-    color: #E1E1E1;
+    color: #817D7E;
   }
   
 .main #home {
     padding: 50px;
-    background-color:#817D7E;
+    background-color:#495D63;
     text-align: left;
   }
 #home h1{
@@ -49,7 +49,7 @@ nav#nav a:hover {
 }
 section#about {
     padding: 50px 50px;
-    background-color: #E1E1E1;
+    background-color: #90B488;
     color: black;
 
   }
@@ -58,13 +58,13 @@ section#contact {
     padding: 50px 50px;
     max-width: 1200px;
     margin: 0px auto;
-    background-color: #90B488;
+    background-color: #495D63;
   }
 
 
    form.contact-form {
     padding: 30px;
-    background-color: #817D7E;
+    background-color: #E1E1E1;
     width: 800px;
     margin: 0px auto;
     margin-top: 5em;
@@ -86,7 +86,7 @@ section#contact {
   button{
     
     align-items: center;
-    background-color:#E1E1E1;
+    background-color:#495D63;
     font-size: 15px;
     padding: 20px;
     border: 1px solid black;
@@ -98,7 +98,7 @@ section#contact {
     font-size: 20px;
   }
 
-  footer p{
+  footer pS{
     font-size: 10px;
     text-align: right;
   }
