@@ -28,19 +28,23 @@
             <p>Enter your info below</p>
             <form class="apply-form">
                 <div class="apply-form-section">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                </div>
+                <div class="apply-form-section">
                     <label for="Lname"></label>
                     <input type="text" id="Lname" name="lastname" placeholder="Last name">
                 </div>
-                <div>
+                <div class="apply-form-section"> 
                     <label for="Phone"></label>
                     <input type="tel" id="phone" name="phone" placeholder="Phone number">
                 </div>
-                <div>
+                <div class="apply-form-section">
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email Address">
                 </div>
-                <div>
-                    <input type="checkbox" name="agreement" value="agree" />
+                <div class="agree">
+                    <input type="checkbox" name="agreement" value="agree" class="agreement" />
                     <p> I agree to dash terms </p>
                 </div>
                 <button type="drive-with-us"> Drive With Us</button>
