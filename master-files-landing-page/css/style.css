@@ -61,6 +61,17 @@ button{
     font-size: 20px;
 }
 
+span{
+    color: red;
+}
+
+.application-status p{
+    font-size: 15px;
+}
+
+.two{
+    background-color: #fffd8c;
+}
 
 @media screen and (max-width: 600px){
     
