@@ -4,6 +4,10 @@ html {
     background-color: #f7f7ff;
   }
 
+body{
+    margin: 0px;
+}
+
 h1 {
     font-size: 80px;
 }
@@ -61,7 +65,7 @@ button{
     font-size: 20px;
 }
 
-span{
+span.red{
     color: red;
 }
 
@@ -72,6 +76,45 @@ span{
 .two{
     background-color: #fffd8c;
 }
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+#hours{
+    padding-left: 0px;
+}
+.earn #hours, .earn #city {
+    border-radius: 10px;
+    border: 0px;
+    background-color: #f7f7ff;
+    margin: 10px;
+    padding: 15px 20px;
+}
+div #hours {
+    width: 10%;
+}
+div #city{
+    width: 60%;
+    display: inline-block;
+}
+
+button.calculate{
+    background-color: #ff8480;
+    color: white;
+    margin-bottom: 20px;
+}
+.icon {
+    align-items: center;
+
+}
+svg{
+    margin: 10px 20px;
+    display: inline;
+    width: max-content;
+}
+
 
 @media screen and (max-width: 600px){
     
