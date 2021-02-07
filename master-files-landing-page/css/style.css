@@ -13,12 +13,6 @@ body {
     margin: 0px;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 1em;
-    margin: 10px 10px;
-}
-
 .apply {
     border: 1px solid white;
     border-radius: 30px;
@@ -27,7 +21,9 @@ body {
     background-color: white;
 }
 
-input:not(.agreement, .hours, .city) {
+
+
+input:not([type='checkbox']):not([type='hours']):not([type='city']) {
     width: 100%;
     padding: 15px 0px 15px 10px;
     border-radius: 10px;
@@ -37,15 +33,33 @@ input:not(.agreement, .hours, .city) {
     font-size: 15px;
 }
 
-
 .apply-form-section {
     padding: 0px 10px 0px 0px;
 }
 
+h1{
+    font-size: 56px;
+    margin: 0px;
+    padding-bottom: 5px;
+    color: #333131;
+}
+
 h2 {
-    font-size: 27px;
+    font-size: 38px;
     margin: 0px;
     padding-bottom: 0px;
+    color: #333131;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.container .p0 {
+    font-size: 18px;
+    color: #333131;
+    margin-bottom: 0px;
 }
 
 .container .p1 {
@@ -53,13 +67,32 @@ h2 {
     margin-top: 10px;
 }
 
-div .p2{
+.container .p1-desktop{
+    display: none;
+}
+
+.p2{
+    font-size: 14px;
     display: inline-block;
     margin: 0px 0px;
     vertical-align: middle;
     padding-bottom: 15px;
 }
 
+.container .p3 {
+    font-size: 12px;
+    text-align: center;
+}
+
+span.red {
+    color: #ff8480;
+    font-size: 13px;
+}
+
+.container .p4 {
+    font-size: 12px;
+    text-align: left;
+}
 
 .agreement {
     margin-top: 8px;
@@ -78,9 +111,25 @@ button.drive {
     color:#333131;
 }
 
-span.red {
-    color: #ff8480;
-    font-size: 13px;
+button.calculate {
+    border-radius: 8px;
+    border: 0px;
+    padding: 5px 20px;
+    background-color: #ff8480;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    display: inline-block;
+}
+
+svg {
+    margin: 8vw 4vw;
+    display: inline;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
 }
 
 .application-status p {
@@ -89,6 +138,7 @@ span.red {
 
 .two {
     background-color: #fffd8c;
+    padding: 20px 30px;
 }
 
 
@@ -99,21 +149,8 @@ span.red {
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
 
-    .container {
-        margin: 0px;
-        padding: 0px;
-    }
-
     .one{
         padding: 10px 40px 40px 40px;
-    }
-
-    .two {
-        padding: 20px 30px;
-    }
-
-    form{
-        width: 100%;
     }
     
     .mobile-logo {
@@ -127,63 +164,24 @@ span.red {
         display: none;
     }
 
-    h1 {
-        font-size: 56px;
-        margin: 0px;
-        padding-bottom: 5px;
-        color: #333131;
-    }
-
-    h2 {
-        font-size: 38px;
-        color: #333131;
-    }
-
-    h3 {
-        font-size: 15px;
-        margin: 0px;
-    }
-
-    .container .p0 {
-        font-size: 23px;
-        color: #333131;
-    }
-
     .container .p1 {
         font-size: 15px;
         margin: 8px 0px 5px 0px;
     }
     
-    .container .p1-desktop{
-        display: none;
-    }
-
-    .container .p2 {
-        font-size: 14px;
-    }
-    
     .container .p3 {
-        font-size: 12px;
         text-align: left;
     }
 
-    .container .p4 {
-        font-size: 12px;
-        text-align: left;
-    }
 /* use flex because the background image has to change the position in different size */
     .stack-1 {
         display: flex;
         flex-direction: column;
-        background: url(../images/bg-image/scooter.svg) no-repeat center;
-        background-size: 90%;
-        background-position: 50% 45%;
     }
 
     .stack-1 .container:nth-child(2) {
-        height: 200px;
+        margin-bottom: 20px;
     }
-
 
     .apply {
         border: 1px solid white;
@@ -198,23 +196,23 @@ span.red {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
-      }
+    }
 
       
     .hours {
         min-width: 0; 
         grid-column: 1 / span 1;
-      }
+    }
 
     .city {
         min-width: 0;
         grid-column: 2 / 6;
-      }
+    }
 
     .calculate {
         min-width: 0;
         grid-column: 1 / 6;
-      }
+    }
 
     .footer #hours {
         border-radius: 8px;
@@ -235,26 +233,6 @@ span.red {
         font-size: 100%;
     }
 
-    button.calculate {
-        border-radius: 8px;
-        border: 0px;
-        padding: 5px 20px;
-        background-color: #ff8480;
-        color: white;
-        float: left;
-        font-size: 20px;
-        width: auto;
-    }
-
-    svg {
-        margin: 8vw 4vw;
-        display: inline;
-        text-align: center;
-    }
-
-    .icon {
-        text-align: center;
-    }
     .facebook{
         border-radius: 14px
     }
@@ -269,17 +247,8 @@ span.red {
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 
-    .container {
-        margin: 0px;
-        padding: 0px;
-    }
-
     .one{
         padding: 10px 80px 80px 80px;
-    }
-
-    .two {
-        padding: 20px 30px;
     }
 
     .tablet-logo {
@@ -293,70 +262,43 @@ span.red {
         display: none;
     }
 
+    .bg-scooter {
+        display: none;
+    }
+
     h1 {
         font-size: 70px;
-        margin: 0%;
-        color: #333131;
+        padding-bottom: 0px;
     }
 
     h2 {
         font-size: 35px;
     }
-    
-    h3 {
-        font-size: 16px;
-        margin: 0px;
-        padding-top: 20px ;
-    }
 
     .container .p0 {
-        font-size: 20px;
         padding-top: 10px;
-        color: #333131;
     }
 
     .container .p1 {
         font-size: 25px;
         margin: 8px 0px 5px 0px;
     }
-
-    .container .p1-desktop{
-        display: none;
-    }
-
-    .container .p2 {
-        font-size: 18px;
-    }
-    
-    .container .p3 {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    span.red {
-        font-size: 15px;
-    }
     
     .container .p4 {
-        font-size: 15px;
-        text-align: left;
         margin-top: 10px;
-    }
-
-    button.drive {
-        font-size: 30px;
     }
 
     .stack-1 {
         display: flex;
         flex-direction: column;
-        background: url(../images/bg-image/scooter.svg) no-repeat center;
-        background-size: 75%;
-        background-position: 50% 38%;
     }
 
-    .stack-1 .container:nth-child(2) {
-        height: 260px;
+    .stack-1 .container:nth-child(1) {
+        background: url(../images/bg-image/scooter.svg) no-repeat center;
+        background-size: 75%;
+        background-position: bottom;
+        margin-bottom: 25px;
+        height: 600px;
     }
 
     .hours-city-calculate {
@@ -364,7 +306,7 @@ span.red {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
-      }
+    }
  
     .hours {
         min-width: 0; 
@@ -390,26 +332,11 @@ span.red {
         padding: 5px 5px;
         font-size: 100%;
     }
-
-    button.calculate {
-        border-radius: 8px;
-        border: 0px;
-        padding: 6px;
-        background-color: #ff8480;
-        color: white;
-        font-size: 20px;
-        display: inline-block;
-    }
     
     svg {
         margin: 20px;
-        display: inline;
-        text-align: center;
     }
 
-    .icon {
-        text-align: center;
-    }
     .facebook{
         border-radius: 14px
     }
@@ -424,6 +351,7 @@ span.red {
     .one {
         margin: 10px 70px 70px 70px;
     }
+
      /* display: inline-block is used to display list items horizontally instead of vertically */
     .desktop-logo {
         display: inline;
@@ -436,50 +364,36 @@ span.red {
         display: none;
     }
 
+    .bg-scooter {
+        display: none;
+    }
+
     h1 {
         font-size: 50px;
         margin: 10% 0% 0% 0%;
         padding-bottom: 10px;
-        color: #333131;
     }
 
     h2 {
         font-size: 25px;
     }
 
-    h3 {
-        font-size: 14px;
-        margin: 0px;
-    }
-
     .container .p0 {
-        font-size: 18px;
         padding-top: 10px;
-        color: #333131;
     }
 
     .container .p1-desktop {
-        font-size: 16px;
-        margin: 8px 0px 3px 0px;
+        display: block;
+        font-size: 18px;
+        margin: 5px 0px 3px;
     }
 
     .container .p1{
         display: none;
     }
 
-    .container .p2 {
-        font-size: 14px;
-    }
-
     .container .p3 {
-        font-size: 11px;
-        text-align: center;
         padding-top: 8px;
-    }
-
-    .container .p4 {
-        font-size: 12px;
-        text-align: left;
     }
 
     .stack-1 {
@@ -487,7 +401,7 @@ span.red {
         flex-wrap: nowrap;
         justify-content: space-evenly;
         background: url(../images/bg-image/scooter.svg) no-repeat center;
-        background-size: 50%;
+        background-size: 40%;
     }
 
     .stack-1 .container:nth-child(1) {
@@ -503,12 +417,6 @@ span.red {
         margin-left: auto;
     }
 
-    .bg-scooter {
-        display: inline-block;
-        width: 150%;
-        height: 150%;
-    }
-
     .stack-2 {
         display: flex;
         background-color: #fffd8c;
@@ -521,12 +429,7 @@ span.red {
 
     .stack-2 .container:nth-child(2) {
         flex-basis: calc(40%);
-        margin: auto;
-        
-    }
-
-    #hours {
-        padding-left: 0px;
+        margin: auto;      
     }
 
     .footer #hours,
@@ -549,24 +452,12 @@ span.red {
         float: left;
     }
 
-    button.calculate {
-        border-radius: 8px;
-        border: 0px;
-        padding: 5px 20px;
-        background-color: #ff8480;
-        color: white;
-        float: left;
-        font-size: 20px;
-        width: auto;
-    }
-
     svg {
         margin: 12px;
-        display: inline;    
     }
 
     .icon {
-        text-align: center;
+        text-align: right;
         margin: 0px;
     }
 }
