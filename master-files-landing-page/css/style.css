@@ -21,7 +21,7 @@ body {
     background-color: white;
 }
 
-input:not(.agreement, .hours, .city) {
+input:not([name='agreement']):not([name='hours']):not([name='city']) {
     width: 100%;
     padding: 15px 0px 15px 10px;
     border-radius: 10px;
