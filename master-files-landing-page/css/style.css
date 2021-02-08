@@ -1,7 +1,18 @@
-/* use specificly font then you should bring them in css */
-@font-face { font-family: Montserrat-Bold; src: url('../fonts/Montserrat-Bold.ttf'); } 
-@font-face { font-family: Montserrat-Regular; src: url('../fonts/Montserrat-Regular.ttf'); } 
-@font-face { font-family: Montserrat-Thin; src: url('../fonts/Montserrat-Thin.ttf'); } 
+/* use specificly font from the font folder. */
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url('../fonts/Montserrat-Thin.ttf');
+}
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +37,7 @@ input:not([name='agreement']):not([name='hours']):not([name='city']) {
     padding: 15px 0px 15px 10px;
     border-radius: 10px;
     border: 0px;
-    background-color:#f4f4f5;
+    background-color: #f4f4f5;
     margin: 5px 0px;
     font-size: 15px;
 }
@@ -35,7 +46,7 @@ input:not([name='agreement']):not([name='hours']):not([name='city']) {
     padding: 0px 10px 0px 0px;
 }
 
-h1{
+h1 {
     font-size: 56px;
     margin: 0px;
     padding-bottom: 5px;
@@ -65,11 +76,11 @@ h3 {
     margin-top: 10px;
 }
 
-.container .p1-desktop{
+.container .p1-desktop {
     display: none;
 }
 
-.p2{
+.p2 {
     font-size: 14px;
     display: inline-block;
     margin: 0px 0px;
@@ -106,7 +117,7 @@ button.drive {
     width: 100%;
     font-size: 20px;
     font-weight: bold;
-    color:#333131;
+    color: #333131;
 }
 
 button.calculate {
@@ -147,10 +158,10 @@ svg {
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
 
-    .one{
+    .one {
         padding: 10px 40px 40px 40px;
     }
-    
+
     .mobile-logo {
         display: inline;
         width: 30%;
@@ -166,12 +177,12 @@ svg {
         font-size: 15px;
         margin: 8px 0px 5px 0px;
     }
-    
+
     .container .p3 {
         text-align: left;
     }
 
-/* use flex because the background image has to change the position in different size */
+    /* use flex to arrage elements in main body and also the background image needs to change the position in different size */
     .stack-1 {
         display: flex;
         flex-direction: column;
@@ -188,16 +199,17 @@ svg {
         padding: 10px 20px;
         background-color: white;
     }
-/* use grid to change the position items: hours, city and calculate botton in mobile size*/
+
+    /* use grid to change the position items: hours, city and calculate botton in mobile size*/
     .hours-city-calculate {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
     }
-   
+
     .hours {
-        min-width: 0; 
+        min-width: 0;
         grid-column: 1 / span 1;
     }
 
@@ -230,7 +242,7 @@ svg {
         font-size: 100%;
     }
 
-    .facebook{
+    .facebook {
         border-radius: 14px
     }
 
@@ -244,7 +256,7 @@ svg {
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 
-    .one{
+    .one {
         padding: 10px 80px 80px 80px;
     }
 
@@ -259,6 +271,7 @@ svg {
         display: none;
     }
 
+    /*dont show bg image in tablet mode and show it in .stack-1 .container:nth-child(1)*/
     .bg-scooter {
         display: none;
     }
@@ -280,22 +293,23 @@ svg {
         font-size: 25px;
         margin: 8px 0px 5px 0px;
     }
-    
+
     .container .p4 {
         margin-top: 10px;
     }
 
+     /* use flex to arrage elements in the main body */
     .stack-1 {
         display: flex;
         flex-direction: column;
     }
 
+    /* set the bg image in child 1 as it has some overlap with the text */
     .stack-1 .container:nth-child(1) {
         background: url(../images/bg-image/scooter.svg) no-repeat center;
-        background-size: 75%;
         background-position: bottom;
         margin-bottom: 25px;
-        height: 600px;
+        height: 700px;
     }
 
     .hours-city-calculate {
@@ -304,9 +318,9 @@ svg {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
     }
- 
+
     .hours {
-        min-width: 0; 
+        min-width: 0;
         grid-column: 1 / span 1;
     }
 
@@ -329,12 +343,12 @@ svg {
         padding: 5px 5px;
         font-size: 100%;
     }
-    
+
     svg {
         margin: 20px;
     }
 
-    .facebook{
+    .facebook {
         border-radius: 14px
     }
 }
@@ -349,7 +363,7 @@ svg {
         margin: 10px 70px 70px 70px;
     }
 
-     /* display: inline-block is used to display list items horizontally instead of vertically */
+    /* display: inline-block is used to display list items horizontally instead of vertically */
     .desktop-logo {
         display: inline;
         width: 10%;
@@ -361,6 +375,7 @@ svg {
         display: none;
     }
 
+    /*dont show bg image in tablet mode and show it in stack-1*/
     .bg-scooter {
         display: none;
     }
@@ -385,7 +400,7 @@ svg {
         margin: 5px 0px 3px;
     }
 
-    .container .p1{
+    .container .p1 {
         display: none;
     }
 
@@ -393,6 +408,7 @@ svg {
         padding-top: 8px;
     }
 
+     /* use flex to arrage elements in the main body */
     .stack-1 {
         display: flex;
         flex-wrap: nowrap;
@@ -414,6 +430,7 @@ svg {
         margin-left: auto;
     }
 
+    /* use flex to arrage elements in the footer */
     .stack-2 {
         display: flex;
         background-color: #fffd8c;
@@ -426,7 +443,7 @@ svg {
 
     .stack-2 .container:nth-child(2) {
         flex-basis: calc(40%);
-        margin: auto;      
+        margin: auto;
     }
 
     .footer #hours,
