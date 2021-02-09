@@ -170,7 +170,7 @@ ul li a{
   }
   .container {
     margin: 0 auto;
-    padding: 2em;
+    padding: 0em;
   }
   
   .container1 {
@@ -260,6 +260,7 @@ p{
     color: #f7f7ff;
     margin: 20px;
     text-decoration: none;
+    box-shadow: 0px 10px 10px 2px grey;
 }
 
 .discover{
@@ -268,14 +269,44 @@ p{
     margin:30px 0px;
 }
 
+
 .graduate{
     background: url(../images/school.jpg) no-repeat center;
     background-size: cover;
-    height: 250px;
-    padding: 2em;
+    height: 400px;
     padding-left: 0em;
     padding-right: 0em;
+    margin: 0%;
     }
+
+h2{
+  font-size: 30px;
+  font-style: italic;
+  margin: 30px 0px 20px 0px;
+}
+
+h3{
+  font-size: 25px;
+  margin:10px 0px;
+}
+.section-white {
+  padding: 0px 30px;
+}
+.button-learn {
+  float: right;
+  background-color: #57eeab;
+  width: auto;
+  border-radius: 40px;
+  padding: 10px;
+  border: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7f7ff;
+  margin: 20px 0px 20px 20px;
+  text-decoration: none;
+  box-shadow: 0px 10px 10px 2px grey;
+  margin-bottom: 20px;
+}
 
 /* .container:not(.graduate){
     margin: 0 auto;
@@ -283,6 +314,51 @@ p{
 } */
 
 
+.section-black{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #333131;
+  margin: 0px;
+  margin-top: 110px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.woman{
+  border-radius: 300px;
+  width: 40%;
+  border: #f7f7ff solid 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+.section-black h3{
+  color: #f7f7ff;
+  text-align: center;
+}
+
+.section-black p{
+  color: #f7f7ff;
+  font-size: 18px;
+  margin: 20px 0px;
+  line-height: 32px;
+}
+
+.drinking{
+  background: url(../images/entertainment.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin: 0%;
+  }
+
+.discover1{
+  padding: 30px 30px;
+  width: auto;
+}
 /*****************************************
                     mobile
 *****************************************/
