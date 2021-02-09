@@ -249,7 +249,10 @@ svg {
     /*twitter icon color is black and background is yellow on the mobile's and the tablet's view*/
     .twitter {
         background-color: #333131;
-        border-radius: 14px
+        border-radius: 14px;
+        object-fit: cover;
+        outline:  10px solid #fffd8c;
+        outline-offset: -4px;
     }
 
     .twitter-desktop {
@@ -364,7 +367,13 @@ svg {
     /*twitter icon color is black and background is yellow on the mobile's and the tablet's view*/
     .twitter {
         background-color: #333131;
-        border-radius: 14px
+        border-radius: 14px;
+        object-fit: cover;
+        outline:  10px solid #fffd8c;
+        outline-offset: -4px;
+        width: 45px;
+        height: 45px;
+        margin-bottom: 14px;
     }
 
     .twitter-desktop {
