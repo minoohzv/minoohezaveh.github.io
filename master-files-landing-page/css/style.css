@@ -241,13 +241,12 @@ svg {
         padding: 5px 5px;
         font-size: 100%;
     }
-
+    /*facebook icon has round shape in mobile and tablet*/
     .facebook {
         border-radius: 14px
     }
 
 }
-
 
 /*****************************************
                     Tablet
@@ -348,6 +347,7 @@ svg {
         margin: 20px;
     }
 
+    /*facebook icon has round shape in mobile and tablet*/
     .facebook {
         border-radius: 14px
     }
@@ -470,8 +470,45 @@ svg {
         margin: 12px;
     }
 
+    /*use grid to change the order and size of social media icons in the desktop view*/
     .icon {
-        text-align: right;
-        margin: 0px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-gap: 15px;
+        float: right; 
     }
+
+    .instagram {
+        min-width: 0;
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        width: 50%;
+        height: 50%; 
+    }
+
+    .twitter {
+        min-width: 0;
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        width: 50%;
+        height: 50%; 
+    }
+
+    .facebook {
+        min-width: 0;
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        width: 50%;
+        height: 50%; 
+    }
+
+    .linkedin{
+        min-width: 0;
+        grid-column: 4 / span 1;
+        grid-row: 1;
+        width: 50%;
+        height: 50%; 
+    }
+
 }
