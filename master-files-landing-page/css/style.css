@@ -245,7 +245,16 @@ svg {
     .facebook {
         border-radius: 14px
     }
+    
+    /*twitter icon color is black and background is yellow on the mobile's and the tablet's view*/
+    .twitter {
+        background-color: #333131;
+        border-radius: 14px
+    }
 
+    .twitter-desktop {
+        display: none;
+    }
 }
 
 /*****************************************
@@ -347,9 +356,19 @@ svg {
         margin: 20px;
     }
 
-    /*facebook icon has round shape in mobile and tablet*/
+    /*facebook icon has round shape on the mobile's and the tablet's view*/
     .facebook {
         border-radius: 14px
+    }
+
+    /*twitter icon color is black and background is yellow on the mobile's and the tablet's view*/
+    .twitter {
+        background-color: #333131;
+        border-radius: 14px
+    }
+
+    .twitter-desktop {
+        display: none;
     }
 }
 
@@ -487,12 +506,17 @@ svg {
         height: 50%; 
     }
 
-    .twitter {
+    .twitter-desktop {
         min-width: 0;
         grid-column: 2 / span 1;
         grid-row: 1;
         width: 50%;
         height: 50%; 
+    }
+
+    /*dont show the mobile and tablet twiter icon here*/
+    .twitter {
+        display: none;
     }
 
     .facebook {
