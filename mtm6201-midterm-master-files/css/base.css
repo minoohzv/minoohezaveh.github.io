@@ -242,13 +242,167 @@ p{
   width: 100%;
 }
 
-.about{
+/* .about{
+  background-color: lightblue;
   object-fit: cover;
   width: 100%;
   height: 300px;
   margin: 30px 0%;
   }
-img .about {
+
+.about-text{
+  display: block;
   background-color: lightblue;
+} */
+
+.intro1{
+  background: url(../images/about.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 30px 0%;
+
+  }
+  .rapper1{
+    background-color: rgba(14, 138, 45, 0.582);
+    width: 100%;
+    height: 300px;
+    }
+
+.intro1 h1{
+  text-align: center;
+  color: #f7f7ff;
+  vertical-align: baseline;
+  padding-top: 150px;
+  opacity: 1;
+  }
+
+h2{
+  font-size: 30px;
+  margin-bottom: 15px;
 }
+
+.info{
+  margin: 0px 30px;
+}
+
+/* .info h2{
+  margin: 0px 30px;
+} */
+
+.Services{
+  background: url(../images/services.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 30px 0%;
+
+  }
+  .rapper2{
+    background-color: rgba(14, 138, 45, 0.582);
+    width: 100%;
+    height: 300px;
+    }
+
+.Services h1{
+  text-align: center;
+  color: #f7f7ff;
+  vertical-align: baseline;
+  padding-top: 150px;
+  opacity: 1;
+  }
+
+.bar, .fitness, .climbing {
+  display: none;
+}
+
+h2, h3{
+  margin: 0px 30px;
+  
+}
+
+h3{
+  font-size: 22px;
+}
+
+h3{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #26A682;
+}
+
+.keep-up{
+  background-color: #3C3B3A;
+  color: #F2F2F2;
+  padding: 25px 0px 25px 0px;
+  margin-bottom: 30px;
+}
+
+.keep-up h4{
+text-align: center;
+font-size: 20px;
+margin-bottom: 3%;
+}
+
+.button-subscribe{
+  background-color: #26A682;
+  color: #F2F2F2;
+  border-radius: 24px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 30%;
+}
+
+.indoor-climbing, .competitive{
+  background-color: #F2F2F2;
+  padding: 30px 0px;
+}
+
+h5{
+  font-size: 70px;
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.students-association, .ac, .pcl, .cibc{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer{
+  background-color: #333131;
+}
+
+footer h3 {
+  padding: 30px 0px 0px 0px;
+  color: #f7f7ff;
+  text-align: center;
+}
+.icon{
+  text-align: center;
+}
+
+.viewbox{
+  text-align: right;
+  padding-bottom: 20px;
+}
+svg{
+  margin: 0px 5px;
+}
+
+.viewbox p{
+  line-height: 5px;
+}
+
 
