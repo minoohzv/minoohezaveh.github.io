@@ -1,96 +1,92 @@
-/* html body{
+html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-} */
-
-
+}
+  
 h1,
-h2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+h2 {
+  font-size: 25px;
   margin-top: 0px;
 }
-
-#about h2{
+  
+/* uses text-alogn: left; to place the headers on the left side of the screen */
+#about h2 {
+  text-align: left;
+}
+  
+#contact h2 {
   text-align: left;
 }
 
-#contact h2{
-  text-align: left;
-}
-
-/* The text-justify Property 
-  text-align: justify;
-  text-justify: inter-word; */
+/* Optional: The text-justify Property 
+text-align: justify;
+text-justify: inter-word; */
 /* word-spacing Property
-  word-spacing: normal; */
-p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+word-spacing: normal; */
+p {
+  font-size: 20px;
 }
-
-/* width: 100% it will also add in padding, border, margin
-width: 100% = width + padding + margin */
+  
+/* uses width: 100%; because it includes block with any horizontal padding, border, and margin
+  width: 100% = width + padding + margin */
 nav#nav {
-  max-width: 1200px;
   width: 100%;
   margin: 0px auto;
   padding: 0px;
-  border: 5px solid #90B488;
+  border: 5px solid #495D63;
   background-color: #90B488;
   color: #E1E1E1;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
 }
 
-a{
+a {
+  display: block;
   text-decoration: none;
 }
-
-nav#nav a{
-  font-size: 15px;
-  padding: 10px;
+  
+nav#nav a {
+  font-size: 18px;
+  padding: 15px;
 }
-
+  
 nav#nav a:hover {
   background-color: #495D63;
   color: #90B488;
 }
-
-/* unvisited link */
-nav#nav a{
-  color: #817D7E;
-}
-/* visited link */
-nav#nav a:visited {
-  color: #817D7E;
+  
+/* The colour of the site menu bar's items are this when they are unvisited */
+nav#nav a {
+  color: #495D63;
 }
   
+/* The colour of the site menu bar's items are this when they are visited */
+nav#nav a:visited {
+  color: #E1E1E1;
+}
+    
 .main #home {
   padding: 50px;
   background-color:#495D63;
   text-align: left;
-  }
-#home h1{
+}
+
+#home h1 {
   text-align: left;
   font-size: 40px;
 }
+
 section#about {
   padding: 50px 50px;
   background-color: #90B488;
   color: black;
-
 }
-
+  
 section#contact {
   padding: 50px 50px;
   max-width: 1200px;
   margin: 0px auto;
   background-color: #495D63;
 }
- 
+   
 /* width: auto = width of containing block (i.e. the parent)
 width: auto; is telling it to fit into the width of the parent */
 form.contact-form {
@@ -100,38 +96,73 @@ form.contact-form {
   margin: 0px auto;
   margin-top: 5em;
   width: auto;
-}
-
+  }
+  
 section#home {
   font-family: Arial, Helvetica, sans-serif;
-
 }
-
+  
 textarea, input.contact-form-input {
   margin: 10px 10px 10px -10px;
   width: 100%;
   height: 15px;
 }
-textarea.contact-form-input{
+  
+textarea.contact-form-input {
   height: 40px;
 }
-button{
+  
+button {
   align-items: center;
   background-color:#495D63;
   font-size: 15px;
   padding: 10px;
   border: 1px solid black;
-  color: #817D7E;
+  color: #E1E1E1;
   margin-left: -10px;
 }
-
-.contact-form-label{
+  
+.contact-form-label {
   font-size: 20px;
 }
-
-footer p{
+  
+footer p {
   font-size: 10px;
   text-align: right;
   max-width: 1200px;
   width: 100%;
+}
+  
+/***********************************************************
+                        Desktop
+***********************************************************/
+
+/* use @media to apply the following code to the rest of the code */
+/* when the screen size is more than 760px wide, set the border to 5px */
+@media screen and (min-width: 760px) {
+  nav#nav {
+    border: 5px solid #90B488;
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1200px;
+  }
+
+  /* display: inline-block is used to display list items horizontally instead of vertically */
+  nav#nav a {
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+    align-items: center; 
+    margin: 0px;
+  }
+  
+  h1,
+  h2 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
 }
