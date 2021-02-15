@@ -259,6 +259,7 @@ header.main-nav{
 
 .rapper h1{
 font-size: 30px;
+margin: 30px 0px;
 }
 
 .masthead{
@@ -274,8 +275,6 @@ p{
     margin: 20px 0px;
     line-height: 32px;
 }
-
-
 
 .apply-form h2{
   color: #f7f7ff;
@@ -296,14 +295,13 @@ p{
 .apply{
     border-radius: 30px;
     box-shadow: 10px 10px 20px 5px gray;
-    padding: 10px 20px;
     background-color:#26A682;
-    padding: 30px 20px;
+    padding: 20px;
     margin: 0px 30px;
 }
 
 .apply-form h2{
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 15px;
 }
 
@@ -320,9 +318,7 @@ border: 0px;
 background-color: #f7f7f7;
 margin: 5px 0px 15px 0px ;
 font-size: 15px;
-
 }
-
 
 .location{
     margin: 60px 30px 30px 30px;
@@ -344,13 +340,13 @@ iframe{
     width: 100%;
 }
 
-
 .footer{
   background-color: #333131;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
 }
 
 .icon {
@@ -358,8 +354,7 @@ iframe{
   display: grid;
   grid-template-areas: "A A A A"
                        "B C D E";
-  grid-template-columns: repeat(4, 40px);
-  grid-row-gap: 1rem;
+  grid-template-columns: repeat(4, 30px);
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -370,44 +365,47 @@ iframe{
   grid-area: A;
   grid-row: 1;
   color: #f7f7ff;
+  font-size: 18px;
+  margin: 10px 0px;
 }
 
 .facebook {
   grid-column: 1 / span 1;
   grid-row: 2;
+  height: 20px;
 }
 
 .instagram {
   grid-column: 2 / span 1;
   grid-row: 2;
+  height: 20px;
 }
 
 .twitter {
   grid-column: 3 / span 1;
   grid-row: 2;
+  height: 20px;
 }
 
 .youtube{
   grid-column: 4 / span 1;
   grid-row: 2;
+  height: 18px;
 }
 
 .viewbox{
   grid-column: 3 / span 1;
   display: grid;
   grid-template-rows: 40px 40px;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  align-self: center;
   justify-items: center;
-
 }
 
 .top{
   grid-row: 1;
-  width: 70%;
-  height: 70%;
-  margin-top: 40px;
+  height: 15px;
+  margin: 30px 5px 0px;
 }
 
 .backtop{
@@ -416,9 +414,10 @@ iframe{
   color: #f7f7ff;
   white-space: nowrap;
   margin: 0%;
-  margin-top: 10px;
-  font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 7px;
 }
+
 
 
   
@@ -432,34 +431,50 @@ iframe{
 @media only screen and (max-width: 599px) {
 
   .mobile-logo{
-    max-width: 100px;   
+    display: inline-flex;
+    max-width: 100px;  
+    justify-content: center;
+    justify-items: center; 
   }
-
+  
   .logobackground{
     background-color: #333131;
     text-align: center;  
   }
-  
-  .desktop-logo{
+
+  .tablet-logo, .desktop-logo {
     display: none;
   }
 
-  .tablet-logo{
-    display: none;
+  .main-nav{
+    display: grid;
   }
 
-  .nav-list{
-    background:#333131;
-    text-align: center;
-    height: 73px;
+  .nav-list {
+    display: grid;
+    grid-template-areas: "B" 
+                         "C" 
+                         "D";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 30px);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
   }
 
-  .nav-list li:last-child{
-    padding-bottom: 30px;
+  .home{
+    grid-area: B;
+    grid-row: 1;
+  }
+
+  .about{
+    grid-area: C;
+    grid-row: 2;
   }
 
   .contact{
-    padding-bottom: 20px;
+    grid-area: D;
+    grid-row: 3;
   }
 
   .button-submit-black{
@@ -477,11 +492,7 @@ iframe{
 .rapper{
   padding: 0px 30px;
 }
-
 }
-
-
-
 
   /*****************************************
                     Tablet
@@ -529,20 +540,18 @@ iframe{
   }
 
   .button-submit-black {
-    
-    /* float: right; */
+    display: block;
+    margin-left: auto;
     background-color: #333131;
     width: auto;
     border-radius: 40px;
-    padding: 10px;
+    padding: 5px 25px;
     border: 0px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: #f7f7f7;
-    margin: 20px 0px 20px 20px;
     text-decoration: none;
     box-shadow: 0px 5px 20px 1px #333131;
-    margin-bottom: 20px;
   }
 
 .apply{
