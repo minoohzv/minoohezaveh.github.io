@@ -181,12 +181,14 @@ ul li a{
   
   /* header */
   .mobile-logo{
-    max-width: 100px;
-    align-items: center;
-    background-color: #333131;
-   
+    max-width: 100px;   
   }
   
+  .logobackground{
+    background-color: #333131;
+    text-align: center;  
+  }
+
   .desktop-logo{
     display: none;
   }
@@ -195,22 +197,10 @@ ul li a{
     display: none;
   }
 
-
   .nav-list{
     background:#333131;
     text-align: center;
-}
-.logobackground{
-    background-color: #333131;
-}
-
-.contact{
-    padding-bottom: 20px;
-}
-
-.nav-list li:last-child{
-    padding-bottom: 30px;
-    
+    height: 73px;
 }
 
 header.main-nav{
@@ -464,6 +454,14 @@ h5{
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
 
+  .nav-list li:last-child{
+    padding-bottom: 30px;
+  }
+
+  .contact{
+    padding-bottom: 20px;
+  }
+  
   .footer{
     background-color: #333131;
     display: grid;
@@ -575,9 +573,34 @@ h5{
     margin-left: 40px;
     
   }
-  
+
   .logobackground {
-    float: right;
+    float: left;
+  }
+
+  .nav-list {
+    display: grid;
+    grid-template-areas: "B C D";
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(1, 70px);
+    justify-content: right;
+    justify-items: center;
+    margin-right: 30px;
+  }
+
+  .home{
+    grid-area: B;
+    grid-row: 1;
+  }
+
+  .about{
+    grid-area: C;
+    grid-row: 1;
+  }
+
+  .contact{
+    grid-area: D;
+    grid-row: 1;
   }
 
   .rapper{

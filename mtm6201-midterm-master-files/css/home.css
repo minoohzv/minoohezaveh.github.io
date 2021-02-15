@@ -241,12 +241,14 @@ ul li a{
   
   /* header */
   .mobile-logo{
-    max-width: 100px;
-    align-items: center;
-    background-color: #333131;
-   
+    max-width: 100px; 
   }
   
+  .logobackground{
+    background-color: #333131;
+    text-align: center;  
+  }
+
   .desktop-logo{
     display: none;
   }
@@ -255,20 +257,15 @@ ul li a{
     display: none;
   }
 
-
   .nav-list{
     background:#333131;
     text-align: center;
-}
-.logobackground{
-    background-color: #333131;
-}
-
+    height: 73px;
+  }
 
 header.main-nav{
     background:#333131;
 }
-
 
 .masthead{
     background:#333131;
@@ -532,13 +529,36 @@ h3{
     height: 70px;
     width: 70px;
     margin-left: 40px;
-    
+  }
+
+  .logobackground{
+    float: left;
   }
 
    /* Navigation */
    .nav-list {
-    display: flex;
-    
+    display: grid;
+    grid-template-areas: "B C D";
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(1, 70px);
+    justify-content: right;
+    justify-items: center;
+    margin-right: 30px;  
+  }
+
+  .home{
+    grid-area: B;
+    grid-row: 1;
+  }
+
+  .about{
+    grid-area: C;
+    grid-row: 1;
+  }
+
+  .contact{
+    grid-area: D;
+    grid-row: 1;
   }
 
   .nav-list li {
@@ -546,10 +566,6 @@ h3{
     align-self: center;
     margin: 10px;
     
-  }
-
-  .logobackground {
-    float: right;
   }
 
 
