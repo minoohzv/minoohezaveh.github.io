@@ -180,29 +180,55 @@ ul li a{
   
   
   /* header */
-  .mobile-logo{
-    max-width: 100px;   
-  }
-  
-  .logobackground{
-    background-color: #333131;
-    text-align: center;  
+
+  .mobile-logo, .tablet-logo {
+    display: none;
   }
 
   .desktop-logo{
-    display: none;
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 40px;
+    
   }
 
-  .tablet-logo{
-    display: none;
+  .logobackground {
+    float: left;
   }
 
-  .nav-list{
-    background:#333131;
-    text-align: center;
-    height: 73px;
-}
+  .nav-list {
+    display: grid;
+    grid-template-areas: "B C D";
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(1, 70px);
+    justify-content: right;
+    justify-items: center;
+    margin-right: 30px;
+  }
 
+  .home{
+    grid-area: B;
+    grid-row: 1;
+  }
+
+  .about{
+    grid-area: C;
+    grid-row: 1;
+  }
+
+  .contact{
+    grid-area: D;
+    grid-row: 1;
+  }
+
+  .nav-list li {
+    border: none;
+    align-self: center;
+    margin: 10px; 
+  }
+  
 header.main-nav{
     background:#333131;
 }
@@ -454,6 +480,29 @@ h5{
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
 
+  .mobile-logo{
+    max-width: 100px;   
+  }
+  
+  .logobackground{
+    background-color: #333131;
+    text-align: center;  
+  }
+
+  .desktop-logo{
+    display: none;
+  }
+
+  .tablet-logo{
+    display: none;
+  }
+
+  .nav-list{
+    background:#333131;
+    text-align: center;
+    height: 73px;
+}
+
   .nav-list li:last-child{
     padding-bottom: 30px;
   }
@@ -549,17 +598,6 @@ h5{
   html {
     font-size: 16px;
   }
-  .nav-list {
-    display: flex;
-    
-  }
-
-  .nav-list li {
-    border: none;
-    align-self: center;
-    margin: 10px;
-    
-  }
 
   .mobile-logo, .desktop-logo {
     display: none;
@@ -572,35 +610,6 @@ h5{
     width: 70px;
     margin-left: 40px;
     
-  }
-
-  .logobackground {
-    float: left;
-  }
-
-  .nav-list {
-    display: grid;
-    grid-template-areas: "B C D";
-    grid-template-columns: repeat(3, 70px);
-    grid-template-rows: repeat(1, 70px);
-    justify-content: right;
-    justify-items: center;
-    margin-right: 30px;
-  }
-
-  .home{
-    grid-area: B;
-    grid-row: 1;
-  }
-
-  .about{
-    grid-area: C;
-    grid-row: 1;
-  }
-
-  .contact{
-    grid-area: D;
-    grid-row: 1;
   }
 
   .rapper{
