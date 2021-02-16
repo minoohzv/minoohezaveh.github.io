@@ -340,6 +340,18 @@ iframe{
     width: 100%;
 }
 
+.button-submit-black{
+  background-color: #333131;
+  color: #f7f7f7;
+  border-radius: 24px;
+  padding: 10px;
+  border: 0px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0px 5px 20px 1px #333131;
+}
+
 .footer{
   background-color: #333131;
   display: grid;
@@ -367,6 +379,7 @@ iframe{
   color: #f7f7ff;
   font-size: 18px;
   margin: 10px 0px;
+  white-space: nowrap;
 }
 
 .facebook {
@@ -477,18 +490,6 @@ iframe{
     grid-row: 3;
   }
 
-  .button-submit-black{
-    background-color: #333131;
-    color: #f7f7f7;
-    border-radius: 24px;
-    padding: 10px;
-    border: 0px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0px 5px 20px 1px #333131;
-}
-
 .rapper{
   padding: 0px 30px;
 }
@@ -539,19 +540,15 @@ iframe{
     margin-bottom: 0px;
   }
 
+
   .button-submit-black {
     display: block;
     margin-left: auto;
-    background-color: #333131;
     width: auto;
     border-radius: 40px;
     padding: 5px 25px;
-    border: 0px;
-    font-size: 25px;
-    font-weight: bold;
     color: #f7f7f7;
     text-decoration: none;
-    box-shadow: 0px 5px 20px 1px #333131;
   }
 
 .apply{
@@ -589,3 +586,36 @@ iframe{
   height: 400px;
 }
 }
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+  .first{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    width: 90%;
+  }
+  .second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    width: 90%;
+  }
+
+  .button-submit-black {
+    display: block;
+    margin-left: auto;
+    width: auto;
+    border-radius: 40px;
+    padding: 5px 25px;
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+
+
+}
+

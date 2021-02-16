@@ -425,6 +425,7 @@ h5{
   color: #f7f7ff;
   font-size: 18px;
   margin: 10px 0px;
+  white-space: nowrap;
 }
 
 .facebook {
@@ -556,6 +557,7 @@ h5{
     grid-area: A;
     grid-row: 1;
     color: #f7f7ff;
+    white-space: nowrap;
   }
   
   .facebook {
@@ -792,4 +794,171 @@ h5{
     margin-top: 30px;
     margin-bottom: 40px;
   }
+}
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+  .rapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    width: 90%;
+  }
+
+  .information{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    width: 90%;
+  }
+
+  .break{
+    display: grid;
+    margin-bottom: 30px;
+  }
+
+  .bar{
+    display: grid;
+    object-fit: cover;
+    object-position: -50px 0px;
+    width: 750px;
+    height: 300px;
+    margin-left: 60px;
+  }
+
+  .need{
+    grid-column: 2;
+    margin: 0px 5px;
+    margin-right: 60px;
+  }
+
+  .competitive{
+    display: grid;
+  }
+
+  .bowling{
+    display: grid;
+    grid-column: 2;
+    object-fit: cover;
+    object-position: center;
+    width: 750px;
+    height: 300px;
+    margin-right: 60px;
+  }
+
+  .friends{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0px 5px;
+    margin-left: 60px;
+  }
+
+  .keep-up{
+    display: grid;
+    padding: 8px 0px;
+    justify-items: center;
+  }
+
+  .keep-up h4{
+  margin-top: 10px;
+  font-size: 30px;
+  }
+
+  .button-subscribe{
+    grid-column: 2;
+    padding: 3px 40px;
+    font-size: 18px;
+  }
+
+  .newme{
+    display: grid;
+    margin-bottom: 30px;
+  }
+
+  .fitness{
+    display: grid;
+    object-fit: cover;
+    object-position: -50px 0px;
+    width: 750px;
+    height: 300px;
+    margin-left: 60px;
+  }
+
+  .newyear{
+    grid-column: 2;
+    margin: 0px 5px;
+    margin-right: 60px;
+  }
+
+  .indoor-climbing{
+    display: grid;
+  }
+
+  .climbing{
+    display: grid;
+    grid-column: 2;
+    object-fit: cover;
+    object-position: center;
+    width: 750px;
+    height: 300px;
+    margin-right: 60px;
+  }
+
+  .indoor{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0px 5px;
+    margin-left: 60px;
+  }
+
+  .second{
+    display: grid;
+    grid-template-areas: "A A A A" 
+                         "B C D E";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+  }
+
+  .special{
+    grid-area: A;
+    grid-row: 1;
+    margin: 100px 300px 30px;
+    
+  }
+
+  .students-association{
+    margin: auto;
+    grid-area: B;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .ac{
+    margin: auto;
+    grid-area: C;
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .pcl{
+    margin: auto;
+    grid-area: C;
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .cibc{
+    margin: auto;
+    grid-area: D;
+    grid-row: 2;
+    grid-column: 4;
+  }
+
+
+
 }

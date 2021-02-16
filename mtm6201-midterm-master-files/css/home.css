@@ -121,6 +121,11 @@ table {
 	border-spacing: 0;
 }
 
+.rapper h1{
+  font-size: 30px;
+  margin: 30px 0px;
+}
+
 /* ********************************************************************************* */
 /* ********************************************************************************* */
 
@@ -235,6 +240,7 @@ main{
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .facebook {
@@ -361,10 +367,6 @@ main{
     font-size: 18px;
     margin: 20px 0px;
     line-height: 32px;
-  }
-  .rapper h1{
-    font-size: 30px;
-    margin: 30px 0px;
   }
 }
 
@@ -524,7 +526,6 @@ h3{
   height: 250px;
   padding-left: 0em;
   padding-right: 0em;
-  margin: 0%;
   }
 
 .discover1{
@@ -684,6 +685,119 @@ h3{
   height: 140px;
   background-position: 0% 67%;
   }
+}
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+  h2{
+    margin: 0px;
+  }
+
+  p{
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  .flex-box{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+    width: 90%;
+  }
+
+  .rapper{
+    padding: 0px;
+  }
+
+  .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    justify-items: center;
+    margin: 50px 0px 20px;
+  }
+
+  .button-get{
+    margin: 20px 0px;
+    padding: 10px 50px;
+    float: left;
+    font-size: 25px;
+  }
+
+  .graduate-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .graduate{
+    background: url(../images/school.jpg) no-repeat center;
+    display: grid;
+    background-size: cover;
+    width: 550px;
+    height: auto;
+    margin-left: 60px;
+  }
+
+  .button-learn{
+    margin: 0px;
+    padding: 5px 30px;
+    font-size: 20px;
+  }
+
+  .section-white{
+    grid-column: 2;
+    margin: 0px 5px;
+    margin-right: 60px;
+  }
+
+  .section-black{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    justify-items: center;
+  }
+  
+  .woman{
+    margin: 0px;
+    width: 60%;
+  }
+
+  .dijanelle{
+    margin: auto;
+    white-space: nowrap;
+    line-height: 30px;
+  }
+
+  .drinking-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+  }
+
+  .discover1{
+    margin-left: 70px;
+    margin-right: 20px;
+    padding: 0px;
+    grid-column: 1;
+  }
+
+  .drinking{
+    background: url(../images/entertainment.jpg) no-repeat center;
+    grid-column: 2;
+    grid-row: 1;
+    background-size: cover;
+    width: 550px;
+    height: auto;
+  }
+
+
 
 }
 
