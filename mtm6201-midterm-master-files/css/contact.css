@@ -100,6 +100,9 @@ nav,
 section {
 	display: block;
 }
+* {
+  font-family: 'Raleway';
+}
 body {
 	line-height: 1;
 }
@@ -245,6 +248,7 @@ ul li a{
   .contact{
     grid-area: D;
     grid-row: 1;
+    font-weight: bold;
   }
 
   .nav-list li {
