@@ -180,8 +180,6 @@ ul li{
 ul li a{
     background-color:  #333131;
     color: #f7f7ff;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
     text-decoration: none;
     display:        flex;
@@ -217,8 +215,7 @@ ul li a{
     display: inline-block;
     height: 70px;
     width: 70px;
-    margin-left: 40px;
-    
+    margin-left: 140px;
   }
   
   .logobackground {
@@ -228,7 +225,7 @@ ul li a{
   .nav-list {
     display: grid;
     grid-template-areas: "B C D";
-    grid-template-columns: repeat(3, 70px);
+    grid-template-columns: repeat(3, 90px);
     grid-template-rows: repeat(1, 70px);
     justify-content: right;
     justify-items: center;
@@ -238,17 +235,20 @@ ul li a{
   .home{
     grid-area: B;
     grid-row: 1;
+    font-size: 16px;
   }
 
   .about{
     grid-area: C;
     grid-row: 1;
+    font-size: 16px;
   }
 
   .contact{
     grid-area: D;
     grid-row: 1;
     font-weight: bold;
+    font-size: 18px;
   }
 
   .nav-list li {
@@ -375,39 +375,41 @@ iframe{
   align-items: center;
   align-self: center;
   justify-items: center;
+  column-gap: 5px;
 }
+
 
 .follow{
   grid-area: A;
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
-  margin: 10px 0px;
   white-space: nowrap;
 }
 
 .facebook {
   grid-column: 1 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .instagram {
   grid-column: 2 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .twitter {
   grid-column: 3 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .youtube{
   grid-column: 4 / span 1;
   grid-row: 2;
-  height: 18px;
+  height: 21.53px;
+  width: 30.61px;
 }
 
 .viewbox{
@@ -596,6 +598,17 @@ iframe{
 **********************************************************/
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
+  .nav-list {
+    height: 75px;
+    margin-right: 139px;
+  }
+
+  .rapper h1 {
+    margin: 80px 0px;
+    font-size: 72px;
+    font-weight: bold;
+    color: #3C3B3A;
+  }
 
   .first{
     display: grid;
@@ -618,6 +631,25 @@ iframe{
     padding: 5px 25px;
     color: #f7f7f7;
     text-decoration: none;
+  }
+
+  
+  .viewbox{
+    margin-right: 20px;
+  }
+
+  .follow{
+    font-size: 24px;
+    margin: 10px 0px;
+  }
+
+  .top{
+    height: 49.79px;
+  }
+  
+  .backtop{
+    margin-top: 50px;
+    font-size: 16px;
   }
 
 

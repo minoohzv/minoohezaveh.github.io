@@ -155,8 +155,6 @@ ul li{
 ul li a{
     background-color:  #333131;
     color: #f7f7ff;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
     text-decoration: none;
     display:        flex;
@@ -193,8 +191,7 @@ ul li a{
     display: inline-block;
     height: 70px;
     width: 70px;
-    margin-left: 40px;
-    
+    margin-left: 140px;
   }
 
   .logobackground {
@@ -204,7 +201,7 @@ ul li a{
   .nav-list {
     display: grid;
     grid-template-areas: "B C D";
-    grid-template-columns: repeat(3, 70px);
+    grid-template-columns: repeat(3, 90px);
     grid-template-rows: repeat(1, 70px);
     justify-content: right;
     justify-items: center;
@@ -214,17 +211,20 @@ ul li a{
   .home{
     grid-area: B;
     grid-row: 1;
+    font-size: 16px;
   }
 
   .about{
     grid-area: C;
     grid-row: 1;
     font-weight: bold;
+    font-size: 18px;
   }
 
   .contact{
     grid-area: D;
     grid-row: 1;
+    font-size: 16px;
   }
 
   .nav-list li {
@@ -245,7 +245,7 @@ margin: 30px;
 p{
   font-size: 18px;
   margin: 20px 30px;
-  line-height: 32px;
+  line-height: 35px;
 }
 
 
@@ -287,15 +287,18 @@ p{
     background-color:rgba(38, 166, 130, 0.5);;
     width: 100%;
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     }
 
-.intro1 h1{
+.rapper1 h1{
   text-align: center;
   color: #f7f7ff;
-  vertical-align: baseline;
-  padding-top: 150px;
   opacity: 1;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   }
 
 h2{
@@ -317,21 +320,24 @@ h2{
   width: 100%;
   height: 300px;
   margin: 30px 0%;
-
   }
-  .rapper2{
-    background-color: rgba(38, 166, 130, 0.5);
-    width: 100%;
-    height: 300px;
-    }
+
+.rapper2{
+  background-color: rgba(38, 166, 130, 0.5);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
 
 .Services h1{
   text-align: center;
   color: #f7f7ff;
-  vertical-align: baseline;
-  padding-top: 150px;
   opacity: 1;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   }
 
 .bar, .bowling, .fitness, .climbing {
@@ -369,7 +375,7 @@ margin-bottom: 3%;
 .button-subscribe{
   background-color: #26A682;
   color: #F2F2F2;
-  border-radius: 24px;
+  border-radius: 50px;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
@@ -391,6 +397,7 @@ h5{
   font-size: 70px;
   text-align: center;
   margin: 0px 30px;
+  font-weight: bold;
 }
 
 .students-association, .ac, .pcl, .cibc{
@@ -421,6 +428,7 @@ h5{
   align-items: center;
   align-self: center;
   justify-items: center;
+  column-gap: 5px;
 }
 
 .follow{
@@ -428,32 +436,32 @@ h5{
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
-  margin: 10px 0px;
   white-space: nowrap;
 }
 
 .facebook {
   grid-column: 1 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .instagram {
   grid-column: 2 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .twitter {
   grid-column: 3 / span 1;
   grid-row: 2;
-  height: 20px;
+  height: 25.11px;
 }
 
 .youtube{
   grid-column: 4 / span 1;
   grid-row: 2;
-  height: 18px;
+  height: 21.53px;
+  width: 30.61px;
 }
 
 .viewbox{
@@ -806,42 +814,83 @@ h5{
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
+  .nav-list {
+    height: 75px;
+    margin-right: 139px;
+  }
+
   .rapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
-    width: 90%;
+    padding: 80px;
   }
 
+  .rapper h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #3C3B3A;
+    margin: 70px;
+  }
+  
+  .rapper p {
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 70px;
+  }
+
+  .information h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .need p {
+    font-weight: 200px;
+  }
+  
   .information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
-    width: 90%;
+    padding: 100px;
+  }
+
+  .rapper1  h1 {
+    font-size: 72px;
+  }
+
+  .rapper2 h1{
+    font-size: 72px;
   }
 
   .break{
     display: grid;
-    margin-bottom: 30px;
+    padding: 100px;
   }
 
   .bar{
     display: grid;
     object-fit: cover;
     object-position: -50px 0px;
-    width: 750px;
-    height: 300px;
-    margin-left: 60px;
+    width: 100%;
   }
 
   .need{
     grid-column: 2;
     margin: 0px 5px;
-    margin-right: 60px;
   }
 
   .competitive{
     display: grid;
+    padding: 100px;
   }
 
   .bowling{
@@ -849,57 +898,63 @@ h5{
     grid-column: 2;
     object-fit: cover;
     object-position: center;
-    width: 750px;
-    height: 300px;
-    margin-right: 60px;
+    width: 100%;
   }
 
   .friends{
     grid-column: 1;
     grid-row: 1;
     margin: 0px 5px;
-    margin-left: 60px;
   }
 
   .keep-up{
     display: grid;
-    padding: 8px 0px;
-    justify-items: center;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    height: 100px;
   }
 
   .keep-up h4{
-  margin-top: 10px;
-  font-size: 30px;
+  grid-row: 1;
+  margin: 0px;
+  margin-right: 20px;
+  font-size: 40px;
+  font-weight: 500px;
+  text-align: right;
   }
 
   .button-subscribe{
-    grid-column: 2;
+    grid-row: 1;
     padding: 3px 40px;
-    font-size: 18px;
+    margin: 0px;
+    font-size: 27px;
+    font-weight: bold;
+    justify-items: left;
+    height: 45px;
+    width: 232px;
   }
 
   .newme{
     display: grid;
-    margin-bottom: 30px;
+    padding: 100px;
   }
 
   .fitness{
     display: grid;
     object-fit: cover;
     object-position: -50px 0px;
-    width: 750px;
-    height: 300px;
-    margin-left: 60px;
+    width: 100%;
   }
 
   .newyear{
     grid-column: 2;
     margin: 0px 5px;
-    margin-right: 60px;
   }
 
   .indoor-climbing{
     display: grid;
+    padding: 100px;
   }
 
   .climbing{
@@ -907,16 +962,13 @@ h5{
     grid-column: 2;
     object-fit: cover;
     object-position: center;
-    width: 750px;
-    height: 300px;
-    margin-right: 60px;
+    width: 100%;
   }
 
   .indoor{
     grid-column: 1;
     grid-row: 1;
     margin: 0px 5px;
-    margin-left: 60px;
   }
 
   .second{
@@ -925,14 +977,14 @@ h5{
                          "B C D E";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
+    margin: 100px;
   }
 
   .special{
     grid-area: A;
     grid-row: 1;
-    margin: 100px 300px 30px;
-    
+    font-size: 72px;
+    line-height: 85px;
   }
 
   .students-association{
@@ -961,6 +1013,24 @@ h5{
     grid-area: D;
     grid-row: 2;
     grid-column: 4;
+  }
+
+  .viewbox{
+    margin-right: 20px;
+  }
+
+  .follow{
+    font-size: 24px;
+    margin: 10px 0px;
+  }
+
+  .top{
+    height: 49.79px;
+  }
+  
+  .backtop{
+    margin-top: 50px;
+    font-size: 16px;
   }
 
 
