@@ -319,6 +319,20 @@ main{
     justify-items: center; 
   }
   
+  .rapper{
+    padding: 0px 36.5px;
+  }
+
+  .rapper h1 {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .rapper p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
   .logobackground{
     background-color: #333131;
     text-align: center;  
@@ -376,8 +390,8 @@ main{
   .section-black p{
     color: #f7f7ff;
     font-size: 18px;
-    margin: 20px 0px;
     line-height: 32px;
+    margin: 20px 0px;
   }
 }
 
@@ -433,23 +447,28 @@ p{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    text-align: center;
+    align-content: center;
     background-color: #26A682;
     width: auto;
     border-radius: 40px;
-    padding: 10px;
+    margin: 37.5px;
+    height: 50px;
     border: 0px;
     font-size: 20px;
     font-weight: bold;
     color: #f7f7ff;
-    margin: 20px;
     text-decoration: none;
     box-shadow: 0px 10px 10px 2px gray;
 }
 
 .discover{
     background-color: white;
-    width: 100%;
+    width: 80%;
     margin:20px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 .scrollview{
   display: none;
@@ -476,22 +495,43 @@ h3{
   color:  #26A682;
 }
 .section-white {
-  padding: 0px 30px;
+  padding: 0px 37.5px;
 }
+
+.section-white h2 {
+  font-size: 32px;
+}
+
+.section-white h3 {
+  font-size: 24px;
+}
+
+.section-white p {
+  font-size: 16px;
+}
+
 .button-learn {
   float: right;
   background-color: #26A682;
-  width: auto;
   border-radius: 40px;
-  padding: 10px;
-  border: 0px;
+  width: 146px;
+  height: 45px;
   font-size: 20px;
   font-weight: bold;
   color: #f7f7ff;
   margin: 20px 0px 20px 20px;
   text-decoration: none;
   box-shadow: 0px 10px 10px 2px grey;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.graduate-desktop {
+  margin-bottom: 0px;
 }
 
 /* .container:not(.graduate){
@@ -506,13 +546,15 @@ h3{
   background-color: #333131;
   margin: 0px;
   margin-top: 110px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 36.5px;
+  padding-right: 36.5px;
 }
 
+
 .woman{
+  margin-bottom: 28px;
   border-radius: 300px;
-  width: 40%;
+  width: 50%;
   border: #f7f7ff solid 4px;
   display: block;
   margin-left: auto;
@@ -521,14 +563,19 @@ h3{
 }
 
 .section-black h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 24px;
   color: #f7f7ff;
   text-align: center;
+  line-height: 35px;
 }
 
 .section-black p{
   color: #f7f7ff;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 5px;
 }
 
 .drinking{
@@ -544,6 +591,25 @@ h3{
   width: auto;
 }
 
+.discover1 h2{
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 0px;
+}
+
+.discover1 h3{
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.discover1 p{
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
 /*****************************************
                     Tablet
 *****************************************/
