@@ -230,18 +230,23 @@ ul li a{
     justify-content: right;
     justify-items: center;
     margin-right: 30px; 
+    margin-bottom: 35px;
   }
 
   .home{
     grid-area: B;
     grid-row: 1;
     font-size: 16px;
+    font-family: 'Raleway';
+    margin-top: 0px;
   }
 
   .about{
     grid-area: C;
     grid-row: 1;
     font-size: 16px;
+    font-family: 'Raleway';
+    margin-top: 20px;
   }
 
   .contact{
@@ -249,6 +254,8 @@ ul li a{
     grid-row: 1;
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Raleway';
+    margin-top: 30px;
   }
 
   .nav-list li {
@@ -375,7 +382,8 @@ iframe{
   align-items: center;
   align-self: center;
   justify-items: center;
-  column-gap: 5px;
+  column-gap: 8px;
+  margin-bottom: 20px;
 }
 
 
@@ -498,6 +506,15 @@ iframe{
 
 .rapper{
   padding: 0px 30px;
+}
+
+.top{
+  height: 22.23px;
+}
+
+.backtop{
+  margin-top: 10px;
+  font-size: 9px;
 }
 }
 
