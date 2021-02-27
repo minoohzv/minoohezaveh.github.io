@@ -102,6 +102,7 @@ section {
 }
 * {
   font-family: 'Raleway';
+  color: #3C3B3A;
 }
 body {
 	line-height: 1;
@@ -167,8 +168,9 @@ main{
     }
 
 
+
 /***********************************************************
-                        Mobile 
+
  **********************************************************/
 
 ul li{
@@ -230,7 +232,6 @@ ul li a{
     justify-content: right;
     justify-items: center;
     margin-right: 30px; 
-    margin-bottom: 35px;
   }
 
   .home{
@@ -238,7 +239,6 @@ ul li a{
     grid-row: 1;
     font-size: 16px;
     font-family: 'Raleway';
-    margin-top: 0px;
   }
 
   .about{
@@ -246,7 +246,6 @@ ul li a{
     grid-row: 1;
     font-size: 16px;
     font-family: 'Raleway';
-    margin-top: 20px;
   }
 
   .contact{
@@ -255,7 +254,6 @@ ul li a{
     font-weight: bold;
     font-size: 18px;
     font-family: 'Raleway';
-    margin-top: 30px;
   }
 
   .nav-list li {
@@ -319,6 +317,8 @@ p{
 #message{
   border-radius: 10px;
   height: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .contact-us-section input{
@@ -351,6 +351,7 @@ iframe{
     width: 100%;
 }
 
+/* che size of box check? */
 .button-submit-black{
   background-color: #333131;
   color: #f7f7f7;
@@ -358,7 +359,7 @@ iframe{
   padding: 10px;
   border: 0px;
   width: 100%;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
   box-shadow: 0px 5px 20px 1px #333131;
 }
@@ -505,7 +506,18 @@ iframe{
   }
 
 .rapper{
-  padding: 0px 30px;
+  padding: 0px 36.5px;
+}
+
+.rapper h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 59px;
+}
+
+.rapper p {
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .top{
@@ -516,6 +528,47 @@ iframe{
   margin-top: 10px;
   font-size: 9px;
 }
+
+.contact {
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+.apply{
+  margin: 0px 35.5px;
+}
+
+.contact-us-section input{
+  width: 97%;
+  padding: 11px 0px 11px 10px;
+  }
+
+  .location{
+    margin: 80px 37px 30px 37px;
+
+  }
+
+  .location h3 {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .location h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .location p {
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 10px;
+  }
+
+  .map {
+    height: 250px;
+  }
 }
 
   /*****************************************

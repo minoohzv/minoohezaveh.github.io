@@ -211,7 +211,6 @@ ul li a{
     justify-content: right;
     justify-items: center;
     margin-right: 30px;
-    margin-bottom: 35px;
   }
 
   .home{
@@ -219,7 +218,6 @@ ul li a{
     grid-row: 1;
     font-size: 16px;
     font-family: 'Raleway';
-    margin-top: 0px;
   }
 
   .about{
@@ -228,7 +226,6 @@ ul li a{
     font-weight: bold;
     font-size: 18px;
     font-family: 'Raleway';
-    margin-top: 20px;
   }
 
   .contact{
@@ -236,7 +233,6 @@ ul li a{
     grid-row: 1;
     font-size: 16px;
     font-family: 'Raleway';
-    margin-top: 30px;
   }
 
   .nav-list li {
