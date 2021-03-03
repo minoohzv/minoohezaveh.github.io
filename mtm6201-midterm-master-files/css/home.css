@@ -102,12 +102,19 @@ section {
   display: block;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
 * {
   font-family: 'Raleway';
   color: #3C3B3A;
 }
 
 body {
+  background: white;
+  margin: 0px;
   line-height: 1;
 }
 
@@ -144,15 +151,6 @@ table {
 /* ********************************************************************************* */
 /* ********************************************************************************* */
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
-
-body {
-  background: white;
-  margin: 0px;
-}
 
 main {
   padding: 0px;
@@ -216,7 +214,7 @@ footer {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Raleway';
-} 
+}
 
 .about {
   grid-area: C;
@@ -467,7 +465,6 @@ h3 {
   padding-right: 36.5px;
 }
 
-
 .woman {
   margin-bottom: 28px;
   border-radius: 300px;
@@ -527,6 +524,84 @@ h3 {
   line-height: 35px;
   margin-top: 2px;
   margin-bottom: 3px;
+}
+
+/* Add animation for buttons */
+.button-get:hover {
+  background-color: #7ED9BF;
+}
+
+.button-get:active {
+  background-color: #7D70BA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-learn:hover {
+  background-color: #7ED9BF
+}
+
+.button-learn:active {
+  background-color: #7D70BA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add animation for scrolldown buttons */
+.scrolldown {
+  position: relative;
+  animation-name: scroll-down;
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+/* Add animation for top buttons */
+.top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.twitter,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.twitter:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
 }
 
 /***********************************************************
@@ -884,7 +959,7 @@ h3 {
   .nav-list {
     grid-template-columns: repeat(3, 75px);
     margin-right: 60px;
-}
+  }
 
   .rapper {
     margin: 50px 60px;
@@ -926,7 +1001,6 @@ h3 {
 
   .scrollview {
     display: grid;
-    justify-content: top;
     align-items: center;
     justify-items: center;
     margin: 30px 0px;
@@ -955,22 +1029,22 @@ h3 {
     font-size: 40px;
     font-weight: 600;
   }
-  
+
   .section-white h3 {
     font-size: 32px;
   }
-  
+
   .section-white p {
     font-size: 18px;
     font-weight: 300;
     line-height: 35px;
-}
+  }
 
   .section-black {
     display: grid;
     flex-direction: column;
     grid-template-areas: "A C"
-                         "B C";
+      "B C";
     grid-template-columns: 1fr 2fr;
     padding-bottom: 50px;
   }
@@ -989,16 +1063,16 @@ h3 {
     font-weight: 600;
   }
 
-.section-black p {
+  .section-black p {
     font-size: 24px;
-}
+  }
 
   .only {
     grid-area: C;
     margin: 0px 30px 0px 20px;
   }
 
-  .drinking{
+  .drinking {
     height: 200px;
   }
 
@@ -1010,14 +1084,14 @@ h3 {
     font-size: 40px;
     font-weight: 600;
     margin: 30px 0px 20px 0px;
-}
+  }
 
   .discover1 h3 {
     font-size: 32px;
     color: #26A682;
   }
 
-  .discover1 p{
+  .discover1 p {
     margin: 20px 0px;
   }
 
@@ -1059,11 +1133,11 @@ h3 {
     background-position: 0% 67%;
   }
 
-  .footer{
+  .footer {
     margin-top: 100px;
   }
 
-  .follow{
+  .follow {
     font-size: 24px;
   }
 
@@ -1152,7 +1226,6 @@ h3 {
 
   .scrollview {
     display: grid;
-    justify-content: top;
     align-items: center;
     justify-items: center;
     margin: 30px 0px;
@@ -1269,6 +1342,6 @@ h3 {
   .backtop {
     margin-top: 50px;
     font-size: 16px;
-  
+
   }
 }

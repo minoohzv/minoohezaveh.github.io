@@ -301,6 +301,8 @@ p {
   margin: 30px 0%;
 }
 
+
+
 .rapper1 {
   background-color: rgba(38, 166, 130, 0.5);
   ;
@@ -516,6 +518,62 @@ h5 {
   font-size: 7px;
 }
 
+/* Add animation for buttons */
+.button-subscribe:hover {
+  background-color: #7ED9BF
+}
+
+.button-subscribe:active {
+  background-color: #7D70BA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add animation for top buttons */
+.top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.twitter,
+.youtube,
+.facebook,
+.students-association,
+.ac,
+.pcl,
+.cibc {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.twitter:hover,
+.youtube:hover,
+.facebook:hover,
+.students-association:hover,
+.ac:hover,
+.pcl:hover,
+.cibc:hover {
+  transform: scale(1.2);
+}
+
+
 /***********************************************************
                         Mobile 
  **********************************************************/
@@ -714,7 +772,7 @@ h5 {
   .nav-list {
     grid-template-columns: repeat(3, 75px);
     margin-right: 60px;
-}
+  }
 
   h2 {
     margin: 10px 5px;
@@ -772,7 +830,9 @@ h5 {
     margin-bottom: 30px;
   }
 
-  .who, .what, .where{
+  .who,
+  .what,
+  .where {
     margin: 45px;
   }
 
@@ -784,19 +844,19 @@ h5 {
     height: 200px;
   }
 
-  .rapper1 h1{
+  .rapper1 h1 {
     font-size: 56px;
   }
 
-  .Services{
+  .Services {
     height: 200px;
   }
 
-  .rapper2{
+  .rapper2 {
     height: 200px;
   }
 
-  .rapper1 h2{
+  .rapper1 h2 {
     font-size: 56px;
   }
 
@@ -818,14 +878,14 @@ h5 {
 
   .need {
     grid-column: 2;
-    }
+  }
 
-  .need h2{
-      font-style: normal;
-      margin-bottom: 15px;
-    }
+  .need h2 {
+    font-style: normal;
+    margin-bottom: 15px;
+  }
 
-  .need p{
+  .need p {
     font-weight: 300;
     margin-top: 5px;
   }
@@ -851,15 +911,15 @@ h5 {
     grid-row: 1;
   }
 
-  .competitive h2{
+  .competitive h2 {
     font-style: normal;
     margin-bottom: 15px;
   }
 
-.competitive p{
-  font-weight: 300;
-  margin-top: 5px;
-}
+  .competitive p {
+    font-weight: 300;
+    margin-top: 5px;
+  }
 
   .keep-up {
     display: grid;
@@ -904,15 +964,15 @@ h5 {
     grid-column: 2;
   }
 
-  .newme h2{
+  .newme h2 {
     font-style: normal;
     margin-bottom: 15px;
   }
 
-.newme p{
-  font-weight: 300;
-  margin-top: 5px;
-}
+  .newme p {
+    font-weight: 300;
+    margin-top: 5px;
+  }
 
   .indoor-climbing {
     display: grid;
@@ -935,15 +995,15 @@ h5 {
     grid-row: 1;
   }
 
-  .indoor-climbing h2{
+  .indoor-climbing h2 {
     font-style: normal;
     margin-bottom: 15px;
   }
 
-.indoor-climbing p{
-  font-weight: 300;
-  margin-top: 5px;
-}
+  .indoor-climbing p {
+    font-weight: 300;
+    margin-top: 5px;
+  }
 
   .students-association {
     width: 53%;
@@ -959,7 +1019,7 @@ h5 {
     margin-bottom: 50px;
   }
 
-  .follow{
+  .follow {
     font-size: 24px;
     margin: 10px 0px;
     font-family: 'Raleway';
@@ -1023,7 +1083,7 @@ h5 {
   }
 
   .need p {
-    font-weight: 200px;
+    font-weight: 200;
   }
 
   .information {
@@ -1089,7 +1149,7 @@ h5 {
     margin: 0px;
     margin-right: 20px;
     font-size: 40px;
-    font-weight: 500px;
+    font-weight: 500;
     text-align: right;
   }
 

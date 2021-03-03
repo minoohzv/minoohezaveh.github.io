@@ -466,6 +466,58 @@ iframe {
 }
 
 
+
+/* Add animation for buttons */
+*:focus {
+  outline: 0;
+}
+
+.button-submit-black:hover {
+  background-color: #7ED9BF
+}
+
+.button-submit-black:active {
+  background-color: #7D70BA;
+  transform: translateY(4px);
+}
+
+/* Add animation for top buttons */
+.top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.twitter,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.twitter:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+
 /***********************************************************
                         Mobile 
  **********************************************************/
@@ -609,7 +661,7 @@ iframe {
   .nav-list {
     grid-template-columns: repeat(3, 75px);
     margin-right: 60px;
-}
+  }
 
   .mobile-logo,
   .desktop-logo {
@@ -660,17 +712,17 @@ iframe {
   .apply-form h2 {
     font-size: 72px;
     font-weight: bold;
-}
+  }
 
-.apply-form label {
-  font-size: 24px;
-}
+  .apply-form label {
+    font-size: 24px;
+  }
 
-.contact-us-section input {
-  margin-top: 15px;
-  padding: 15px 0px;
-  text-indent: 1em;
-}
+  .contact-us-section input {
+    margin-top: 15px;
+    padding: 15px 0px;
+    text-indent: 1em;
+  }
 
   .button-submit-black {
     display: block;
@@ -718,7 +770,7 @@ iframe {
     height: 500px;
   }
 
-  .follow{
+  .follow {
     font-size: 24px;
     margin: 10px 0px;
   }
@@ -817,7 +869,6 @@ iframe {
   h4 {
     font-size: 40px;
     margin-left: 70px;
-    white-space: nowrap;
   }
 
   .p1 {
