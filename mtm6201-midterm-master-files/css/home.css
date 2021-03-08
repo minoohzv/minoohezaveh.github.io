@@ -105,6 +105,7 @@ section {
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -148,10 +149,6 @@ table {
   color: #3C3B3A;
 }
 
-/* ********************************************************************************* */
-/* ********************************************************************************* */
-
-
 main {
   padding: 0px;
   background: white;
@@ -179,20 +176,6 @@ footer {
 }
 
 /* header */
-
-.mobile-logo,
-.tablet-logo {
-  display: none;
-}
-
-.desktop-logo {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  margin-left: 140px;
-}
-
 .logobackground {
   float: left;
 }
@@ -205,7 +188,7 @@ footer {
   grid-template-rows: repeat(1, 70px);
   justify-content: right;
   justify-items: center;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 
 .home {
@@ -242,7 +225,6 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 2%;
   padding-bottom: 2%;
-
 }
 
 .icon {
@@ -382,7 +364,6 @@ p {
 }
 
 .discover {
-  background-color: white;
   width: 80%;
   margin: 20px 0px;
   display: block;
@@ -604,6 +585,42 @@ h3 {
   transform: scale(1.2);
 }
 
+/* add pulse to attract user attention to icons buttons*/
+#bowling, #rock-climbing, #fitness-center, #indoor-court {
+  box-shadow: 0 0 0 0 rgba(38, 166, 130, 1);
+	height: 69px;
+	width: 114px;
+  overflow: visible;
+	transform: scale(1);
+  animation: pulse 3s infinite;
+}
+
+#bowling:hover, #rock-climbing:hover, #fitness-center:hover, #indoor-court:hover {
+  -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.7);
+		box-shadow: 0 0 0 0 rgba(38, 166, 130, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(38, 166, 130, 0);
+	}
+
+	100% {
+		transform: scale(0.7);
+		box-shadow: 0 0 0 0 rgba(38, 166, 130, 0);
+	}
+}
+
+
+
 /***********************************************************
                         Mobile 
  **********************************************************/
@@ -617,6 +634,11 @@ h3 {
     max-width: 100px;
     justify-content: center;
     justify-items: center;
+  }
+
+  .tablet-logo,
+  .desktop-logo {
+    display: none;
   }
 
   .rapper {
@@ -637,11 +659,6 @@ h3 {
   .logobackground {
     background-color: #333131;
     text-align: center;
-  }
-
-  .tablet-logo,
-  .desktop-logo {
-    display: none;
   }
 
   .main-nav {
@@ -765,7 +782,6 @@ h3 {
   }
 
   .discover {
-    background-color: white;
     width: 80%;
     margin: 38px 0px;
     display: block;
@@ -958,7 +974,7 @@ h3 {
 
   .nav-list {
     grid-template-columns: repeat(3, 75px);
-    margin-right: 60px;
+    margin-right: 5%;
   }
 
   .rapper {
@@ -1122,7 +1138,6 @@ h3 {
     align-items: center;
     display: inline-block;
     margin-left: 30%;
-    margin-right: 30%;
     white-space: nowrap;
   }
 
@@ -1160,6 +1175,19 @@ h3 {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
+.mobile-logo,
+.tablet-logo {
+  display: none;
+}
+
+.desktop-logo {
+  text-decoration: none;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin-left: 150%;
+}
+
   .rapper h1 {
     margin: 80px 0px;
   }
@@ -1187,20 +1215,13 @@ h3 {
 
   .nav-list {
     height: 75px;
-    margin-right: 139px;
+    margin-right: 5%;
   }
 
-  .flex-box {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 65px;
-    margin-left: 140px;
-    margin-right: 139px;
-    width: 85%;
-  }
-
-  .first {
-    width: 41.47%;
+  .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
   }
 
   .rapper {

@@ -140,6 +140,7 @@ table {
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -217,18 +218,6 @@ ul li a:hover {
 
 
 /* header */
-.mobile-logo,
-.tablet-logo {
-  display: none;
-}
-
-.desktop-logo {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  margin-left: 140px;
-}
 
 .logobackground {
   float: left;
@@ -241,7 +230,7 @@ ul li a:hover {
   grid-template-rows: repeat(1, 70px);
   justify-content: right;
   justify-items: center;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 
 .home {
@@ -330,7 +319,7 @@ p {
   margin-bottom: 15px;
 }
 
-#message {
+#text {
   border-radius: 10px;
   height: 100px;
   width: -webkit-fill-available;
@@ -660,7 +649,7 @@ iframe {
 
   .nav-list {
     grid-template-columns: repeat(3, 75px);
-    margin-right: 60px;
+    margin-right: 5%;
   }
 
   .mobile-logo,
@@ -792,9 +781,23 @@ iframe {
 **********************************************************/
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
+
+.mobile-logo,
+.tablet-logo {
+  display: none;
+}
+
+.desktop-logo {
+  text-decoration: none;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin-left: 150%;
+}
+
   .nav-list {
     height: 75px;
-    margin-right: 139px;
+    margin-right: 5%;
   }
 
   .rapper {
@@ -805,13 +808,14 @@ iframe {
     font-size: 72px;
     font-weight: bold;
     color: #3C3B3A;
-    margin: 70px;
+    margin: 80px 25px;
   }
 
   .rapper p {
     font-size: 24px;
     line-height: 35px;
-    margin-left: 70px;
+    margin-left: 25px;
+    margin-right: 60px;
   }
 
   .rapper .contact-img {
@@ -846,9 +850,8 @@ iframe {
 
   .first {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 80px;
-    width: 90%;
+    grid-template-columns: 3fr 2fr;
+    padding: 5%;
     align-items: center;
   }
 
@@ -892,7 +895,6 @@ iframe {
     font-size: 40px;
     font-weight: bold;
   }
-
 
   .viewbox {
     margin-right: 20px;
