@@ -1009,16 +1009,16 @@ h5 {
     margin-top: 5px;
   }
 
-  .students-association {
+  #students-association {
     width: 53%;
   }
 
-  .ac,
-  .pcl {
+  #ac,
+  #pcl {
     width: 25%;
   }
 
-  .cibc {
+  #cibc {
     width: 18%;
     margin-bottom: 50px;
   }
@@ -1221,8 +1221,8 @@ h5 {
     grid-template-areas: "A A A A"
       "B C D E";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 100px;
+    margin: 140px; 
+    align-items: end;
   }
 
   .special {
@@ -1232,28 +1232,28 @@ h5 {
     line-height: 85px;
   }
 
-  .students-association {
+  a.students-association {
     margin: auto;
     grid-area: B;
     grid-row: 2;
     grid-column: 1;
   }
 
-  .ac {
+  a.ac {
     margin: auto;
     grid-area: C;
     grid-row: 2;
     grid-column: 2;
   }
 
-  .pcl {
+  a.pcl {
     margin: auto;
     grid-area: C;
     grid-row: 2;
     grid-column: 3;
   }
 
-  .cibc {
+  a.cibc {
     margin: auto;
     grid-area: D;
     grid-row: 2;
@@ -1277,4 +1277,28 @@ h5 {
     margin-top: 50px;
     font-size: 16px;
   }
+
+.students-association
+ {
+  display: block;
+  width: 110%;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.ac,
+.pcl{
+  display: block;
+  width: 55%;
+  margin: 20px 0px 0px auto;
+  padding: 0px;
+} 
+
+.cibc{
+  display: block;
+  width: 38%;
+  margin: 20px 0px 0px auto;
+  padding: 0px;
+} 
+
 }
