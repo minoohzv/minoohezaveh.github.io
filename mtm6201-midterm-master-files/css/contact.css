@@ -225,7 +225,7 @@ ul li a:hover {
 
 .nav-list {
   display: grid;
-  grid-template-areas: "B C D";
+  grid-template-areas: "home about contact";
   grid-template-columns: repeat(3, 90px);
   grid-template-rows: repeat(1, 70px);
   justify-content: right;
@@ -234,21 +234,21 @@ ul li a:hover {
 }
 
 .home {
-  grid-area: B;
+  grid-area: home;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
 }
 
 .about {
-  grid-area: C;
+  grid-area: about;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
 }
 
 .contact {
-  grid-area: D;
+  grid-area: contact;
   grid-row: 1;
   font-weight: bold;
   font-size: 18px;
@@ -386,8 +386,8 @@ iframe {
 .icon {
   grid-column: 2 / span 1;
   display: grid;
-  grid-template-areas: "A A A A"
-    "B C D E";
+  grid-template-areas: "follow follow follow follow"
+                       "facebook instagram twitter youtube";
   grid-template-columns: repeat(4, 30px);
   justify-content: center;
   align-items: center;
@@ -397,7 +397,7 @@ iframe {
 }
 
 .follow {
-  grid-area: A;
+  grid-area: follow;
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
@@ -405,25 +405,25 @@ iframe {
 }
 
 .facebook {
-  grid-column: 1 / span 1;
+  grid-area: facebook;
   grid-row: 2;
   height: 25.11px;
 }
 
 .instagram {
-  grid-column: 2 / span 1;
+  grid-area:instagram;
   grid-row: 2;
   height: 25.11px;
 }
 
 .twitter {
-  grid-column: 3 / span 1;
+  grid-area: twitter;
   grid-row: 2;
   height: 25.11px;
 }
 
 .youtube {
-  grid-column: 4 / span 1;
+  grid-area: youtube;
   grid-row: 2;
   height: 21.53px;
   width: 30.61px;
@@ -452,6 +452,7 @@ iframe {
   margin: 0%;
   margin-bottom: 20px;
   font-size: 7px;
+  text-decoration: none;
 }
 
 
@@ -538,9 +539,9 @@ iframe {
 
   .nav-list {
     display: grid;
-    grid-template-areas: "B"
-      "C"
-      "D";
+    grid-template-areas: "home"
+      "about"
+      "contact";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 40px);
     justify-content: center;
@@ -550,17 +551,17 @@ iframe {
   }
 
   .home {
-    grid-area: B;
+    grid-area: home;
     grid-row: 1;
   }
 
   .about {
-    grid-area: C;
+    grid-area: about;
     grid-row: 2;
   }
 
   .contact {
-    grid-area: D;
+    grid-area: contact;
     grid-row: 3;
   }
 
@@ -782,18 +783,18 @@ iframe {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-.mobile-logo,
-.tablet-logo {
-  display: none;
-}
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
 
-.desktop-logo {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  margin-left: 150%;
-}
+  .desktop-logo {
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 150%;
+  }
 
   .nav-list {
     height: 75px;
@@ -808,7 +809,7 @@ iframe {
     font-size: 72px;
     font-weight: bold;
     color: #3C3B3A;
-    margin: 0px 25px 80px 25px;
+    margin: 80px 25px;
   }
 
   .rapper p {
@@ -865,15 +866,18 @@ iframe {
     font-size: 72px;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-left: 70px;
   }
 
   h4 {
     font-size: 40px;
+    margin-left: 70px;
   }
 
   .p1 {
     font-size: 18px;
     line-height: 35px;
+    margin-left: 70px;
   }
 
   .map {
@@ -899,6 +903,7 @@ iframe {
   .follow {
     font-size: 24px;
     margin: 10px 0px;
+    font-weight: inherit;
   }
 
   .top {
@@ -908,9 +913,5 @@ iframe {
   .backtop {
     margin-top: 50px;
     font-size: 16px;
-  }
-
-  .location {
-    margin: 0px;
   }
 }

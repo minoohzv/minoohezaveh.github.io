@@ -134,9 +134,6 @@ table {
   border-spacing: 0;
 }
 
-/* ********************************************************************************* */
-/* ********************************************************************************* */
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -156,9 +153,6 @@ main {
 .keep-up h4 {
   color: #F2F2F2;
 }
-
-/***********************************************************
- **********************************************************/
 
 ul li {
   width: 100%;
@@ -194,7 +188,6 @@ ul li a:hover {
   padding: 0em;
 }
 
-
 /* header */
 .logobackground {
   float: left;
@@ -202,7 +195,7 @@ ul li a:hover {
 
 .nav-list {
   display: grid;
-  grid-template-areas: "B C D";
+  grid-template-areas: "home about contact";
   grid-template-columns: repeat(3, 90px);
   grid-template-rows: repeat(1, 70px);
   justify-content: right;
@@ -211,14 +204,14 @@ ul li a:hover {
 }
 
 .home {
-  grid-area: B;
+  grid-area: home;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
 }
 
 .about {
-  grid-area: C;
+  grid-area: about;
   grid-row: 1;
   font-weight: bold;
   font-size: 18px;
@@ -226,7 +219,7 @@ ul li a:hover {
 }
 
 .contact {
-  grid-area: D;
+  grid-area: contact;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
@@ -253,7 +246,6 @@ p {
   line-height: 35px;
 }
 
-
 .masthead {
   background: #333131;
 }
@@ -267,19 +259,6 @@ p {
   width: 100%;
 }
 
-/* .about{
-  background-color: lightblue;
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  margin: 30px 0%;
-  }
-
-.about-text{
-  display: block;
-  background-color: lightblue;
-} */
-
 .intro1 {
   background: url(../images/about.jpg) no-repeat center;
   background-size: cover;
@@ -287,8 +266,6 @@ p {
   height: 300px;
   margin: 30px 0%;
 }
-
-
 
 .rapper1 {
   background-color: rgba(38, 166, 130, 0.5);
@@ -301,7 +278,7 @@ p {
   text-align: center;
 }
 
-.rapper1 h1 {
+.rapper1 h2, .rapper2 h2 {
   text-align: center;
   color: #f7f7ff;
   opacity: 1;
@@ -317,10 +294,6 @@ h2 {
 .info {
   margin: 0px 30px;
 }
-
-/* .info h2{
-  margin: 0px 30px;
-} */
 
 .Services {
   background: url(../images/services.jpg) no-repeat center;
@@ -358,14 +331,10 @@ h2 {
 h2,
 h3 {
   margin: 0px 30px;
-
 }
 
 h3 {
   font-size: 22px;
-}
-
-h3 {
   margin-top: 20px;
   margin-bottom: 0px;
   color: #26A682;
@@ -428,17 +397,19 @@ h5 {
 .footer {
   background-color: #333131;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "none icon viewbox";
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 2%;
   padding-bottom: 2%;
 
 }
 
 .icon {
-  grid-column: 2 / span 1;
+  grid-area: icon;
+  grid-row: 1;
   display: grid;
-  grid-template-areas: "A A A A"
-    "B C D E";
+  grid-template-areas: "follow follow follow follow"
+                       "facebook instagram twitter youtube";
   grid-template-columns: repeat(4, 30px);
   justify-content: center;
   align-items: center;
@@ -448,7 +419,7 @@ h5 {
 }
 
 .follow {
-  grid-area: A;
+  grid-area: follow;
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
@@ -456,32 +427,33 @@ h5 {
 }
 
 .facebook {
-  grid-column: 1 / span 1;
+  grid-area: facebook;
   grid-row: 2;
   height: 25.11px;
 }
 
 .instagram {
-  grid-column: 2 / span 1;
+  grid-area: instagram;
   grid-row: 2;
   height: 25.11px;
 }
 
 .twitter {
-  grid-column: 3 / span 1;
+  grid-area: twitter;
   grid-row: 2;
   height: 25.11px;
 }
 
 .youtube {
-  grid-column: 4 / span 1;
+  grid-area: youtube;
   grid-row: 2;
   height: 21.53px;
   width: 30.61px;
 }
 
 .viewbox {
-  grid-column: 3 / span 1;
+  grid-area: viewbox;
+  grid-row: 1;
   display: grid;
   grid-template-rows: 40px 40px;
   justify-content: right;
@@ -503,6 +475,7 @@ h5 {
   margin: 0%;
   margin-bottom: 20px;
   font-size: 7px;
+  text-decoration: none;
 }
 
 /* Add animation for buttons */
@@ -562,20 +535,20 @@ h5 {
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.7);
-		box-shadow: 0 0 0 0 rgba(51, 49, 49, 0.7);
-	}
+  0% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(51, 49, 49, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(51, 49, 49, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(51, 49, 49, 0);
+  }
 
-	100% {
-		transform: scale(0.7);
-		box-shadow: 0 0 0 0 rgba(51, 49, 49, 0);
-	}
+  100% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(51, 49, 49, 0);
+  }
 }
 
 /***********************************************************
@@ -721,9 +694,9 @@ h5 {
 
   .nav-list {
     display: grid;
-    grid-template-areas: "B"
-      "C"
-      "D";
+    grid-template-areas: "home"
+                         "about"
+                         "contact";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 40px);
     justify-content: center;
@@ -733,17 +706,17 @@ h5 {
   }
 
   .home {
-    grid-area: B;
+    grid-area: home;
     grid-row: 1;
   }
 
   .about {
-    grid-area: C;
+    grid-area: about;
     grid-row: 2;
   }
 
   .contact {
-    grid-area: D;
+    grid-area: contact;
     grid-row: 3;
   }
 
@@ -848,7 +821,7 @@ h5 {
     height: 200px;
   }
 
-  .rapper1 h1 {
+  .rapper1 h2, .rapper2 h2 {
     font-size: 56px;
   }
 
@@ -858,10 +831,6 @@ h5 {
 
   .rapper2 {
     height: 200px;
-  }
-
-  .rapper1 h2 {
-    font-size: 56px;
   }
 
   .break {
@@ -1009,16 +978,16 @@ h5 {
     margin-top: 5px;
   }
 
-  #students-association {
+  .students-association {
     width: 53%;
   }
 
-  #ac,
-  #pcl {
+  .ac,
+  .pcl {
     width: 25%;
   }
 
-  #cibc {
+  .cibc {
     width: 18%;
     margin-bottom: 50px;
   }
@@ -1047,18 +1016,18 @@ h5 {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-.mobile-logo,
-.tablet-logo {
-  display: none;
-}
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
 
-.desktop-logo {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  margin-left: 150%;
-}
+  .desktop-logo {
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 150%;
+  }
 
   .nav-list {
     height: 75px;
@@ -1108,48 +1077,52 @@ h5 {
     padding: 100px;
   }
 
-  .rapper1 h1 {
+  .rapper1 h2, .rapper2 h2 {
     font-size: 72px;
   }
 
-  .rapper2 h1 {
-    font-size: 72px;
+  .bar,
+  .bowling,
+  .fitness,
+  .climbing {
+    display: none;
   }
 
   .break {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 100px;
   }
 
-  .bar {
+  .bar-desktop {
+    background: url(../images/bar.jpg) no-repeat center;
     display: grid;
-    object-fit: cover;
-    object-position: -50px 0px;
-    width: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
   }
 
   .need {
     grid-column: 2;
-    margin: 0px 5px;
   }
 
   .competitive {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 100px;
   }
 
-  .bowling {
+  .bowling-desktop {
+    background: url(../images/bowling.jpg) no-repeat center;
     display: grid;
-    grid-column: 2;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
   }
 
   .friends {
     grid-column: 1;
     grid-row: 1;
-    margin: 0px 5px;
   }
 
   .keep-up {
@@ -1182,82 +1155,99 @@ h5 {
 
   .newme {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 100px;
   }
 
-  .fitness {
+  .fitness-desktop {
+    background: url(../images/fitness.jpg) no-repeat center;
     display: grid;
-    object-fit: cover;
-    object-position: -50px 0px;
-    width: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
   }
 
   .newyear {
     grid-column: 2;
-    margin: 0px 5px;
   }
 
   .indoor-climbing {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 100px;
   }
 
-  .climbing {
+  .climbing-desktop {
+    background: url(../images/climbing.jpg) no-repeat center;
     display: grid;
-    grid-column: 2;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
   }
 
   .indoor {
     grid-column: 1;
     grid-row: 1;
-    margin: 0px 5px;
   }
 
   .second {
     display: grid;
-    grid-template-areas: "A A A A"
-      "B C D E";
+    grid-template-areas: "special special special special"
+                         "students ac pcl cibc";
     grid-template-columns: repeat(4, 1fr);
-    margin: 140px; 
-    align-items: end;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 100px;
   }
 
   .special {
-    grid-area: A;
+    grid-area: special;
     grid-row: 1;
     font-size: 72px;
     line-height: 85px;
   }
 
-  a.students-association {
+  .students-association {
     margin: auto;
-    grid-area: B;
+    grid-area: students;
     grid-row: 2;
     grid-column: 1;
+    display: block;
+    width: 110%;
+    margin: 0px auto;
+    padding: 0px;
   }
 
-  a.ac {
+  .ac {
     margin: auto;
-    grid-area: C;
+    grid-area: ac;
     grid-row: 2;
     grid-column: 2;
+    display: block;
+    width: 55%;
+    margin: 20px 0px 0px auto;
+    padding: 0px;
   }
 
-  a.pcl {
+  .pcl {
     margin: auto;
-    grid-area: C;
+    grid-area: pcl;
     grid-row: 2;
     grid-column: 3;
+    display: block;
+    width: 55%;
+    margin: 20px 0px 0px auto;
+    padding: 0px;
   }
 
-  a.cibc {
+  .cibc {
     margin: auto;
-    grid-area: D;
+    grid-area: cibc;
     grid-row: 2;
     grid-column: 4;
+    display: block;
+    width: 38%;
+    margin: 20px 0px 0px auto;
+    padding: 0px;
   }
 
   .viewbox {
@@ -1267,6 +1257,7 @@ h5 {
   .follow {
     font-size: 24px;
     margin: 10px 0px;
+    font-family: "Raleway";
   }
 
   .top {
@@ -1276,28 +1267,6 @@ h5 {
   .backtop {
     margin-top: 50px;
     font-size: 16px;
+    font-family: "Raleway";
   }
-
-.students-association
- {
-  display: block;
-  width: 110%;
-  margin: 0px auto;
-  padding: 0px;
-}
-
-.ac,
-.pcl{
-  display: block;
-  width: 55%;
-  margin: 20px 0px 0px auto;
-  padding: 0px;
-} 
-
-.cibc{
-  display: block;
-  width: 38%;
-  margin: 20px 0px 0px auto;
-  padding: 0px;
-} 
 }

@@ -183,7 +183,7 @@ footer {
 /* Navigation */
 .nav-list {
   display: grid;
-  grid-template-areas: "B C D";
+  grid-template-areas: "home about contact";
   grid-template-columns: repeat(3, 90px);
   grid-template-rows: repeat(1, 70px);
   justify-content: right;
@@ -192,7 +192,7 @@ footer {
 }
 
 .home {
-  grid-area: B;
+  grid-area: home;
   grid-row: 1;
   font-weight: bold;
   font-size: 18px;
@@ -200,14 +200,14 @@ footer {
 }
 
 .about {
-  grid-area: C;
+  grid-area: about;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
 }
 
 .contact {
-  grid-area: D;
+  grid-area: contact;
   grid-row: 1;
   font-size: 16px;
   font-family: 'Raleway';
@@ -230,8 +230,8 @@ footer {
 .icon {
   grid-column: 2 / span 1;
   display: grid;
-  grid-template-areas: "A A A A"
-    "B C D E";
+  grid-template-areas: "follow follow follow follow"
+    "facebook instagram twitter youtube";
   grid-template-columns: repeat(4, 30px);
   justify-content: center;
   align-items: center;
@@ -241,7 +241,7 @@ footer {
 }
 
 .follow {
-  grid-area: A;
+  grid-area: follow;
   grid-row: 1;
   color: #f7f7ff;
   font-size: 18px;
@@ -249,25 +249,25 @@ footer {
 }
 
 .facebook {
-  grid-column: 1 / span 1;
+  grid-area: facebook;
   grid-row: 2;
   height: 25.11px;
 }
 
 .instagram {
-  grid-column: 2 / span 1;
+  grid-area: instagram;
   grid-row: 2;
   height: 25.11px;
 }
 
 .twitter {
-  grid-column: 3 / span 1;
+  grid-area: twitter;
   grid-row: 2;
   height: 25.11px;
 }
 
 .youtube {
-  grid-column: 4 / span 1;
+  grid-area: youtube;
   grid-row: 2;
   height: 21.53px;
   width: 30.61px;
@@ -296,6 +296,7 @@ footer {
   margin: 0%;
   margin-bottom: 20px;
   font-size: 7px;
+  text-decoration: none;
 }
 
 ul li a {
@@ -586,37 +587,43 @@ h3 {
 }
 
 /* add pulse to attract user attention to icons buttons*/
-#bowling, #rock-climbing, #fitness-center, #indoor-court {
+#bowling,
+#rock-climbing,
+#fitness-center,
+#indoor-court {
   box-shadow: 0 0 0 0 rgba(38, 166, 130, 1);
-	height: 69px;
-	width: 114px;
+  height: 69px;
+  width: 114px;
   overflow: visible;
-	transform: scale(1);
+  transform: scale(1);
   animation: pulse 3s infinite;
 }
 
-#bowling:hover, #rock-climbing:hover, #fitness-center:hover, #indoor-court:hover {
+#bowling:hover,
+#rock-climbing:hover,
+#fitness-center:hover,
+#indoor-court:hover {
   -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-     animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.7);
-		box-shadow: 0 0 0 0 rgba(38, 166, 130, 0.7);
-	}
+  0% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(38, 166, 130, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(38, 166, 130, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(38, 166, 130, 0);
+  }
 
-	100% {
-		transform: scale(0.7);
-		box-shadow: 0 0 0 0 rgba(38, 166, 130, 0);
-	}
+  100% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(38, 166, 130, 0);
+  }
 }
 
 
@@ -667,9 +674,9 @@ h3 {
 
   .nav-list {
     display: grid;
-    grid-template-areas: "B"
-      "C"
-      "D";
+    grid-template-areas: "home"
+      "about"
+      "contact";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 40px);
     justify-content: center;
@@ -679,21 +686,21 @@ h3 {
   }
 
   .home {
-    grid-area: B;
+    grid-area: home;
     grid-row: 1;
     font-size: 18px;
     font-family: 'Raleway';
   }
 
   .about {
-    grid-area: C;
+    grid-area: about;
     grid-row: 2;
     font-size: 16px;
     font-family: 'Raleway';
   }
 
   .contact {
-    grid-area: D;
+    grid-area: contact;
     grid-row: 3;
     font-size: 16px;
     font-family: 'Raleway';
@@ -1029,6 +1036,7 @@ h3 {
     margin: 0%;
     margin-bottom: 8px;
     font-size: 16px;
+    text-decoration: none;
   }
 
   .scrolldown {
@@ -1059,14 +1067,14 @@ h3 {
   .section-black {
     display: grid;
     flex-direction: column;
-    grid-template-areas: "A C"
-      "B C";
+    grid-template-areas: "woman only"
+      "dijanelle only";
     grid-template-columns: 1fr 2fr;
     padding-bottom: 50px;
   }
 
   .woman {
-    grid-area: A;
+    grid-area: woman;
     width: 63%;
     height: auto;
     margin-left: 40px;
@@ -1074,7 +1082,7 @@ h3 {
   }
 
   .dijanelle {
-    grid-area: B;
+    grid-area: dijanelle;
     font-size: 18px;
     font-weight: 600;
   }
@@ -1175,18 +1183,18 @@ h3 {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-.mobile-logo,
-.tablet-logo {
-  display: none;
-}
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
 
-.desktop-logo {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  margin-left: 150%;
-}
+  .desktop-logo {
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 150%;
+  }
 
   .rapper h1 {
     margin: 80px 0px;
@@ -1222,6 +1230,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5%;
+    padding-bottom: 0px;
   }
 
   .rapper {
@@ -1259,6 +1268,7 @@ h3 {
     margin: 0%;
     margin-bottom: 10px;
     font-size: 16px;
+    text-decoration: none;
   }
 
   .scrolldown {
