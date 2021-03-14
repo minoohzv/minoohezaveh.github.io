@@ -985,7 +985,6 @@ h3 {
     margin-top: 10px;
     font-size: 9px;
   }
-
 }
 
 /*****************************************
@@ -1124,7 +1123,7 @@ h3 {
   }
 
   .only {
-    grid-area: C;
+    grid-area: only;
     margin: 0px 30px 0px 20px;
   }
 
