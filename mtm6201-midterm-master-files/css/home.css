@@ -102,7 +102,6 @@ section {
   display: block;
 }
 
-
 body {
   line-height: 1;
 }
@@ -130,6 +129,9 @@ table {
   border-spacing: 0;
 }
 
+/* ********************************************************************************* */
+
+/*Use following fonts if Raleway isn't availble*/
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -255,6 +257,7 @@ footer {
   padding-bottom: 2%;
 }
 
+/* use grid insdie the footer grid to orgizize social media icons*/
 .icon {
   grid-column: 2 / span 1;
   display: grid;
@@ -355,7 +358,6 @@ ul li a:hover {
   padding: 0em;
 }
 
-
 header.main-nav {
   background: #333131;
 }
@@ -398,10 +400,6 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto
-}
-
-.scrollview {
-  display: none;
 }
 
 .graduate {
@@ -459,6 +457,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 }
 
 .container.graduate-desktop {
@@ -535,6 +534,10 @@ h3 {
   margin-top: 2px;
   margin-bottom: 3px;
 }
+
+/***********************************************************
+                        Animation 
+ **********************************************************/
 
 /* Add animation for buttons */
 .button-get:hover {
@@ -654,12 +657,9 @@ h3 {
   }
 }
 
-
-
 /***********************************************************
                         Mobile 
  **********************************************************/
-
 /* use @media to apply the following code to the rest of the code */
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
@@ -671,6 +671,7 @@ h3 {
     justify-items: center;
   }
 
+  /*dont show desktop and tablet logo on mobile*/
   .tablet-logo,
   .desktop-logo {
     display: none;
@@ -700,6 +701,7 @@ h3 {
     display: grid;
   }
 
+  /* use grid to change the position of items: home, about and contact on mobile size*/
   .nav-list {
     display: grid;
     grid-template-areas: "home"
@@ -824,6 +826,8 @@ h3 {
     margin-right: auto
   }
 
+
+  /*dont show scroll-down on mobile*/
   .scrollview {
     display: none;
   }
@@ -987,13 +991,13 @@ h3 {
 /*****************************************
                     Tablet
 *****************************************/
-
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   html {
     font-size: 16px;
   }
 
+  /*dont show mobile and desktop logo on tablet*/
   .mobile-logo,
   .desktop-logo {
     display: none;
@@ -1211,6 +1215,7 @@ h3 {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
+  /*dont show mobile and tablet logo on desktop*/
   .mobile-logo,
   .tablet-logo {
     display: none;

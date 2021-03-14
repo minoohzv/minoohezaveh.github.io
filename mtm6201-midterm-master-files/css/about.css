@@ -130,6 +130,9 @@ table {
   border-spacing: 0;
 }
 
+/* ********************************************************************************* */
+
+/*Use following fonts if Raleway isn't availble*/
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -279,7 +282,8 @@ p {
   text-align: center;
 }
 
-.rapper1 h2, .rapper2 h2 {
+.rapper1 h2,
+.rapper2 h2 {
   text-align: center;
   color: #f7f7ff;
   opacity: 1;
@@ -405,12 +409,13 @@ h5 {
 
 }
 
+/* use grid insdie the footer grid to orgizize social media icons*/
 .icon {
   grid-area: icon;
   grid-row: 1;
   display: grid;
   grid-template-areas: "follow follow follow follow"
-                       "facebook instagram twitter youtube";
+    "facebook instagram twitter youtube";
   grid-template-columns: repeat(4, 30px);
   justify-content: center;
   align-items: center;
@@ -478,6 +483,10 @@ h5 {
   font-size: 7px;
   text-decoration: none;
 }
+
+/***********************************************************
+                        Animation 
+ **********************************************************/
 
 /* Add animation for buttons */
 .button-subscribe:hover {
@@ -555,7 +564,6 @@ h5 {
 /***********************************************************
                         Mobile 
  **********************************************************/
-
 /* use @media to apply the following code to the rest of the code */
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
@@ -662,7 +670,7 @@ h5 {
   .ac,
   .pcl,
   .cibc {
-    width: 301px;
+    width: 80%;
   }
 
   .construction {
@@ -684,6 +692,7 @@ h5 {
     text-align: center;
   }
 
+  /*dont show desktop and tablet logo on mobile*/
   .tablet-logo,
   .desktop-logo {
     display: none;
@@ -693,11 +702,12 @@ h5 {
     display: grid;
   }
 
+  /* use grid to change the position of items: home, about and contact on mobile size*/
   .nav-list {
     display: grid;
     grid-template-areas: "home"
-                         "about"
-                         "contact";
+      "about"
+      "contact";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 40px);
     justify-content: center;
@@ -740,7 +750,6 @@ h5 {
 /*****************************************
                     Tablet
 *****************************************/
-
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   html {
@@ -776,6 +785,7 @@ h5 {
     line-height: 35px;
   }
 
+  /*dont show desktop and mobile logo on tablet*/
   .mobile-logo,
   .desktop-logo {
     display: none;
@@ -822,7 +832,8 @@ h5 {
     height: 200px;
   }
 
-  .rapper1 h2, .rapper2 h2 {
+  .rapper1 h2,
+  .rapper2 h2 {
     font-size: 56px;
   }
 
@@ -1017,6 +1028,7 @@ h5 {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
+  /*dont show tablet and mobile logo on desktop*/
   .mobile-logo,
   .tablet-logo {
     display: none;
@@ -1078,10 +1090,12 @@ h5 {
     padding: 100px;
   }
 
-  .rapper1 h2, .rapper2 h2 {
+  .rapper1 h2,
+  .rapper2 h2 {
     font-size: 72px;
   }
 
+  /*dont show tablet and mobile view of following image on desktop*/
   .bar,
   .bowling,
   .fitness,
@@ -1194,7 +1208,7 @@ h5 {
   .second {
     display: grid;
     grid-template-areas: "special special special special"
-                         "students ac pcl cibc";
+      "students ac pcl cibc";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin: 100px;
