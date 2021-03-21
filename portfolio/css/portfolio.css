@@ -201,14 +201,7 @@ footer {
   margin-top: 70px;
 }
 
-.main-image {
-    background: url(../images/main-image.jpg) no-repeat center;
-    background-size: cover;
-    height: 400px;
-    padding-left: 0em;
-    padding-right: 0em;
-    margin: 0%;
-  }
+  
 /***********************************************************
                         Mobile 
  **********************************************************/
@@ -288,6 +281,44 @@ footer {
     grid-row: 4;
     font-size: 16px;
     font-family: 'Raleway';
+  }
+
+  .illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding:15px;
+  }
+
+  .rhino-headband, .giraffe-leave, .giraffe-sunglasses, .rhino, .plant, .christmast, .spring, .winter {
+    border: solid var(--primary-color) 1px;
+    display: block;
+    margin: 60px auto;
+    width: 80%;
+  }
+
+  .image-ui-ux, .midterm-image {
+    border: solid var(--primary-color) 1px;
+    display: block;
+    margin: 60px auto;
+    width: 80%;
+  }
+
+  .ui-ux h3, .WEB-DEVELOPMENT h3 {
+    text-align: center;
+    margin: 30px 30px;
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .ui-ux p, .WEB-DEVELOPMENT p {
+    margin: 30px 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--primary-color);
   }
 
 }
