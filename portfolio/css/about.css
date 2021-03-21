@@ -1,0 +1,377 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ********************************************************************************* */
+
+/*Use following fonts if Raleway isn't availble*/
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+
+* {
+  font-family: 'Raleway';
+  color: var(--primary-color)
+}
+
+body {
+  background: white;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* use custom properties, can be used to store value to be referenced later, here I use for colors and font */
+:root {
+    --primary-color: #1E2832;
+    --secondary-color: #83C04B;
+    --font: 'Raleway'
+}
+ol,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.nav-list a{
+    text-decoration: none;
+}
+
+.rapper h1 {
+  margin: 30px 0px;
+  font-size: 72px;
+  font-weight: bold;
+  color: #3C3B3A;
+}
+
+main {
+  padding: 0px;
+  background: white;
+}
+
+footer {
+  background-color: var(--primary-color);
+  margin-top: 70px;
+}
+
+.minoo-image {
+  background: url(../images/minoohezaveh.jpg) no-repeat center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.about-minoo h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.about-minoo p {
+  font-size: 16px;
+  margin: 0px 30px 60px 30px;
+  line-height: 30px;
+}
+
+.education-image {
+  background: url(../images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 272px;
+  margin: 60px 0%;
+}
+
+.education h3, .experience-info h3, .daily-info h3 {
+  font-size: 29px;
+  font-weight: bold;
+  margin: 60px 30px;
+  text-align: center;
+}
+
+.education p, .experience-info p, .daily-info p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0px 30px;
+}
+
+.experience-image {
+  background: url(../images/kobu-agency-7okkFhxrxNw-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 272px;
+  margin: 60px 0%;
+}
+
+.daily-image {
+  background: url(../images/IMG_9921.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 272px;
+  margin: 60px 0%;
+}
+/***********************************************************
+                        Mobile 
+ **********************************************************/
+/* use @media to apply the following code to the rest of the code */
+/* when the screen size is less than 599px wide, set all of items that include main braces */
+@media only screen and (max-width: 599px) {
+    .tablet-logo,
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .rapper {
+        padding: 0px 36.5px;
+      }
+    
+      .rapper h1 {
+        font-size: 40px;
+        line-height: 47px;
+        margin: 36.5px 0px;
+      }
+    
+      .rapper p {
+        font-size: 16px;
+        line-height: 35px;
+      }
+    
+      .logobackground {
+        text-align: center;
+      }
+
+    .main-nav {
+        display: grid;
+      }
+
+    /* use grid to change the position of items: home, about and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home"
+      "about"
+      "contact";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .home {
+    grid-area: home;
+    grid-row: 1;
+    font-size: 18px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-row: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: contact;
+    grid-row: 3;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-row: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  
+}
+
+
+
+/*****************************************
+                    Tablet
+*****************************************/
+/* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+
+    .mobile-logo,
+    .desktop-logo {
+      display: none;
+    }
+}
+
+
+
+
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+    /*dont show mobile and tablet logo on desktop*/
+    .mobile-logo,
+    .tablet-logo {
+      display: none;
+    }
+}
