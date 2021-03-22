@@ -371,6 +371,65 @@ footer {
     .desktop-logo {
       display: none;
     }
+
+    .tablet-logo {
+      width: 120px;
+      float: left;
+      margin-left: 5%;
+    }
+
+    /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 40px);
+    justify-content: right;
+    justify-items: center;
+  }
+
+  .home {
+    grid-area: home;
+    grid-column: 1;
+    font-size: 18px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-column: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+    grid-column: 3;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-column: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+    padding-top: 40px;
+  }
+
+  .contact-follow h2{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 40px 0px;
+  }
 }
 
 
