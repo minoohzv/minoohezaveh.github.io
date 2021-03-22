@@ -468,7 +468,7 @@ footer {
       margin-left: 5%;
     }
 
-    /* use grid to change the position of items: home, about and contact on mobile size*/
+    /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
   .nav-list {
     display: grid;
     grid-template-areas: "home about portfolio contact";
@@ -480,28 +480,28 @@ footer {
 
   .home {
     grid-area: home;
-    grid-columns: 1;
+    grid-column: 1;
     font-size: 18px;
     font-family: 'Raleway';
   }
 
   .about {
     grid-area: about;
-    grid-columns: 2;
+    grid-column: 2;
     font-size: 16px;
     font-family: 'Raleway';
   }
 
   .portfolio {
     grid-area: portfolio;
-    grid-columns: 3;
+    grid-column: 3;
     font-size: 16px;
     font-family: 'Raleway';
   }
 
   .contact {
     grid-area: contact;
-    grid-columns: 4;
+    grid-column: 4;
     font-size: 16px;
     font-family: 'Raleway';
   }
@@ -564,25 +564,30 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     justify-items: center;
-    margin-right: 0px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 80px;
   }
 
   .illustration {
     grid-area: illustration;
     grid-column: 1;
     grid-row: 1;
+    margin:0px 20px 20px 0px;
   }
 
   .ui-ux {
     grid-area: ui-ux;
     grid-column: 2;
     grid-row: 1;
+    margin:0px 0px 20px 20px;
   }
 
   .web {
     grid-area: web;
     grid-column: 1;
     grid-row: 2;
+    margin: 0px 20px 0px 0px;
     
   }
 
@@ -590,6 +595,7 @@ footer {
     grid-area: photography;
     grid-column: 2;
     grid-row: 2; 
+    margin:0px 0px 0px 20px;
   }
 
 
