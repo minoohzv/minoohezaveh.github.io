@@ -531,9 +531,193 @@ footer {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-    /*dont show mobile and tablet logo on desktop*/
-    .mobile-logo,
-    .tablet-logo {
-      display: none;
-    }
+  html {
+    font-size: 16px;
+  }
+/*dont show mobile and tablet logo on desktop page*/
+  .mobile-logo,
+  .desktop-logo {
+    display: none;
+  }
+
+  .tablet-logo {
+    width: 120px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+.nav-list {
+  display: grid;
+  grid-template-areas: "home about portfolio contact";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 40px);
+  justify-content: right;
+  justify-items: center;
+}
+
+.home {
+  grid-area: home;
+  grid-column: 1;
+  font-size: 18px;
+  font-family: 'Raleway';
+}
+
+.about {
+  grid-area: about;
+  grid-column: 2;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.portfolio {
+  grid-area: portfolio;
+  grid-column: 3;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.contact {
+  grid-area: contact;
+  grid-column: 4;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.nav-list {
+  height: 75px;
+  margin-right: 5%;
+  padding-top: 40px;
+}
+.illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+
+.illustration-images {
+  display: grid;
+  grid-template-columns:  1fr 2fr;
+  grid-template-columns:  2fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.rhino-headband {
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin:0px 20px 20px 0px;
+}
+
+.giraffe-leave {
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin:0px 0px 20px 20px;
+}
+
+.giraffe-sunglasses {
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0px 20px 0px 0px;
+}
+
+.rhino {
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin:0px 0px 0px 20px;
+}
+
+.ui-ux h2 {
+  margin-top: 100px;
+}
+
+.ui-ux, .WEB-DEVELOPMENT {
+  margin-bottom: 100px;
+}
+
+.image-ui-ux{
+  float: right;
+  width: 50%;
+}
+
+.ui-ux h3, .WEB-DEVELOPMENT h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 60px 30px 60px 30px;
+}
+
+.ui-ux p, .WEB-DEVELOPMENT p {
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0px 30px;
+}
+
+.midterm-image{
+  float: left;
+  width: 50%;
+}
+
+.photography-images {
+  display: grid;
+  grid-template-areas: "A A"
+                       "B C"
+                       "D D";
+  justify-content: center;
+  justify-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.plant {
+  display: grid;
+  grid-area: A;
+  object-fit: cover;
+  width: 100%;
+  height:100%;
+}
+
+.christmast {
+  display: grid;
+  grid-area: B;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.spring {
+  display: grid;
+  grid-area: C;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.winter {
+  display: grid;
+  grid-area: D;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 }

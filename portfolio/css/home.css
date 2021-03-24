@@ -514,7 +514,6 @@ footer {
 
   .cover-page {
     height: 520px;
-    
   }
   
   .minoohezaveh {
@@ -611,9 +610,153 @@ footer {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-    /*dont show mobile and tablet logo on desktop*/
-    .mobile-logo,
-    .tablet-logo {
-      display: none;
-    }
+  html {
+    font-size: 18px;
+  }
+ /*dont show mobile and tablet logo on desktop*/
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
+
+  .desktop-logo
+  {
+    width: 120px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+.nav-list {
+  display: grid;
+  grid-template-areas: "home about portfolio contact";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 40px);
+  justify-content: right;
+  justify-items: center;
+  font-size: 20px;
+}
+
+.home {
+  grid-area: home;
+  grid-column: 1;
+  font-size: 18px;
+  font-family: 'Raleway';
+}
+
+.about {
+  grid-area: about;
+  grid-column: 2;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.portfolio {
+  grid-area: portfolio;
+  grid-column: 3;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.contact {
+  grid-area: contact;
+  grid-column: 4;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.nav-list {
+  height: 75px;
+  margin-right: 5%;
+  padding-top: 40px;
+}
+
+.cover-page {
+  height: 640px;
+}
+
+.minoohezaveh {
+  background-color: rgba(30, 40, 50, 0.5);
+  height: 640px;
+}
+
+.minoohezaveh h1{
+  color: white;
+  font-size: 70px;
+}
+.hezaveh {
+  height: 135px;
+}
+
+.about-me h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  margin: 25px 30px 25px 30px;
+}
+
+.read-more {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.categories-skills {
+  display: grid;
+  grid-template-areas: "illustration ui-ux"
+                       "web photography";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.illustration {
+  grid-area: illustration;
+  grid-column: 1;
+  grid-row: 1;
+  margin:0px 20px 20px 0px;
+}
+
+.ui-ux {
+  grid-area: ui-ux;
+  grid-column: 2;
+  grid-row: 1;
+  margin:0px 0px 20px 20px;
+}
+
+.web {
+  grid-area: web;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0px 20px 0px 0px;
+  
+}
+
+.photography {
+  grid-area: photography;
+  grid-column: 2;
+  grid-row: 2; 
+  margin:0px 0px 0px 20px;
+}
+
+
 }

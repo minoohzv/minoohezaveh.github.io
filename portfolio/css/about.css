@@ -471,9 +471,108 @@ footer {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-    /*dont show mobile and tablet logo on desktop*/
+    html {
+      font-size: 18px;
+    }
+   /*dont show mobile and tablet logo on desktop*/
     .mobile-logo,
     .tablet-logo {
       display: none;
+    }
+  
+    .desktop-logo
+    {
+      width: 120px;
+      float: left;
+      margin-left: 5%;
+    }
+  
+    /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 40px);
+    justify-content: right;
+    justify-items: center;
+    font-size: 20px;
+  }
+  
+  .home {
+    grid-area: home;
+    grid-column: 1;
+    font-size: 18px;
+    font-family: 'Raleway';
+  }
+  
+  .about {
+    grid-area: about;
+    grid-column: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+  
+  .portfolio {
+    grid-area: portfolio;
+    grid-column: 3;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+  
+  .contact {
+    grid-area: contact;
+    grid-column: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+  
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+    padding-top: 40px;
+  }
+
+  .about-minoo {
+    display: grid;
+    grid-template-areas: "image header"
+                         "image paragraph";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--primary-color);
+    height: 600px;
+    
+  }
+
+  .minoo-image {
+    grid-area: image;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 30px 0px 0px 30px;
+  }
+
+  .about-minoo h2 {
+    grid-area: header;
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Raleway';
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    } 
+
+    .about-minoo p {
+      color: white;
+    }
+  
+    .education, .experience, .daily-life {
+      height: 500px;
+    }
+    .education-image img, .experience-image img, .daily-image img{
+      float: right;
+      width: 50%;
     }
 }
