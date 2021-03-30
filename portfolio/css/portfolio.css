@@ -506,48 +506,6 @@ main {
   }
 
 
-  .illustration-images {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 80px;
-  }
-
-  .rhino-headband {
-    display: grid;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin:0px 20px 20px 0px;
-  }
-
-  .giraffe-leave {
-    display: grid;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin:0px 0px 20px 20px;
-  }
-
-  .giraffe-sunglasses {
-    display: grid;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin: 0px 20px 0px 0px;
-  }
-
-  .rhino {
-    display: grid;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin:0px 0px 0px 20px;
-  }
-
   .ui-ux h2 {
     margin-top: 100px;
   }
@@ -577,52 +535,6 @@ main {
     float: left;
     width: 50%;
   }
-
-  .photography-images {
-    display: grid;
-    grid-template-areas: "A A"
-                         "B C"
-                         "D D";
-    justify-content: center;
-    justify-items: center;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 80px;
-  }
-
-  .plant {
-    display: grid;
-    grid-area: A;
-    object-fit: cover;
-    width: 100%;
-    height:100%;
-  }
-
-  .christmast {
-    display: grid;
-    grid-area: B;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .spring {
-    display: grid;
-    grid-area: C;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .winter {
-    display: grid;
-    grid-area: D;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-
   
 }
 
@@ -708,48 +620,6 @@ main {
 }
 
 
-.illustration-images {
-  display: grid;
-  grid-template-columns:  1fr 2fr;
-  grid-template-columns:  2fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 80px;
-}
-
-.rhino-headband {
-  display: grid;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  margin:0px 20px 20px 0px;
-}
-
-.giraffe-leave {
-  display: grid;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  margin:0px 0px 20px 20px;
-}
-
-.giraffe-sunglasses {
-  display: grid;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  margin: 0px 20px 0px 0px;
-}
-
-.rhino {
-  display: grid;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  margin:0px 0px 0px 20px;
-}
 
 .ui-ux h2 {
   margin-top: 100px;
@@ -780,51 +650,5 @@ main {
   float: left;
   width: 50%;
 }
-
-.photography-images {
-  display: grid;
-  grid-template-areas: "A A"
-                       "B C"
-                       "D D";
-  justify-content: center;
-  justify-items: center;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 80px;
-}
-
-.plant {
-  display: grid;
-  grid-area: A;
-  object-fit: cover;
-  width: 100%;
-  height:100%;
-}
-
-.christmast {
-  display: grid;
-  grid-area: B;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.spring {
-  display: grid;
-  grid-area: C;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.winter {
-  display: grid;
-  grid-area: D;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-
 
 }
