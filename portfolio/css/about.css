@@ -196,9 +196,87 @@ main {
   background: white;
 }
 
-footer {
-  background-color: var(--primary-color);
-  margin-top: 70px;
+.footer {
+  background-color:var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.icon {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-areas: "follow follow follow follow"
+    "facebook instagram twitter youtube";
+  grid-template-columns: repeat(4, 30px);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+  column-gap: 5px;
+  row-gap: 15px;
+}
+
+.follow {
+  grid-area: follow;
+  grid-row: 1;
+  color: #f7f7ff;
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 35px;
+  text-align: center;
+}
+
+.facebook {
+  grid-area: facebook;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.instagram {
+  grid-area: instagram;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.linkedin {
+  grid-area: twitter;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.youtube {
+  grid-area: youtube;
+  grid-row: 2;
+  height: 21.53px;
+  width: 30.61px;
+}
+
+.viewbox {
+  grid-column: 3 / span 1;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  justify-content: right;
+  align-items: center;
+  justify-items: center;
+}
+
+.top {
+  grid-row: 1;
+  height: 22.23px;
+  margin: 140px 10px 10px;
+}
+
+.backtop {
+  line-height: 5px;
+  grid-row: 2;
+  color:white;
+  white-space: nowrap;
+  margin: 0%;
+  margin-top: 90px;
+  font-size: 9px;
+  text-decoration: none;
 }
 
 .minoo-image {
@@ -234,6 +312,7 @@ footer {
   font-size: 16px;
   line-height: 30px;
   margin: 0px 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -253,6 +332,7 @@ footer {
     .mobile-logo {
         height: 60px;
         width: 60px;
+        margin-top: 20px;
     }
 
     .rapper {
@@ -290,20 +370,23 @@ footer {
     justify-items: center;
     margin-right: 0px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .home {
     grid-area: home;
     grid-row: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway';
   }
 
   .about {
     grid-area: about;
     grid-row: 2;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Raleway';
+    font-weight: bold;
+    color: #83C04B;
   }
 
   .portfolio {
@@ -346,7 +429,6 @@ footer {
     background-size: cover;
     width: 100%;
     height: 272px;
-    margin: 60px 0%;
   }
   
   
@@ -387,15 +469,17 @@ footer {
   .home {
     grid-area: home;
     grid-column: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway';
   }
 
   .about {
     grid-area: about;
     grid-column: 2;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Raleway';
+    font-weight: bold;
+    color: #83C04B;
   }
 
   .portfolio {
@@ -501,15 +585,17 @@ footer {
   .home {
     grid-area: home;
     grid-column: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway';
   }
   
   .about {
     grid-area: about;
     grid-column: 2;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Raleway';
+    font-weight: bold;
+    color: #83C04B;
   }
   
   .portfolio {
