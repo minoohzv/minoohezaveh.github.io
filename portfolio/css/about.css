@@ -504,16 +504,13 @@ main {
 
   .about-minoo {
     display: grid;
-    grid-template-areas: "image header"
-                         "image paragraph";
+    grid-template-areas: "image header";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     justify-items: center;
     margin-right: 0px;
     margin-left: 0px;
     background-color: var(--primary-color);
-    
   }
 
   .minoo-image {
@@ -620,17 +617,13 @@ main {
 
   .about-minoo {
     display: grid;
-    grid-template-areas: "image header"
-                         "image paragraph";
+    grid-template-areas: "image header";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     justify-items: center;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: var(--primary-color);
-    height: 600px;
-    
+    background-color: var(--primary-color);    
   }
 
   .minoo-image {
