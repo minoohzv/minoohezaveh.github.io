@@ -300,6 +300,18 @@ main {
   }
 }
 
+.w3-row-padding {
+  margin: 30px 10px;
+}
+
+.first {
+  margin-top: 60px;
+}
+
+.last {
+  margin-bottom: 60px;
+}
+
   
 /***********************************************************
                         Mobile 
