@@ -588,6 +588,60 @@ main {
     text-align: center;
     padding: 40px 0px;
   }
+
+  .send-msg {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 20px;
+  }
+
+  #fname, #email, #text {
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+  }
+
+  .add-info {
+    margin: 60px auto;
+  }
+
+  #fname {
+    margin-bottom: 20px;
+  }
+
+  .number-email p, .number-email a{
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  hr {
+    width: 250px
+  }
+
+  .resume p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .github{
+    width: 100px;
+    display: block;
+    margin: 30px auto;
+  }
+
 }
 
 
@@ -599,9 +653,139 @@ main {
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-    /*dont show mobile and tablet logo on desktop*/
+    html {
+      font-size: 18px;
+    }
+   /*dont show mobile and tablet logo on desktop*/
     .mobile-logo,
     .tablet-logo {
       display: none;
     }
+  
+    .desktop-logo
+    {
+      width: 120px;
+      float: left;
+      margin-left: 5%;
+    }
+
+     /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 40px);
+    justify-content: right;
+    justify-items: center;
+  }
+
+  .home {
+    grid-area: home;
+    grid-column: 1;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-column: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+    grid-column: 3;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-column: 4;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: #83C04B;
+  }
+
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+    padding-top: 40px;
+  }
+
+  .contact-follow h2{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 40px 0px;
+  }
+
+  .send-msg {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #fname, #email, #text {
+    font-size: 20px;
+    /*width: 480px; */
+  }
+
+
+  #fname {
+    margin-bottom: 20px;
+  }
+
+  .number-email p, .number-email a{
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+ /* hr {
+    width: 400px;
+  }*/
+
+  .resume p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .github{
+    width: 100px;
+    display: block;
+    margin: 30px auto;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-areas: "maryam my-information";
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    margin: 50px 0px;
+
+  }
+
+  .maryam {
+    grid-area: maryam;
+    grid-column: 1;
+  }
+
+  .my-information {
+    grid-area: my-information;
+    grid-column: 2;
+  }
 }
