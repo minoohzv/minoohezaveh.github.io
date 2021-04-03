@@ -504,36 +504,31 @@ main {
 
   .about-minoo {
     display: grid;
-    grid-template-areas: "image header";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
     justify-content: center;
     justify-items: center;
-    margin-right: 0px;
-    margin-left: 0px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color);    
   }
 
   .minoo-image {
-    grid-area: image;
     grid-column: 1;
-    grid-row: 1;
-    margin: 30px 0px 0px 30px;
+    height: auto;
   }
 
   .about-minoo h2 {
-    grid-area: header;
     grid-column: 2;
-    grid-row: 1;
-    font-family: 'Raleway';
     color: white;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
     } 
-  
-  .about-minoo p {
-    color: white;
-  }
 
+    .about-minoo p {
+      color: white;
+      font-size: 16px;
+      margin: 0px 0px 0px 30px;
+      line-height: 30px;
+    }
+    
   .education-image img, .experience-image img, .daily-image img{
     float: right;
     width: 50%;
@@ -541,9 +536,6 @@ main {
 
 
 }
-
-
-
 
 
 /***********************************************************
@@ -617,41 +609,100 @@ main {
 
   .about-minoo {
     display: grid;
-    grid-template-areas: "image header";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
     justify-content: center;
     justify-items: center;
-    margin-right: 0px;
-    margin-left: 0px;
     background-color: var(--primary-color);    
   }
 
   .minoo-image {
-    grid-area: image;
     grid-column: 1;
-    grid-row: 1;
-    margin: 30px 0px 0px 30px;
+    height: auto;
   }
 
   .about-minoo h2 {
-    grid-area: header;
     grid-column: 2;
-    grid-row: 1;
-    font-family: 'Raleway';
     color: white;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
     } 
 
     .about-minoo p {
       color: white;
+      font-size: 16px;
+      margin: 0px 0px 0px 30px;
+      line-height: 30px;
     }
   
     .education, .experience, .daily-life {
       height: 500px;
     }
     .education-image img, .experience-image img, .daily-image img{
-      float: right;
-      width: 50%;
+      width: 100%;
+    }
+
+    .education h3, .experience-info h3, .daily-info h3 {
+      margin: 30px 0px;
+
+    }
+    
+
+    
+    .education{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 70px;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 100px;
+    }
+
+    .education-image{
+      grid-column: 2;
+      height: auto;
+    }
+
+    .education-info{
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .experience{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 70px;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 100px;
+    }
+
+    .experience-image{
+      grid-column: 2;
+      grid-row: 1 /span 2;
+      height: auto;
+    }
+
+    .experience-info{
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .daily-life{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 70px;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 100px;
+    }
+
+    .daily-image{
+      grid-column: 2;
+      height: auto;
+    }
+
+    .daily-info{
+      grid-column: 1;
+      grid-row: 1;
     }
 }
