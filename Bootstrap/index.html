@@ -39,32 +39,36 @@
       </div>
     </div>
   </nav>
-    <img class="img-fluid w-100" src="images/bootstrap-illustration.png" alt="Responsive image">
-  
+  <img class="img-fluid w-100" src="images/bootstrap-illustration.png" alt="Responsive image">
+
   <section class="container">
     <div class="row">
       <div class="col-md-12">
         <h1 class="mt-5">About Bootstrap</h1>
-        <p class="text-lg-nowrap">Bootstrap is one of the popular open source CSS framworks that allows us to build fast responsive websites. Responsive means when the size of the window or screen changes the layout of the website still looks good.</p>
+        <p class="text-lg-nowrap">Bootstrap is one of the popular open-source CSS frameworks that allow us to build fast
+          responsive websites. Responsive attributes take care of the layout for different screen sizes such as mobile,
+          tablet, and desktop.</p>
       </div>
     </div>
 
-    <div class="list-group list-group-horizontal-lg mb-3">  
+    <div class="list-group list-group-horizontal-lg mb-3">
       <a href="#simple" class="list-group-item list-group-item-action list-group-item-primary">Simple Integration</a>
       <a href="#grid" class="list-group-item list-group-item-action list-group-item-secondary">Great Grid System</a>
       <a href="#document" class="list-group-item list-group-item-action list-group-item-success">Good Documentation</a>
     </div>
 
     <!-- cards -->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="images/simple.jpg" class="card-img-simple" id="simple" alt="...">
           <div class="card-body">
             <h2 class="card-title">Simple Integration</h2>
-            <p class="card-text">Bootstrap can be easily used with other frameworks and platforms such as "Angular" and "React". It allows you to create a completely new website or add its elements to the existing website and CSS file.</p>
+            <p class="card-text">Bootstrap can be easily used with other frameworks and platforms such as "Angular" and
+              "React". It allows you to create a completely new website or add its elements to the existing website and
+              CSS file.</p>
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -74,9 +78,11 @@
           <img src="images/grid.png" class="card-img-grid" id="grid" alt="...">
           <div class="card-body">
             <h2 class="card-title">Great Grid System</h2>
-            <p class="card-text text-justify">The grid system is probably the most powerful tool you are going to use in the bootstrap because everything works inside of the grid. Behind the scenes, the bootstrap grid uses the flexbox function to position elements and to make sure that everything is where it should be.</p>
+            <p class="card-text text-justify">The grid system is probably the most powerful tool you are going to use in
+              the bootstrap because everything works inside of the grid. Behind the scenes, the bootstrap grid uses the
+              flexbox function to position elements and to make sure that everything is where it should be.</p>
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -86,9 +92,11 @@
           <img src="images/document.png" class="card-img-document" id="document" alt="...">
           <div class="card-body">
             <h2 class="card-title">Good Documentation</h2>
-            <p class="card-text">Bootstrap provides comprehensive documentation that includes examples and demos to make it easier for everyone, especially beginners. It also offers a great search engine and suggestions inside the website that make it easy to look for almost every component.</p>
+            <p class="card-text">Bootstrap provides comprehensive documentation that includes examples and demos to make
+              it easier for everyone, especially beginners. It also offers a great search engine and suggestions inside
+              the website that make it easy to look for almost every component.</p>
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -103,9 +111,10 @@
     </div>
 
     <div class="dropdown">
-      <h1 class="btn btn-secondary dropdown-toggle mb-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-       Examples
-      </h1>
+      <button class="btn btn-secondary dropdown-toggle mb-3" type="button" id="dropdownMenuButton1"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Examples
+      </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#dropdowns">Dropdowns</a></li>
         <li><a class="dropdown-item" href="#card">Cards</a></li>
@@ -114,15 +123,46 @@
     </div>
 
     <!-- cards -->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="images/dropdowns.png" class="card-img-dropdowns" id="dropdowns" alt="...">
           <div class="card-body">
             <h2 class="card-title">Dropdowns</h2>
-            <p class="card-text">Bootstrap's dropdown menu is a predefined menu which allows the user to select their desired value from the list. Bootstrap's dropdown menu offers different directions menus, including Dropup, Dropright, and Dropleft.</p>
+            <p class="card-text">Bootstrap's dropdown menu is a predefined menu that allows the user to select their
+              desired value from the list. Bootstrap's dropdown menu offers different directions menus, including
+              Dropup, Dropright, and Dropleft.</p>
+
+            <p> We are able to turn any button or link to a dropdown menu by adding &lt;div class="dropdown"&gt; and a
+              few changes to the button's or link's definitions. We are also able to use different colors and sizes for
+              our dropdown menu. Here is an easy example of how to use turn a button into a dropdown menu:</p>
+
+            <div class="bd-example mb-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"dropdown"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">id</span><span class="o">=</span><span class="s">"dropdownMenuButton1"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>
+                Dropdown button
+              <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"dropdownMenuButton1"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"dropdown-item"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"dropdown-item"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Another action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"dropdown-item"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Something else here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -133,9 +173,11 @@
           <img src="images/card.png" class="card-img-card" id="card" alt="...">
           <div class="card-body">
             <h2 class="card-title">Cards</h2>
-            <p class="card-text">Bootstrap's card is an excellent way to create flexible and extensible content containers. Bootstrap's card framework offers many useful and powerful features, including headers, footers, content, and background colors.</p>
+            <p class="card-text">Bootstrap's card is an excellent way to create flexible and extensible content
+              containers. Bootstrap's card framework offers many useful and powerful features, including headers,
+              footers, content, and background colors.</p>
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -145,9 +187,11 @@
           <img src="images/navbar.png" class="card-img-navbar" id="navbar" alt="...">
           <div class="card-body">
             <h2 class="card-title">Navbar</h2>
-            <p class="card-text">Bootstrap's navbar is a responsive navigation header that can extend or collapse depending on the screen size. Bootstrap navbar offers many useful and powerful features, including branding, navigation, forms, color schemes, and more.</p>
+            <p class="card-text">Bootstrap's navbar is a responsive navigation header that can extend or collapse
+              depending on the screen size. Bootstrap navbar offers many useful and powerful features, including
+              branding, navigation, forms, color schemes, and more.</p>
             <div class="col-md-6">
-              <a type="button" href="#" class="btn btn-outline-secondary mb-5">Learn more...</a>
+              <a class="btn btn-outline-secondary mb-5" href="#" role="button">Learn more...</a>
             </div>
           </div>
         </div>
@@ -160,11 +204,12 @@
   </section>
 
   <footer class="footer mt-5 py-3 bg-dark">
-    <div class="footer-text ps-3">
-      <a href=# class="text-decoration-none text-light">GitHub&nbsp</a>
-      <a href=# class="text-decoration-none text-light"> Twitter&nbsp</a>
-      <a href=# class="text-decoration-none text-light"> Examples&nbsp</a>
-      <a href=# class="text-decoration-none text-light">About&nbsp</a>
+    <div class="col footer-text ps-3">
+      <a href="https://github.com/twbs" class="col-12 px-2 text-decoration-none">GitHub</a>
+      <a href="https://twitter.com/" class="col-12 px-2 text-decoration-none"> Twitter</a>
+      <a href="https://getbootstrap.com/docs/5.0/examples/" class="col-12 px-2 text-decoration-none"> Examples</a>
+      <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+        class="col-12 px-2 text-decoration-none">Docs</a>
     </div>
   </footer>
 </body>
