@@ -517,11 +517,6 @@ main {
     
   }
 
-
-  .ui-ux h2 {
-    margin-top: 100px;
-  }
-
   .ui-ux, .WEB-DEVELOPMENT {
     margin-bottom: 100px;
   }
@@ -627,14 +622,46 @@ main {
   color: var(--secondary-color);
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px;
-  
+  padding-bottom: 40px; 
 }
 
-
-
-.ui-ux h2 {
+.ui{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
   margin-top: 100px;
+}
+
+.company-ui{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.image-ui-ux{
+  grid-column: 2;
+  grid-row: 1 /span 2;
+}
+
+.web{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+.midterm-image{
+  grid-column: 1;
+  grid-row: 1 /span 2;
+}
+
+.company{
+  grid-column: 2;
+}
+
+.album{
+  margin: 0px 20%;
 }
 
 .ui-ux, .WEB-DEVELOPMENT {
@@ -649,13 +676,13 @@ main {
 .ui-ux h3, .WEB-DEVELOPMENT h3 {
   font-size: 26px;
   font-weight: bold;
-  margin: 60px 30px 60px 30px;
+  margin-bottom: 30px;
 }
 
 .ui-ux p, .WEB-DEVELOPMENT p {
   font-size: 18px;
   line-height: 35px;
-  margin: 0px 30px;
+  margin: 0px 20%;
 }
 
 .midterm-image{
