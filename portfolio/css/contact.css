@@ -259,6 +259,11 @@ main {
   padding-bottom: 25px;
 }
 
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
 .icon {
   grid-column: 2 / span 1;
   display: grid;

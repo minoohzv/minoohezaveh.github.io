@@ -204,6 +204,11 @@ main {
   padding-bottom: 25px;
 }
 
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
 .icon {
   grid-column: 2 / span 1;
   display: grid;
@@ -317,8 +322,26 @@ main {
   text-align: justify;
 }
 
+ /* Add animation for top buttons */
+ .top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
 
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
 
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
 
 /***********************************************************
                         Mobile 
