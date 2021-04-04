@@ -375,10 +375,9 @@ main {
     }
 
     .mobile-logo {
-        height: 60px;
-        width: 60px;
-        margin-top: 20px;
-    }
+      width: 110px;
+      margin-top: 20px;
+  }
 
     .rapper {
         padding: 0px 36.5px;
@@ -722,7 +721,7 @@ main {
   .main-nav {
     height: 80px;
   }
-  
+
   .contact-follow h2{
     font-size: 40px;
     font-weight: bold;

@@ -325,8 +325,7 @@ main {
     }
 
     .mobile-logo {
-        height: 60px;
-        width: 60px;
+        width: 110px;
         margin-top: 20px;
     }
 
@@ -509,7 +508,7 @@ main {
   .main-nav {
     height: 80px;
   }
-  
+
   .illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
     font-size: 40px;
     font-weight: bold;
