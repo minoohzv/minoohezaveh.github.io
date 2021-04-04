@@ -313,6 +313,7 @@ main {
   line-height: 30px;
   margin: 0px 30px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 
@@ -532,8 +533,12 @@ main {
   .education-image img, .experience-image img, .daily-image img{
     float: right;
     width: 50%;
+    margin: 0px 30px ;
   }
 
+  .education h3, .experience-info h3, .daily-info h3 {
+    margin: 60px 30px 30px;
+  }
 
 }
 
@@ -633,10 +638,7 @@ main {
       margin: 0px 0px 0px 30px;
       line-height: 30px;
     }
-  
-    .education, .experience, .daily-life {
-      height: 500px;
-    }
+
     .education-image img, .experience-image img, .daily-image img{
       width: 100%;
     }
@@ -646,20 +648,16 @@ main {
 
     }
     
-
-    
     .education{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 70px;
+      grid-template-columns: 2fr 1fr;
+      padding: 70px 70px 35px;
       justify-content: center;
       justify-items: center;
-      margin-top: 100px;
     }
 
     .education-image{
-      grid-column: 2;
-      height: auto;
+      margin-top: 30px;
     }
 
     .education-info{
@@ -669,17 +667,14 @@ main {
 
     .experience{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 70px;
+      grid-template-columns: 2fr 1fr;
+      padding: 35px 70px;
       justify-content: center;
       justify-items: center;
-      margin-top: 100px;
     }
 
     .experience-image{
-      grid-column: 2;
-      grid-row: 1 /span 2;
-      height: auto;
+      margin-top: 30px;
     }
 
     .experience-info{
@@ -689,16 +684,15 @@ main {
 
     .daily-life{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 70px;
+      grid-template-columns: 2fr 1fr;
+      padding: 35px 70px;
       justify-content: center;
       justify-items: center;
-      margin-top: 100px;
     }
 
     .daily-image{
-      grid-column: 2;
-      height: auto;
+      margin-top: 30px;
+
     }
 
     .daily-info{
