@@ -133,7 +133,7 @@ table {
 
 /*Use following fonts if Raleway isn't availble*/
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
@@ -141,7 +141,7 @@ html {
 
 * {
   font-family: 'Raleway';
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 body {
@@ -194,6 +194,29 @@ table {
 main {
   padding: 0px;
   background: white;
+}
+
+.scrollview {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 30px 0px;
+}
+
+.scroll {
+  line-height: 5px;
+  grid-row: 1;
+  white-space: nowrap;
+  margin: 0%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.scrolldown {
+  height: 25.93px;
+  transform: rotate(180deg);
+  text-align: center;
 }
 
 .footer {
@@ -284,6 +307,27 @@ main {
   text-decoration: none;
 }
 
+/* Add animation for scrolldown buttons */
+.scrolldown {
+  position: relative;
+  animation-name: scroll-down;
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: 30px;
+    opacity: 0;
+  }
+}
+
 /* Add animation for top buttons */
 .top {
   position: relative;
@@ -333,6 +377,11 @@ main {
         width: 110px;
         margin-top: 20px;
     }
+
+      /*dont show scroll-down on mobile*/
+  .scrollview {
+    display: none;
+  }
 
     .rapper {
         padding: 0px 36.5px;
@@ -403,12 +452,14 @@ main {
   }
 
   .illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
-    font-size: 25px;
+    font-family: 'Raleway';
+    font-size: 20px;
     font-weight: bold;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding:15px;
+    padding:10px;
+    margin: 0px;
   }
 
   .rhino-headband, .giraffe-leave, .giraffe-sunglasses, .rhino, .plant, .christmast, .spring, .winter {
@@ -507,7 +558,7 @@ main {
   .nav-list {
     height: 75px;
     margin-right: 5%;
-    padding-top: 30px;
+    padding-top: 26px;
   }
 
   .main-nav {
@@ -520,9 +571,8 @@ main {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
+    padding-top: 10px;
+    padding-bottom: 10px; 
   }
 
   .header-one {
@@ -590,7 +640,6 @@ main {
   grid-template-rows: repeat(1, 40px);
   justify-content: right;
   justify-items: center;
-  font-size: 20px;
 }
 
 .home {
@@ -639,8 +688,8 @@ main {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px; 
+  padding-top: 10px;
+  padding-bottom: 10px; 
 }
 
 .header-one {

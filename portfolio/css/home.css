@@ -133,7 +133,7 @@ table {
 
 /*Use following fonts if Raleway isn't availble*/
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
