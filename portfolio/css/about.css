@@ -426,6 +426,10 @@ main {
     font-family: 'Raleway';
   }
 
+  .main-nav {
+    height: 300px;
+  }
+
   .about-minoo {
     display: grid;
     grid-template-rows: 1fr 1fr;

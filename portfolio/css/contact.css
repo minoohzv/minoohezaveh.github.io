@@ -408,19 +408,19 @@ main {
       }
 
     /* use grid to change the position of items: home, about and contact on mobile size*/
-  .nav-list {
-    display: grid;
-    grid-template-areas: "home"
-      "about"
-      "contact";
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 40px);
-    justify-content: center;
-    justify-items: center;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
+    .nav-list {
+      display: grid;
+      grid-template-areas: "home"
+        "about"
+        "contact";
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 40px);
+      justify-content: center;
+      justify-items: center;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
 
   .home {
     grid-area: home;
@@ -452,6 +452,10 @@ main {
     color: var(--secondary-color);
   }
 
+  .main-nav {
+    height: 300px;
+  }
+  
   .contact-follow h2 {
     font-size: 20px;
     font-weight: bold;

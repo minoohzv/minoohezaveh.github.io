@@ -407,19 +407,19 @@ main {
       }
 
     /* use grid to change the position of items: home, about and contact on mobile size*/
-  .nav-list {
-    display: grid;
-    grid-template-areas: "home"
-      "about"
-      "contact";
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 40px);
-    justify-content: center;
-    justify-items: center;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
+    .nav-list {
+      display: grid;
+      grid-template-areas: "home"
+        "about"
+        "contact";
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 40px);
+      justify-content: center;
+      justify-items: center;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
 
   .home {
     grid-area: home;
@@ -449,6 +449,10 @@ main {
     grid-row: 4;
     font-size: 16px;
     font-family: 'Raleway';
+  }
+
+  .main-nav {
+    height: 300px;
   }
 
   .illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
