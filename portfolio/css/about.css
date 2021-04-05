@@ -341,6 +341,21 @@ main {
   }
 }
 
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.linkedin,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
 /***********************************************************
                         Mobile 
  **********************************************************/

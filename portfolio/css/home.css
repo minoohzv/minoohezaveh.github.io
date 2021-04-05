@@ -482,6 +482,47 @@ main {
   }
 }
 
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.linkedin,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+/* Add animation for Read more button */
+.read-more:hover {
+  background-color: var(--primary-color);
+}
+
+.read-more:active {
+  background-color:  var(--secondary-color);
+  color: white;
+  transform: translateY(4px);
+}
+
+/* when you move your mouse on the names of the categories they became out, and they became bigger */
+.illustration a,
+.ui-ux a,
+.web a,
+.photography a{
+  transition: all .2s ease-in-out;
+}
+
+.illustration a:hover,
+.ui-ux a:hover,
+.web a:hover,
+.photography a:hover {
+  transform: scale(1.2);
+}
+
 /***********************************************************
                         Mobile 
  **********************************************************/

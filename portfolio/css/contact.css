@@ -233,6 +233,11 @@ main {
   width: 22px;
 }
 
+/* Styling Phone Link */
+a[href^="tel:"] {
+  text-decoration: none;
+}
+
 .email{
   grid-row: 2;
   grid-column: 2;
@@ -368,6 +373,33 @@ main {
     opacity: 0;
   }
 }
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.linkedin,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+/* Add animation for the send button */
+.send-msg:hover {
+  background-color: var(--primary-color);
+}
+
+.send-msg:active {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(4px);
+}
+
 /***********************************************************
                         Mobile 
  **********************************************************/
