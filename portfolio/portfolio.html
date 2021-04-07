@@ -45,12 +45,29 @@
         <section class="four-sections">
             <div class="illustration" id="illustration">
                 <h2 class="header-one">ILLUSTRATION</h2>
-                <!-- <div class="illustration-images">
-                    <img class="rhino-headband" src="images/photo_2021-03-14_11-58-14.jpg" alt="rhino with headband">
-                    <img class="giraffe-leave" src="images/Hezaveh_Giraffe-02.jpg" alt="giraffe with his leave">
-                    <img class="giraffe-sunglasses" src="images/Hezaveh_Giraffe-01.jpg" alt="giraffe with sunglasses">
-                    <img class="rhino" src="images/photo_2021-03-14_12-10-38.jpg" alt="rhino">
-                </div> -->
+                <div class="w3-row-padding">
+                    <div class="illustration-images w3-half">
+                        <img src="images/photo_2021-03-14_11-58-14.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="illustration-images w3-half">
+                        <img src="images/Hezaveh_Giraffe-02.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="illustration-images w3-half">
+                        <img src="images/Hezaveh_Giraffe-01.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="illustration-images w3-half">
+                        <img src="images/photo_2021-03-14_12-10-38.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                </div>
+            </div>
+            <div class="illustration-desktop" id="illustration-desktop">
+                <h2 class="header-one">ILLUSTRATION</h2>
                 <div class="w3-row-padding">
                     <div class="illustration-images w3-quarter">
                         <img src="images/photo_2021-03-14_11-58-14.jpg" style="width:100%;cursor:pointer"
@@ -69,7 +86,6 @@
                             onclick="onClick(this)" class="w3-hover-opacity">
                     </div>
                 </div>
-
                 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
                     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                     <div class="w3-modal-content w3-animate-zoom">
@@ -84,22 +100,18 @@
                     }
                 </script>
             </div>
+
+
             <div class="ui-ux" id="ui-ux">
                 <h2 class="header-two">UI/UX DESIGN</h2>
                 <div class="ui">
-                    <img class="image-ui-ux" src="images/UI-UX.jpg"
+                    <img class="perkins" src="images/perkins.jpg"
                         alt="first page of a website on mobile, tablet, and desktop">
-                    <h3 class="company-ui">Company/Client Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur erat et porta viverra.
-                        Proin malesuada nisi varius metus sagittis euismod. Vestibulum pretium ac nunc vitae
-                        consectetur.
-                        Duis at vulputate libero. Vestibulum feugiat sem a dui pretium, et accumsan dui vulputate. Fusce
-                        molestie molestie mi, id eleifend nisl convallis ac. Etiam est neque, imperdiet dapibus urna ac,
-                        congue faucibus felis. Nunc ac lacus aliquam, aliquam erat eu, mollis nulla. Curabitur sit amet
-                        dui
-                        faucibus, scelerisque leo sit amet, fringilla felis. Quisque nec maximus arcu. Ut sagittis et
-                        nisl a
-                        vehicula. Nunc ac ornare nibh. </p>
+                    <a class="perkins-header" href="https://xd.adobe.com/view/6676f952-4268-4ef5-9eea-d6dc5a44dc02-3325/">Perkins Restaurant & Bakery</a>
+                    <img class="portfolio-image" src="images/portfolio.jpg"
+                        alt="first page of a website on mobile, tablet, and desktop">
+                    <a class="portfolio-header" href="https://xd.adobe.com/view/107d6333-5a6b-494c-9533-21afa9c68cad-452e/">My Portfolio</a>
+
                 </div>
             </div>
 
@@ -117,57 +129,108 @@
             <div class="WEB-DEVELOPMENT" id="WEB-DEVELOPMENT">
                 <h2 class="header-three"> WEB DEVELOPMENT</h2>
                 <div class="web">
-                    <img class="midterm-image" src="images/web-development.jpg" alt="a website for midterm project">
-                    <h3 class="company">Company/Client Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur erat et porta viverra.
-                        Proin malesuada nisi varius metus sagittis euismod. Vestibulum pretium ac nunc vitae
-                        consectetur.
-                        Duis at vulputate libero. Vestibulum feugiat sem a dui pretium, et accumsan dui vulputate. Fusce
-                        molestie molestie mi, id eleifend nisl convallis ac. Etiam est neque, imperdiet dapibus urna ac,
-                        congue faucibus felis. Nunc ac lacus aliquam, aliquam erat eu, mollis nulla. Curabitur sit amet
-                        dui
-                        faucibus, scelerisque leo sit amet, fringilla felis. Quisque nec maximus arcu. Ut sagittis et
-                        nisl a
-                        vehicula. Nunc ac ornare nibh.</p>
+                    <img class="arc" src="images/arc.jpg" alt="arc project">
+                    <a class="arc-h" href="https://minoohzv.github.io/mtm6201-midterm-master-files/">ARC</a>
+                    <img class="portfolio-web" src="images/port.jpg" alt="portfolio project">
+                    <a class="portfolio-h" href="https://minoohzv.github.io/portfolio/">My Portfolio</a>
+                    <img class="dash" src="images/dash.png" alt="dash project">
+                    <a class="dash-h" href="https://minoohzv.github.io/master-files-landing-page/">Dash</a>
+                    <img class="bootstrap" src="images/bootstrap.jpg" alt="bootstrap project">
+                    <a class="bootstrap-h" href="https://minoohzv.github.io/Bootstrap/">Bootstrap</a>
                 </div>
             </div>
             <div class="photography" id="photography">
                 <h2 class="header-four">PHOTOGRAPHY</h2>
 
                 <div class="w3-row-padding">
-                    <div class="photography-images w3-quarter">
+                    <div class="photography-images w3-half">
                         <img src="images/plant.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
                             class="w3-hover-opacity">
                     </div>
-                    <div class="photography-images w3-quarter">
+                    <div class="photography-images w3-half">
                         <img src="images/christmast.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
                             class="w3-hover-opacity">
                     </div>
-                    <div class="photography-images w3-quarter">
+                </div>
+                <div class="w3-row-padding">
+                    <div class="photography-images w3-half">
                         <img src="images/spring.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
                             class="w3-hover-opacity">
                     </div>
-                    <div class="photography-images w3-quarter">
+                    <div class="photography-images w3-half">
                         <img src="images/winter.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
                             class="w3-hover-opacity">
                     </div>
                 </div>
 
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                    <img id="img01" style="width:100%">
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img id="img01" style="width:100%">
+                    </div>
+                </div>
+
+                <script>
+                    function onClick(element) {
+                        document.getElementById("img01").src = element.src;
+                        document.getElementById("modal01").style.display = "block";
+                    }
+                </script>
+            </div>
+
+            <div class="photography-desktop" id="photography-desktop">
+                <h2 class="header-four">PHOTOGRAPHY</h2>
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/plant.jpg" style="width:40%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/christmast.jpg" style="width:40%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/spring.jpg" style="width:40%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/winter.jpg" style="width:40%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/plant.jpg" style="width:80%" onclick="currentSlide(1)"
+                                alt="The Woods">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/christmast.jpg" style="width:80%"
+                                onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/spring.jpg" style="width:80%" onclick="currentSlide(3)"
+                                alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/winter.jpg" style="width:80%" onclick="currentSlide(4)"
+                                alt="Northern Lights">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <script>
-                function onClick(element) {
-                    document.getElementById("img01").src = element.src;
-                    document.getElementById("modal01").style.display = "block";
-                }
-            </script>
-            </div>
-            </div>
+            <script src="myScript.js"></script>
+
 
             <footer>
                 <div class="footer" id="footer">

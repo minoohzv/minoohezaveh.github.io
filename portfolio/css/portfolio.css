@@ -349,8 +349,8 @@ main {
   }
 }
 
-.w3-row-padding {
-  margin: 30px 10px;
+.w3-row-padding, .w3-row-padding2 {
+  margin: 30px;
 }
 
 .first {
@@ -375,6 +375,23 @@ main {
 .facebook:hover {
   transform: scale(1.2);
 }
+
+.ui-ux a:hover, .WEB-DEVELOPMENT a:hover {
+  color: rgba(30, 40, 50, 0.5);
+}
+
+.ui-ux a:active, .WEB-DEVELOPMENT a:active {
+  color: var(--secondary-color)
+}
+
+.ui-ux a:visited, .WEB-DEVELOPMENT a:visited {
+  color: var(--secondary-color)
+}
+
+.ui-ux a, .WEB-DEVELOPMENT a {
+  margin-top: 10px;
+}
+  
   
 /***********************************************************
                         Mobile 
@@ -383,7 +400,7 @@ main {
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
     .tablet-logo,
-    .desktop-logo {
+    .desktop-logo, .illustration-desktop, .photography-desktop {
         display: none;
     }
 
@@ -450,7 +467,7 @@ main {
   }
 
   .portfolio {
-    grid-area: contact;
+    grid-area: portfolio;
     grid-row: 3;
     font-size: 18px;
     font-family: 'Raleway';
@@ -487,26 +504,20 @@ main {
     width: 80%;
   }
 
-  .image-ui-ux, .midterm-image {
-    border: solid var(--primary-color) 1px;
+  .perkins, .portfolio-image, .arc, .portfolio-web, .dash, .bootstrap, .midterm-image {
     display: block;
-    margin: 60px auto;
+    margin: 30px auto 10px;
     width: 80%;
   }
 
-  .ui-ux h3, .WEB-DEVELOPMENT h3 {
+  .ui-ux a, .WEB-DEVELOPMENT a {
     text-align: center;
-    margin: 30px 30px;
-    font-size: 29px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--primary-color);
-  }
-
-  .ui-ux p, .WEB-DEVELOPMENT p {
-    margin: 30px 30px;
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--primary-color);
+    text-decoration: none;
+    display: grid;
+    margin-bottom: 30px;
   }
 
   .w3-row-padding img {
@@ -526,7 +537,7 @@ main {
     }
 
     .mobile-logo,
-    .desktop-logo {
+    .desktop-logo, .container, .illustration-desktop, .photography-desktop {
       display: none;
     }
 
@@ -600,25 +611,97 @@ main {
     margin: 0px;
   }
 
-  .ui-ux, .WEB-DEVELOPMENT {
-    margin-bottom: 100px;
+  .ui{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+  }
+  
+  .perkins{
+    grid-column: 1;
+    grid-row: 1;
+    height: 150px;
+  }
+  
+  .portfolio-image{
+    grid-column: 2;
+    grid-row: 1;
+    height: 150px;
   }
 
-  .image-ui-ux{
-    float: right;
-    width: 50%;
-  }
+  .web{
+  display: grid;
+  grid-template-areas: "arc" "portfolio-web"
+                       "arc-h" "portfolio-h"
+                       "dash" "bootstrap"
+                       "dash-h" "bootstrap-h";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20px;
+}
 
-  .ui-ux h3, .WEB-DEVELOPMENT h3 {
-    font-size: 26px;
-    font-weight: bold;
-    margin: 60px 30px 60px 30px;
-  }
 
-  .ui-ux p, .WEB-DEVELOPMENT p {
+.arc {
+  grid-area: arc;
+  grid-column: 1;
+  grid-row: 1;
+  height: 150px;
+}
+
+.arc-h{
+  grid-area: arc-h;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.portfolio-web {
+  grid-area: portfolio-web;
+  grid-row: 1;
+  grid-column: 2;
+  height: 150px;
+}
+
+.portfolio-h{
+  grid-area: portfolio-h;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.dash {
+  grid-area: dash;
+  grid-row: 3;
+  grid-column: 1;
+  height: 150px;
+}
+
+.dash-h{
+  grid-area: dash-h;
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.bootstrap {
+  grid-area: bootstrap;
+  grid-row: 3;
+  grid-column: 2;
+  height: 150px;
+}
+
+.bootstrap-h {
+  grid-area: bootstrap-h;
+  grid-row: 4;
+  grid-column: 2;
+}
+
+  .ui-ux a, .WEB-DEVELOPMENT a {
     font-size: 18px;
-    line-height: 35px;
-    margin: 0px 30px;
+    font-weight: bold;
+    margin: 30px;
+    text-decoration: none;
   }
 
   .midterm-image{
@@ -643,7 +726,7 @@ main {
   }
 /*dont show mobile and tablet logo on desktop page*/
   .mobile-logo,
-  .desktop-logo {
+  .desktop-logo, .illustration, .photography {
     display: none;
   }
 
@@ -703,7 +786,105 @@ main {
   height: 80px;
 }
 
-.illustration h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography h2 {
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+.mySlides{
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(30, 40,50, 0.8);
+}
+
+.prev,
+.next {
+  background-color: var(--primary-color);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row {
+  content: "";
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+.illustration-desktop h2, .ui-ux h2, .WEB-DEVELOPMENT h2, .photography-desktop h2 {
   font-size: 40px;
   font-weight: bold;
   background-color: var(--primary-color);
@@ -722,42 +903,87 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   justify-items: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
-.company-ui{
+.perkins{
   grid-column: 1;
   grid-row: 1;
+  height: 150px;
 }
 
-.image-ui-ux{
+.portfolio-image{
   grid-column: 2;
-  grid-row: 1 /span 2;
+  grid-row: 1;
+  height: 150px;
 }
 
 .web{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "arc" "portfolio-web"
+                       "arc-h" "portfolio-h"
+                       "dash" "bootstrap"
+                       "dash-h" "bootstrap-h";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
   justify-content: center;
   justify-items: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
-.midterm-image{
+
+.arc {
+  grid-area: arc;
   grid-column: 1;
-  grid-row: 1 /span 2;
+  grid-row: 1;
+  height: 150px;
 }
 
-.company{
+.arc-h{
+  grid-area: arc-h;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.portfolio-web {
+  grid-area: portfolio-web;
+  grid-row: 1;
   grid-column: 2;
+  height: 150px;
 }
 
-.album{
-  margin: 0px 20%;
+.portfolio-h{
+  grid-area: portfolio-h;
+  grid-row: 2;
+  grid-column: 2;
+  margin-bottom: 30px;
 }
 
-.ui-ux, .WEB-DEVELOPMENT {
-  margin-bottom: 100px;
+.dash {
+  grid-area: dash;
+  grid-row: 3;
+  grid-column: 1;
+  height: 150px;
+}
+
+.dash-h{
+  grid-area: dash-h;
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.bootstrap {
+  grid-area: bootstrap;
+  grid-row: 3;
+  grid-column: 2;
+  height: 150px;
+}
+
+.bootstrap-h {
+  grid-area: bootstrap-h;
+  grid-row: 4;
+  grid-column: 2;
+  margin-bottom: 30px;
 }
 
 .image-ui-ux{
@@ -765,16 +991,10 @@ main {
   width: 50%;
 }
 
-.ui-ux h3, .WEB-DEVELOPMENT h3 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.ui-ux p, .WEB-DEVELOPMENT p {
+.ui-ux a, .WEB-DEVELOPMENT a {
   font-size: 18px;
-  line-height: 35px;
-  margin: 0px 20%;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .midterm-image{
