@@ -816,7 +816,7 @@ a[href^="tel:"] {
   .contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5%;
+    margin: 30px;
     align-items: center;
   }
 

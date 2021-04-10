@@ -769,7 +769,7 @@ main {
   .education {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 70px 70px 35px;
+    padding: 30px 30px 35px;
     justify-content: center;
     justify-items: center;
   }
@@ -786,7 +786,7 @@ main {
   .experience {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 35px 70px;
+    padding: 35px 30px;
     justify-content: center;
     justify-items: center;
   }
@@ -803,7 +803,7 @@ main {
   .daily-life {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 35px 70px;
+    padding: 35px 30px;
     justify-content: center;
     justify-items: center;
   }
@@ -817,4 +817,10 @@ main {
     grid-column: 1;
     grid-row: 1;
   }
+
+.education p,
+.experience-info p,
+.daily-info p {
+  margin: 0px 30px 0px 0px;
+}
 }

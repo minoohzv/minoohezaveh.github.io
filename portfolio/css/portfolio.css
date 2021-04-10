@@ -620,19 +620,19 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     justify-items: center;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   
   .perkins{
     grid-column: 1;
     grid-row: 1;
-    height: 150px;
+    height: 200px;
   }
   
   .portfolio-image{
     grid-column: 2;
     grid-row: 1;
-    height: 150px;
+    height: 200px;
   }
 
   .web{
@@ -913,13 +913,13 @@ img {
 .perkins{
   grid-column: 1;
   grid-row: 1;
-  height: 150px;
+  height: 220px;
 }
 
 .portfolio-image{
   grid-column: 2;
   grid-row: 1;
-  height: 150px;
+  height: 220px;
 }
 
 .web{
@@ -940,7 +940,7 @@ img {
   grid-area: arc;
   grid-column: 1;
   grid-row: 1;
-  height: 150px;
+  height: 170px;
 }
 
 .arc-h{
@@ -953,7 +953,7 @@ img {
   grid-area: portfolio-web;
   grid-row: 1;
   grid-column: 2;
-  height: 150px;
+  height: 170px;
 }
 
 .portfolio-h{
@@ -967,7 +967,7 @@ img {
   grid-area: dash;
   grid-row: 3;
   grid-column: 1;
-  height: 150px;
+  height: 170px;
 }
 
 .dash-h{
@@ -980,7 +980,7 @@ img {
   grid-area: bootstrap;
   grid-row: 3;
   grid-column: 2;
-  height: 150px;
+  height: 170px;
 }
 
 .bootstrap-h {
