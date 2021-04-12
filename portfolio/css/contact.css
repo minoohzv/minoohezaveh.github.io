@@ -507,13 +507,13 @@ a[href^="tel:"] {
     width: 140px;
     display: flex;
     justify-content: center;
-    margin-left: 4%;
+    margin-left: 8.5%;
     margin-top: 20px;
   }
 
   #fname, #email, #text {
     font-size: 20px;
-    width: 90%;
+    width: 82%;
     margin-left: auto;
     margin-right: auto;
     display: flex;

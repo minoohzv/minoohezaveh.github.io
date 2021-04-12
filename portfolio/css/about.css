@@ -771,7 +771,7 @@ main {
   .education {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 30px 30px 35px;
+    padding: 30px;
     justify-content: center;
     justify-items: center;
   }
@@ -788,7 +788,7 @@ main {
   .experience {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 35px 30px;
+    padding: 30px;
     justify-content: center;
     justify-items: center;
   }
@@ -805,7 +805,7 @@ main {
   .daily-life {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 35px 30px;
+    padding: 30px;
     justify-content: center;
     justify-items: center;
   }
