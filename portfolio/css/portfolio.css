@@ -553,17 +553,18 @@ main {
     margin: 0px 14px;
   }
 
+  .illustration-images {
+    margin: 30px 0px;
+  }
+
+  .photography-images {
+    margin: 30px 0px;
+  }
+
   .photography h2, .illustration h2 {
     margin-bottom: 30px;
   }
 
-  .illustration img{
-    margin-bottom: 30px;
-  }
-
-  .photography img {
-    margin-bottom: 30px;
-  }
 }
 
 
@@ -691,7 +692,6 @@ main {
     margin-top: 30px;
   }
 
-
   .arc {
     grid-area: arc;
     grid-column: 1;
@@ -761,9 +761,6 @@ main {
     margin: 30px 14px;
   }
 }
-
-
-
 
 
 /***********************************************************
