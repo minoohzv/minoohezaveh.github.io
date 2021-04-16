@@ -129,15 +129,12 @@ table {
   border-spacing: 0;
 }
 
-/* ********************************************************************************* */
-
 /*Use following fonts if Raleway isn't availble*/
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
-
 
 * {
   font-family: 'Raleway';
@@ -152,10 +149,11 @@ body {
 
 /* use custom properties, can be used to store value to be referenced later, here I use for colors and font */
 :root {
-    --primary-color: #1E2832;
-    --secondary-color: #83C04B;
-    --font: 'Raleway'
+  --primary-color: #1E2832;
+  --secondary-color: #83C04B;
+  --font: 'Raleway'
 }
+
 ol,
 ul {
   list-style: none;
@@ -180,8 +178,8 @@ table {
   border-spacing: 0;
 }
 
-.nav-list a{
-    text-decoration: none;
+.nav-list a {
+  text-decoration: none;
 }
 
 .rapper h1 {
@@ -205,28 +203,29 @@ main {
   font-size: 16px;
 }
 
-.number-email{
+.number-email {
   display: grid;
   grid-template-areas: "phone number"
-                       "post email";
+    "post email";
   justify-content: center;
   align-items: center;
   align-self: center;
   justify-items: center;
   column-gap: 10px;
 }
-.phone{
+
+.phone {
   grid-row: 1;
   grid-column: 1;
   width: 22px;
 }
 
-.number{
+.number {
   grid-row: 1;
   grid-column: 2;
 }
 
-.post{
+.post {
   grid-row: 2;
   grid-column: 1;
   width: 22px;
@@ -237,7 +236,7 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
-.email{
+.email {
   grid-row: 2;
   grid-column: 2;
   text-decoration: none;
@@ -249,14 +248,14 @@ a[href^="tel:"] {
   font-weight: bold;
 }
 
-.github{
+.github {
   width: 100px;
   display: block;
   margin: 30px auto;
 }
 
 .footer {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 10px;
@@ -335,7 +334,7 @@ a[href^="tel:"] {
 .backtop {
   line-height: 5px;
   grid-row: 2;
-  color:white;
+  color: white;
   white-space: nowrap;
   margin: 0%;
   margin-top: 90px;
@@ -344,15 +343,15 @@ a[href^="tel:"] {
 }
 
 .main-image {
-    background: url(../images/main-image.jpg) no-repeat center;
-    background-size: cover;
-    height: 400px;
-    padding-left: 0em;
-    padding-right: 0em;
-    margin: 0%;
-  }
+  background: url(../images/main-image.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin: 0%;
+}
 
-  /* Add animation for top buttons */
+/* Add animation for top buttons */
 .top {
   position: relative;
   animation-name: scroll-up;
@@ -405,53 +404,54 @@ a[href^="tel:"] {
 /* use @media to apply the following code to the rest of the code */
 /* when the screen size is less than 599px wide, set all of items that include main braces */
 @media only screen and (max-width: 599px) {
-    .tablet-logo,
-    .desktop-logo {
-        display: none;
-    }
 
-    .mobile-logo {
-      width: 110px;
-      margin-top: 20px;
+  .tablet-logo,
+  .desktop-logo {
+    display: none;
   }
 
-    .rapper {
-        padding: 0px 36.5px;
-      }
-    
-      .rapper h1 {
-        font-size: 40px;
-        line-height: 47px;
-        margin: 36.5px 0px;
-      }
-    
-      .rapper p {
-        font-size: 16px;
-        line-height: 35px;
-      }
-    
-      .logobackground {
-        text-align: center;
-      }
+  .mobile-logo {
+    width: 110px;
+    margin-top: 20px;
+  }
 
-    .main-nav {
-        display: grid;
-      }
+  .rapper {
+    padding: 0px 36.5px;
+  }
 
-    /* use grid to change the position of items: home, about and contact on mobile size*/
-    .nav-list {
-      display: grid;
-      grid-template-areas: "home"
-        "about"
-        "contact";
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(3, 40px);
-      justify-content: center;
-      justify-items: center;
-      margin-right: 0px;
-      margin-bottom: 20px;
-      margin-top: 10px;
-    }
+  .rapper h1 {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 36.5px 0px;
+  }
+
+  .rapper p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .logobackground {
+    text-align: center;
+  }
+
+  .main-nav {
+    display: grid;
+  }
+
+  /* use grid to change the position of items: home, about and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home"
+      "about"
+      "contact";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 
   .home {
     grid-area: home;
@@ -486,14 +486,14 @@ a[href^="tel:"] {
   .main-nav {
     height: 300px;
   }
-  
+
   .contact-follow h2 {
     font-size: 20px;
     font-weight: bold;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    padding:15px;
+    padding: 15px;
   }
 
   .send-msg {
@@ -510,13 +510,15 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  #fname, #email, #text {
+  #fname,
+  #email,
+  #text {
     font-size: 20px;
     width: 82%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    
+
   }
 
   .add-info {
@@ -527,7 +529,8 @@ a[href^="tel:"] {
     margin-bottom: 20px;
   }
 
-  .number-email p, .number-email a{
+  .number-email p,
+  .number-email a {
     font-size: 22px;
     text-align: center;
     line-height: 50px;
@@ -543,7 +546,7 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  .github{
+  .github {
     width: 100px;
     display: block;
     margin: 30px auto;
@@ -551,29 +554,27 @@ a[href^="tel:"] {
 
 }
 
-
-
-/*****************************************
-                    Tablet
-*****************************************/
+/***********************************************************
+                        Tablet 
+ **********************************************************/
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    html {
-      font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 
-    .mobile-logo,
-    .desktop-logo {
-      display: none;
-    }
+  .mobile-logo,
+  .desktop-logo {
+    display: none;
+  }
 
-    .tablet-logo {
-      width: 100px;
-      float: left;
-      margin-left: 5%;
-    }
+  .tablet-logo {
+    width: 100px;
+    float: left;
+    margin-left: 5%;
+  }
 
-    /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
   .nav-list {
     display: grid;
     grid-template-areas: "home about portfolio contact";
@@ -623,7 +624,7 @@ a[href^="tel:"] {
     height: 80px;
   }
 
-  .contact-follow h2{
+  .contact-follow h2 {
     font-size: 40px;
     font-weight: bold;
     background-color: var(--primary-color);
@@ -646,13 +647,15 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  #fname, #email, #text {
+  #fname,
+  #email,
+  #text {
     font-size: 20px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    
+
   }
 
   .add-info {
@@ -663,7 +666,8 @@ a[href^="tel:"] {
     margin-bottom: 20px;
   }
 
-  .number-email p, .number-email a{
+  .number-email p,
+  .number-email a {
     font-size: 22px;
     text-align: center;
     line-height: 50px;
@@ -679,7 +683,7 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  .github{
+  .github {
     width: 100px;
     display: block;
     margin: 30px auto;
@@ -687,32 +691,29 @@ a[href^="tel:"] {
 
 }
 
-
-
-
 /***********************************************************
-                    Desktop
-**********************************************************/
+                        Desktop 
+ **********************************************************/
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
-    html {
-      font-size: 18px;
-    }
-   /*dont show mobile and tablet logo on desktop*/
-    .mobile-logo,
-    .tablet-logo {
-      display: none;
-    }
-  
-    .desktop-logo
-    {
-      width: 100px;
-      float: left;
-      margin-left: 5%;
-    }
+  html {
+    font-size: 18px;
+  }
 
-     /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  /*dont show mobile and tablet logo on desktop*/
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    width: 100px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
   .nav-list {
     display: grid;
     grid-template-areas: "home about portfolio contact";
@@ -762,7 +763,7 @@ a[href^="tel:"] {
     height: 80px;
   }
 
-  .contact-follow h2{
+  .contact-follow h2 {
     font-size: 40px;
     font-weight: bold;
     background-color: var(--primary-color);
@@ -784,17 +785,19 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  #fname, #email, #text {
+  #fname,
+  #email,
+  #text {
     font-size: 20px;
     width: -webkit-fill-available;
   }
-
 
   #fname {
     margin-bottom: 20px;
   }
 
-  .number-email p, .number-email a{
+  .number-email p,
+  .number-email a {
     font-size: 22px;
     text-align: center;
     line-height: 50px;
@@ -806,7 +809,7 @@ a[href^="tel:"] {
     margin-top: 20px;
   }
 
-  .github{
+  .github {
     width: 100px;
     display: block;
     margin: 30px auto;
@@ -822,5 +825,4 @@ a[href^="tel:"] {
   hr {
     margin: 30px 100px;
   }
-  
 }

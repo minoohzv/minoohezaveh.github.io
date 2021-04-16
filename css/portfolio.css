@@ -129,15 +129,12 @@ table {
   border-spacing: 0;
 }
 
-/* ********************************************************************************* */
-
 /*Use following fonts if Raleway isn't availble*/
 html {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
-
 
 * {
   font-family: 'Raleway';
@@ -399,9 +396,6 @@ main {
   transition: all .2s ease-in-out;
 }
 
-
-
-
 /***********************************************************
                         Mobile 
  **********************************************************/
@@ -561,21 +555,20 @@ main {
     margin: 15px 0px;
   }
 
-  .photography h2, .illustration h2 {
+  .photography h2,
+  .illustration h2 {
     margin-bottom: 15px;
   }
 
-  .footer{
+  .footer {
     margin-top: 15px;
   }
 
 }
 
-
-
-/*****************************************
-                    Tablet
-*****************************************/
+/***********************************************************
+                        Tablet 
+ **********************************************************/
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   html {
@@ -777,15 +770,14 @@ main {
     margin: 8px 0px;
   }
 
-  .footer{
+  .footer {
     margin-top: 22px;
   }
 }
 
-
 /***********************************************************
-                    Desktop
-**********************************************************/
+                        Desktop 
+ **********************************************************/
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
@@ -944,7 +936,6 @@ main {
     margin-bottom: 30px;
   }
 
-
   /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
@@ -1008,7 +999,6 @@ main {
     justify-items: center;
     margin-top: 30px;
   }
-
 
   .arc {
     grid-area: arc;

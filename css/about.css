@@ -129,8 +129,6 @@ table {
   border-spacing: 0;
 }
 
-/* ********************************************************************************* */
-
 /*Use following fonts if Raleway isn't availble*/
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -487,7 +485,6 @@ main {
     display: none;
   }
 
-
   .education-image {
     background: url(../images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) no-repeat center;
     background-size: cover;
@@ -512,11 +509,9 @@ main {
   }
 }
 
-
-
-/*****************************************
-                    Tablet
-*****************************************/
+/***********************************************************
+                        Tablet 
+ **********************************************************/
 /* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   html {
@@ -528,7 +523,7 @@ main {
     display: none;
   }
 
-  .container1{
+  .container1 {
     display: grid;
   }
 
@@ -637,14 +632,11 @@ main {
     margin: 60px 30px 30px;
     text-align: left;
   }
-
-
 }
 
-
 /***********************************************************
-                    Desktop
-**********************************************************/
+                        Desktop 
+ **********************************************************/
 /* when the screen size is more than 769px wide, set all of items that include main braces */
 @media screen and (min-width: 769px) {
 
@@ -658,7 +650,7 @@ main {
     display: none;
   }
 
-  .container1{
+  .container1 {
     display: grid;
   }
 
@@ -765,7 +757,6 @@ main {
   .experience-info h3,
   .daily-info h3 {
     margin: 30px 0px;
-
   }
 
   .education {
@@ -812,7 +803,6 @@ main {
 
   .daily-image {
     margin-top: 30px;
-
   }
 
   .daily-info {
@@ -820,9 +810,9 @@ main {
     grid-row: 1;
   }
 
-.education p,
-.experience-info p,
-.daily-info p {
-  margin: 0px 30px 0px 0px;
-}
+  .education p,
+  .experience-info p,
+  .daily-info p {
+    margin: 0px 30px 0px 0px;
+  }
 }
