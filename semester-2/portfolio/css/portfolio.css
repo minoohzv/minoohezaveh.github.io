@@ -1,0 +1,1088 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ********************************************************************************* */
+
+/*Use following fonts if Raleway isn't availble*/
+html {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+
+* {
+  font-family: 'Raleway';
+  color: var(--primary-color);
+}
+
+body {
+  background: white;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* use custom properties, can be used to store value to be referenced later, here I use for colors and font */
+:root {
+  --primary-color: #1E2832;
+  --secondary-color: #83C04B;
+  --font: 'Raleway'
+}
+
+ol,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+.rapper h1 {
+  margin: 30px 0px;
+  font-size: 72px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+main {
+  padding: 0px;
+  background: white;
+}
+
+.scrollview {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 30px 0px;
+}
+
+.scroll {
+  line-height: 5px;
+  grid-row: 1;
+  white-space: nowrap;
+  margin: 0%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.scrolldown {
+  height: 25.93px;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-areas: "follow follow follow follow"
+    "facebook instagram twitter youtube";
+  grid-template-columns: repeat(4, 30px);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+  column-gap: 5px;
+  row-gap: 15px;
+}
+
+.follow {
+  grid-area: follow;
+  grid-row: 1;
+  color: #f7f7ff;
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 35px;
+  text-align: center;
+}
+
+.facebook {
+  grid-area: facebook;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.instagram {
+  grid-area: instagram;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.linkedin {
+  grid-area: twitter;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.youtube {
+  grid-area: youtube;
+  grid-row: 2;
+  height: 21.53px;
+  width: 30.61px;
+}
+
+.viewbox {
+  grid-column: 3 / span 1;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  justify-content: right;
+  align-items: center;
+  justify-items: center;
+}
+
+.top {
+  grid-row: 1;
+  height: 22.23px;
+  margin: 140px 10px 10px;
+}
+
+.backtop {
+  line-height: 5px;
+  grid-row: 2;
+  color: white;
+  white-space: nowrap;
+  margin: 0%;
+  margin-top: 90px;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+/* Add animation for scrolldown buttons */
+.scrolldown {
+  position: relative;
+  animation-name: scroll-down;
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+/* Add animation for top buttons */
+.top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
+
+.w3-row-padding {
+  margin: 30px;
+}
+
+.first {
+  margin-top: 60px;
+}
+
+.last {
+  margin-bottom: 60px;
+}
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.linkedin,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+.ui-ux a:hover,
+.WEB-DEVELOPMENT a:hover {
+  color: rgba(30, 40, 50, 0.5);
+  transform: scale(1.4);
+}
+
+.ui-ux a:active,
+.WEB-DEVELOPMENT a:active {
+  color: var(--secondary-color)
+}
+
+.ui-ux a:visited,
+.WEB-DEVELOPMENT a:visited {
+  color: var(--secondary-color)
+}
+
+.ui-ux a,
+.WEB-DEVELOPMENT a {
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+}
+
+
+
+
+/***********************************************************
+                        Mobile 
+ **********************************************************/
+/* use @media to apply the following code to the rest of the code */
+/* when the screen size is less than 600px wide, set all of items that include main braces */
+@media only screen and (max-width: 600px) {
+
+  .tablet-logo,
+  .desktop-logo,
+  .illustration-desktop,
+  .photography-desktop {
+    display: none;
+  }
+
+  .mobile-logo {
+    width: 110px;
+    margin-top: 20px;
+  }
+
+  /*dont show scroll-down on mobile*/
+  .scrollview {
+    display: none;
+  }
+
+  .rapper {
+    padding: 0px 36.5px;
+  }
+
+  .rapper h1 {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 36.5px 0px;
+  }
+
+  .rapper p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .logobackground {
+    text-align: center;
+  }
+
+  .main-nav {
+    display: grid;
+  }
+
+  /* use grid to change the position of items: home, about and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home"
+      "about"
+      "contact";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .home {
+    grid-area: home;
+    grid-row: 1;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-row: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+    grid-row: 3;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-row: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .main-nav {
+    height: 300px;
+  }
+
+  .illustration h2,
+  .ui-ux h2,
+  .WEB-DEVELOPMENT h2,
+  .photography h2 {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .rhino-headband,
+  .giraffe-leave,
+  .giraffe-sunglasses,
+  .rhino,
+  .plant,
+  .christmast,
+  .spring,
+  .winter {
+    border: solid var(--primary-color) 1px;
+    display: block;
+    margin: 60px auto;
+    width: 80%;
+  }
+
+  .perkins,
+  .portfolio-image,
+  .arc,
+  .portfolio-web,
+  .dash,
+  .bootstrap,
+  .midterm-image {
+    display: block;
+    margin: 30px auto 10px;
+    width: 80%;
+  }
+
+  .ui-ux a,
+  .WEB-DEVELOPMENT a {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: grid;
+    margin-bottom: 30px;
+  }
+
+  .w3-row-padding {
+    margin: 0px 14px;
+  }
+
+  .illustration-images {
+    margin: 30px 0px;
+  }
+
+  .photography-images {
+    margin: 15px 0px;
+  }
+
+  .photography h2, .illustration h2 {
+    margin-bottom: 15px;
+  }
+
+  .footer{
+    margin-top: 15px;
+  }
+
+}
+
+
+
+/*****************************************
+                    Tablet
+*****************************************/
+/* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mobile-logo,
+  .desktop-logo,
+  .container,
+  .illustration-desktop,
+  .photography-desktop {
+    display: none;
+  }
+
+  .tablet-logo {
+    width: 100px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 40px);
+    justify-content: right;
+    justify-items: center;
+  }
+
+  .home {
+    grid-area: home;
+    grid-column: 1;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-column: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+    grid-column: 3;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-column: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+    padding-top: 26px;
+  }
+
+  .main-nav {
+    height: 80px;
+  }
+
+  .illustration h2,
+  .ui-ux h2,
+  .WEB-DEVELOPMENT h2,
+  .photography h2 {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .photography h2 {
+    margin-bottom: 22px;
+  }
+
+  .header-one {
+    margin: 0px;
+  }
+
+  .ui {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .perkins {
+    grid-column: 1;
+    grid-row: 1;
+    height: 200px;
+  }
+
+  .portfolio-image {
+    grid-column: 2;
+    grid-row: 1;
+    height: 200px;
+  }
+
+  .web {
+    display: grid;
+    grid-template-areas: "arc""portfolio-web"
+      "arc-h""portfolio-h"
+      "dash""bootstrap"
+      "dash-h""bootstrap-h";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .arc {
+    grid-area: arc;
+    grid-column: 1;
+    grid-row: 1;
+    height: 150px;
+  }
+
+  .arc-h {
+    grid-area: arc-h;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .portfolio-web {
+    grid-area: portfolio-web;
+    grid-row: 1;
+    grid-column: 2;
+    height: 150px;
+  }
+
+  .portfolio-h {
+    grid-area: portfolio-h;
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .dash {
+    grid-area: dash;
+    grid-row: 3;
+    grid-column: 1;
+    height: 150px;
+  }
+
+  .dash-h {
+    grid-area: dash-h;
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .bootstrap {
+    grid-area: bootstrap;
+    grid-row: 3;
+    grid-column: 2;
+    height: 150px;
+  }
+
+  .bootstrap-h {
+    grid-area: bootstrap-h;
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  .ui-ux a,
+  .WEB-DEVELOPMENT a {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px;
+    text-decoration: none;
+  }
+
+  .midterm-image {
+    float: left;
+    width: 50%;
+  }
+
+  .w3-row-padding {
+    margin: 0px 14px;
+  }
+
+  .illustration-images {
+    margin: 20px 0px;
+  }
+
+  .photography-images {
+    margin: 8px 0px;
+  }
+
+  .footer{
+    margin-top: 22px;
+  }
+}
+
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  /*dont show mobile and tablet logo on desktop page*/
+  .mobile-logo,
+  .desktop-logo,
+  .illustration,
+  .photography {
+    display: none;
+  }
+
+  .tablet-logo {
+    width: 100px;
+    float: left;
+    margin-left: 5%;
+  }
+
+  /* use grid to change the position of items: home, about, portfolio and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(1, 40px);
+    justify-content: right;
+    justify-items: center;
+  }
+
+  .home {
+    grid-area: home;
+    grid-column: 1;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-column: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+    grid-column: 3;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-column: 4;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+    padding-top: 30px;
+  }
+
+  .main-nav {
+    height: 80px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  .mySlides {
+    text-align: center;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(30, 40, 50, 0.8);
+  }
+
+  .prev,
+  .next {
+    background-color: var(--primary-color);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row {
+    content: "";
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .illustration-desktop h2,
+  .ui-ux h2,
+  .WEB-DEVELOPMENT h2,
+  .photography-desktop h2 {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .photography-desktop h2 {
+    margin-bottom: 30px;
+  }
+
+  .header-one {
+    margin: 0px;
+  }
+
+  .ui {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  .perkins {
+    grid-column: 1;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .portfolio-image {
+    grid-column: 2;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .web {
+    display: grid;
+    grid-template-areas: "arc""portfolio-web"
+      "arc-h""portfolio-h"
+      "dash""bootstrap"
+      "dash-h""bootstrap-h";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+
+  .arc {
+    grid-area: arc;
+    grid-column: 1;
+    grid-row: 1;
+    height: 170px;
+  }
+
+  .arc-h {
+    grid-area: arc-h;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .portfolio-web {
+    grid-area: portfolio-web;
+    grid-row: 1;
+    grid-column: 2;
+    height: 170px;
+  }
+
+  .portfolio-h {
+    grid-area: portfolio-h;
+    grid-row: 2;
+    grid-column: 2;
+    margin-bottom: 20px;
+  }
+
+  .dash {
+    grid-area: dash;
+    grid-row: 3;
+    grid-column: 1;
+    height: 170px;
+  }
+
+  .dash-h {
+    grid-area: dash-h;
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .bootstrap {
+    grid-area: bootstrap;
+    grid-row: 3;
+    grid-column: 2;
+    height: 170px;
+  }
+
+  .bootstrap-h {
+    grid-area: bootstrap-h;
+    grid-row: 4;
+    grid-column: 2;
+    margin-bottom: 20px;
+  }
+
+  .image-ui-ux {
+    float: right;
+    width: 50%;
+  }
+
+  .ui-ux a,
+  .WEB-DEVELOPMENT a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .midterm-image {
+    float: left;
+    width: 50%;
+  }
+
+  .w3-row-padding {
+    margin: 30px 14px;
+  }
+
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <div class="banner">
+            <div class="container1">
+                <nav class="main-nav">
+                    <div class="logobackground">
+                        <img src="images/logo.png" alt="MH" class="mobile-logo">
+                        <img src="images/logo.png" alt="MH" class="tablet-logo">
+                        <img src="images/logo.png" alt="MH" class="desktop-logo">
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a class="home" href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a class="about" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="portfolio" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="contact" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <section class="four-sections">
+            <div class="illustration" id="illustration">
+                <h2 class="header-one">ILLUSTRATION</h2>
+                <div class="w3-row-padding">
+                    <div class="illustration-images w3-half">
+                        <img src="images/photo_2021-03-14_11-58-14.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Rhino-1">
+                    </div>
+                    <div class="illustration-images w3-half">
+                        <img src="images/Hezaveh_Giraffe-02.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Giraffe-1">
+                    </div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="illustration-images w3-half">
+                        <img src="images/Hezaveh_Giraffe-01.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Giraffe-2">
+                    </div>
+                    <div class="illustration-images w3-half">
+                        <img src="images/photo_2021-03-14_12-10-38.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Rhino-2">
+                    </div>
+                </div>
+            </div>
+            <div class="illustration-desktop" id="illustration-desktop">
+                <h2 class="header-one">ILLUSTRATION</h2>
+                <div class="w3-row-padding">
+                    <div class="illustration-images w3-quarter">
+                        <img src="images/photo_2021-03-14_11-58-14.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Rhino-1">
+                    </div>
+                    <div class="illustration-images w3-quarter">
+                        <img src="images/Hezaveh_Giraffe-02.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Giraffe-1">
+                    </div>
+                    <div class="illustration-images w3-quarter">
+                        <img src="images/Hezaveh_Giraffe-01.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Giraffe-2">
+                    </div>
+                    <div class="illustration-images w3-quarter">
+                        <img src="images/photo_2021-03-14_12-10-38.jpg" style="width:100%;cursor:pointer"
+                            onclick="onClick(this)" class="w3-hover-opacity" alt="Rhino-2">
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img src="img01" id="img01" style="width:100%" alt="img01"> 
+                </div>
+            </div>
+
+            <script>
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                }
+            </script>
+
+            <div class="ui-ux" id="ui-ux">
+                <h2 class="header-two">UI/UX DESIGN</h2>
+                <div class="ui">
+                    <img class="perkins" src="images/perkins.jpg"
+                        alt="first page of a website on mobile, tablet, and desktop">
+                    <a class="perkins-header" href="https://xd.adobe.com/view/6676f952-4268-4ef5-9eea-d6dc5a44dc02-3325/">Perkins Restaurant & Bakery</a>
+                    <img class="portfolio-image" src="images/portfolio.jpg"
+                        alt="first page of a website on mobile, tablet, and desktop">
+                    <a class="portfolio-header" href="https://xd.adobe.com/view/107d6333-5a6b-494c-9533-21afa9c68cad-452e/">My Portfolio</a>
+
+                </div>
+            </div>
+
+
+            <div class="scrollview">
+                <a href="#footer" class="scroll">scroll</a>
+                <svg class="scrolldown" xmlns="http://www.w3.org/2000/svg" width="49.793" height="49.793"
+                    viewBox="0 0 49.793 49.793">
+                    <path
+                        d="M.563,25.459a24.9,24.9,0,1,1,24.9,24.9A24.892,24.892,0,0,1,.563,25.459Zm14.416,2.9,7.268-7.579V39.112a2.4,2.4,0,0,0,2.409,2.409h1.606a2.4,2.4,0,0,0,2.409-2.409V20.781l7.268,7.579a2.412,2.412,0,0,0,3.443.04l1.094-1.1a2.4,2.4,0,0,0,0-3.4L27.166,10.571a2.4,2.4,0,0,0-3.4,0L10.431,23.893a2.4,2.4,0,0,0,0,3.4l1.094,1.1A2.424,2.424,0,0,0,14.979,28.361Z"
+                        transform="translate(-0.563 -0.563)" fill="#1E2832" /></svg>
+            </div>
+
+
+            <div class="WEB-DEVELOPMENT" id="WEB-DEVELOPMENT">
+                <h2 class="header-three"> WEB DEVELOPMENT</h2>
+                <div class="web">
+                    <img class="arc" src="images/arc.jpg" alt="arc project">
+                    <a class="arc-h" href="https://minoohzv.github.io/mtm6201-midterm-master-files/">ARC</a>
+                    <img class="portfolio-web" src="images/port.jpg" alt="portfolio project">
+                    <a class="portfolio-h" href="https://minoohzv.github.io/portfolio/">My Portfolio</a>
+                    <img class="dash" src="images/dash.png" alt="dash project">
+                    <a class="dash-h" href="https://minoohzv.github.io/master-files-landing-page/">Dash</a>
+                    <img class="bootstrap" src="images/bootstrap.jpg" alt="bootstrap project">
+                    <a class="bootstrap-h" href="https://minoohzv.github.io/Bootstrap/">Bootstrap</a>
+                </div>
+            </div>
+            <div class="photography" id="photography">
+                <h2 class="header-four">PHOTOGRAPHY</h2>
+
+                <div class="w3-row-padding">
+                    <div class="photography-images w3-half">
+                        <img src="images/plant.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Plant">
+                    </div>
+                    <div class="photography-images w3-half">
+                        <img src="images/christmast.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Christmast">
+                    </div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="photography-images w3-half">
+                        <img src="images/spring.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Spring">
+                    </div>
+                    <div class="photography-images w3-half">
+                        <img src="images/winter.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)"
+                            class="w3-hover-opacity" alt="Winter">
+                    </div>
+                </div>
+            </div>
+
+            <div class="photography-desktop" id="photography-desktop">
+                <h2 class="header-four">PHOTOGRAPHY</h2>
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/plant.jpg" style="width:40%" alt="Plant">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/christmast.jpg" style="width:40%" alt="Christmast">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/spring.jpg" style="width:40%" alt="Spring">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/winter.jpg" style="width:40%" alt="Winter">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/plant.jpg" style="width:80%" onclick="currentSlide(1)"
+                                alt="The Woods">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/christmast.jpg" style="width:80%"
+                                onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/spring.jpg" style="width:80%" onclick="currentSlide(3)"
+                                alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/winter.jpg" style="width:80%" onclick="currentSlide(4)"
+                                alt="Northern Lights">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="myScript.js"></script>
+
+
+            <footer>
+                <div class="footer" id="footer">
+                    <!-- These are social media icons -->
+                    <div class="icon">
+                        <h3 class="follow">Follow and contact me below <br>
+                            <a href="mailto:minoohzv@gmail.com">minoohzv@gmail.com</a></h3>
+                        <a href="https://www.facebook.com/">
+                            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="25.114" height="25.114"
+                                viewBox="0 0 25.114 25.114">
+                                <path
+                                    d="M22.423,2.25H2.691A2.691,2.691,0,0,0,0,4.941V24.673a2.691,2.691,0,0,0,2.691,2.691h7.694V18.825H6.853V14.807h3.532V11.744c0-3.484,2.074-5.408,5.251-5.408a21.4,21.4,0,0,1,3.112.271v3.419H16.995A2.009,2.009,0,0,0,14.729,12.2v2.609h3.856l-.617,4.019H14.729v8.538h7.694a2.691,2.691,0,0,0,2.691-2.691V4.941A2.691,2.691,0,0,0,22.423,2.25Z"
+                                    transform="translate(0 -2.25)" fill="#f2f2f2" /></svg></a>
+
+                        <a href="https://www.instagram.com/">
+                            <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="25.128" height="25.122"
+                                viewBox="0 0 25.128 25.122">
+                                <path
+                                    d="M12.561,8.358A6.441,6.441,0,1,0,19,14.8,6.431,6.431,0,0,0,12.561,8.358Zm0,10.628A4.187,4.187,0,1,1,16.749,14.8a4.2,4.2,0,0,1-4.187,4.187ZM20.768,8.094a1.5,1.5,0,1,1-1.5-1.5A1.5,1.5,0,0,1,20.768,8.094Zm4.266,1.525A7.435,7.435,0,0,0,23,4.355a7.484,7.484,0,0,0-5.264-2.029c-2.074-.118-8.291-.118-10.365,0A7.473,7.473,0,0,0,2.112,4.35,7.459,7.459,0,0,0,.083,9.613c-.118,2.074-.118,8.291,0,10.365a7.435,7.435,0,0,0,2.029,5.264,7.493,7.493,0,0,0,5.264,2.029c2.074.118,8.291.118,10.365,0A7.435,7.435,0,0,0,23,25.242a7.483,7.483,0,0,0,2.029-5.264c.118-2.074.118-8.285,0-10.359ZM22.354,22.2a4.239,4.239,0,0,1-2.388,2.388c-1.654.656-5.578.5-7.405.5s-5.757.146-7.405-.5A4.239,4.239,0,0,1,2.768,22.2c-.656-1.654-.5-5.578-.5-7.405s-.146-5.757.5-7.405A4.239,4.239,0,0,1,5.156,5.006c1.654-.656,5.578-.5,7.405-.5s5.757-.146,7.405.5a4.239,4.239,0,0,1,2.388,2.388c.656,1.654.5,5.578.5,7.405S23.01,20.556,22.354,22.2Z"
+                                    transform="translate(0.005 -2.238)" fill="#f2f2f2" /></svg></a>
+
+                        <a href="https://www.linkedin.com/in/minoo-hezaveh-b05903a6/">
+                            <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="25.114" height="25.114"
+                                viewBox="0 0 30.625 30.625">
+                                <path id="Icon_awesome-linkedin" data-name="Icon awesome-linkedin"
+                                    d="M28.438,2.188H2.181A2.2,2.2,0,0,0,0,4.4V30.6a2.2,2.2,0,0,0,2.181,2.208H28.438A2.2,2.2,0,0,0,30.625,30.6V4.4A2.2,2.2,0,0,0,28.438,2.188ZM9.256,28.438H4.717V13.822H9.263V28.438ZM6.986,11.826A2.632,2.632,0,1,1,9.618,9.194,2.633,2.633,0,0,1,6.986,11.826ZM26.271,28.438H21.731V21.328c0-1.7-.034-3.876-2.358-3.876-2.365,0-2.728,1.846-2.728,3.753v7.232H12.106V13.822h4.354v2h.062a4.781,4.781,0,0,1,4.3-2.358c4.594,0,5.448,3.028,5.448,6.966Z"
+                                    transform="translate(0 -2.188)" fill="#f2f2f2" /></svg></a>
+
+                        <a href="https://www.youtube.com/channel/UCxvG20T5Z9xQVIIJT3EPqJw">
+                            <svg class="youtube" xmlns="http://www.w3.org/2000/svg" width="30.615" height="21.526"
+                                viewBox="0 0 30.615 21.526">
+                                <path
+                                    d="M31.025,7.868a3.847,3.847,0,0,0-2.707-2.724C25.931,4.5,16.357,4.5,16.357,4.5S6.784,4.5,4.4,5.144A3.847,3.847,0,0,0,1.69,7.868a40.354,40.354,0,0,0-.64,7.417A40.354,40.354,0,0,0,1.69,22.7,3.789,3.789,0,0,0,4.4,25.382c2.388.644,11.961.644,11.961.644s9.573,0,11.961-.644A3.789,3.789,0,0,0,31.025,22.7a40.354,40.354,0,0,0,.64-7.417,40.354,40.354,0,0,0-.64-7.417Zm-17.8,11.969v-9.1l8,4.552-8,4.552Z"
+                                    transform="translate(-1.05 -4.5)" fill="#f2f2f2" /></svg></a>
+
+
+                    </div>
+                    <div class="viewbox">
+                        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="49.793" height="49.793"
+                            viewBox="0 0 49.793 49.793">
+                            <path
+                                d="M.563,25.459a24.9,24.9,0,1,1,24.9,24.9A24.892,24.892,0,0,1,.563,25.459Zm14.416,2.9,7.268-7.579V39.112a2.4,2.4,0,0,0,2.409,2.409h1.606a2.4,2.4,0,0,0,2.409-2.409V20.781l7.268,7.579a2.412,2.412,0,0,0,3.443.04l1.094-1.1a2.4,2.4,0,0,0,0-3.4L27.166,10.571a2.4,2.4,0,0,0-3.4,0L10.431,23.893a2.4,2.4,0,0,0,0,3.4l1.094,1.1A2.424,2.424,0,0,0,14.979,28.361Z"
+                                transform="translate(-0.563 -0.563)" fill="#f2f2f2" /></svg>
+                        <a href="#top" class="backtop">back to top</a>>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+    </main>
+</body>
+
+</html>

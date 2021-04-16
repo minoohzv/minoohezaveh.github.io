@@ -1,0 +1,1412 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ********************************************************************************* */
+
+/*Use following fonts if Raleway isn't availble*/
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Raleway';
+  color: #3C3B3A;
+}
+
+body {
+  background: white;
+  margin: 0px;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rapper h1 {
+  margin: 30px 0px;
+  font-size: 72px;
+  font-weight: bold;
+  color: #3C3B3A;
+}
+
+main {
+  padding: 0px;
+  background: white;
+}
+
+footer {
+  background-color: #333131;
+  margin-top: 70px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.viewbox {
+  text-align: right;
+}
+
+.viewbox p {
+  line-height: 5px;
+}
+
+.rapper {
+  padding: 0px 30px;
+}
+
+/* header */
+.logobackground {
+  float: left;
+}
+
+/* Navigation */
+.nav-list {
+  display: grid;
+  grid-template-areas: "home about contact";
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(1, 70px);
+  justify-content: right;
+  justify-items: center;
+  margin-right: 5%;
+}
+
+.home {
+  grid-area: home;
+  grid-row: 1;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Raleway';
+}
+
+.about {
+  grid-area: about;
+  grid-row: 1;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.contact {
+  grid-area: contact;
+  grid-row: 1;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+.nav-list li {
+  border: none;
+  align-self: center;
+  margin: 10px;
+}
+
+.footer {
+  background-color: #333131;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* use grid insdie the footer grid to orgizize social media icons*/
+.icon {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-areas: "follow follow follow follow"
+    "facebook instagram twitter youtube";
+  grid-template-columns: repeat(4, 30px);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+  column-gap: 5px;
+}
+
+.follow {
+  grid-area: follow;
+  grid-row: 1;
+  color: #f7f7ff;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.facebook {
+  grid-area: facebook;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.instagram {
+  grid-area: instagram;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.twitter {
+  grid-area: twitter;
+  grid-row: 2;
+  height: 25.11px;
+}
+
+.youtube {
+  grid-area: youtube;
+  grid-row: 2;
+  height: 21.53px;
+  width: 30.61px;
+}
+
+.viewbox {
+  grid-column: 3 / span 1;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  justify-content: right;
+  align-items: center;
+  justify-items: center;
+}
+
+.top {
+  grid-row: 1;
+  height: 15px;
+  margin: 30px 5px 0px;
+}
+
+.backtop {
+  line-height: 5px;
+  grid-row: 2;
+  color: #f7f7ff;
+  white-space: nowrap;
+  margin: 0%;
+  margin-bottom: 20px;
+  font-size: 7px;
+  text-decoration: none;
+}
+
+ul li a {
+  background-color: #333131;
+  color: #f7f7ff;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+ul li a:hover {
+  background-color: #333131;
+  color: #f7f7ff;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0em;
+}
+
+.container1 {
+  margin: 0 auto;
+  padding: 0em;
+}
+
+header.main-nav {
+  background: #333131;
+}
+
+.masthead {
+  background: #333131;
+}
+
+.container {
+  margin: 0px;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0px;
+  line-height: 32px;
+}
+
+.button-get {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+  background-color: #26A682;
+  width: auto;
+  border-radius: 40px;
+  margin: 37.5px;
+  border: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7f7ff;
+  text-decoration: none;
+  box-shadow: 0px 10px 10px 2px gray;
+}
+
+.discover {
+  width: 80%;
+  margin: 20px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.graduate {
+  background: url(../images/school.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin: 0%;
+  background-color: rgba(38, 166, 130, 0.5);
+
+}
+
+h2 {
+  font-size: 30px;
+  font-style: italic;
+  margin: 30px 0px 20px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0px;
+  color: #26A682;
+}
+
+.section-white {
+  padding: 0px 37.5px;
+}
+
+.section-white h2 {
+  font-size: 32px;
+}
+
+.section-white h3 {
+  font-size: 24px;
+}
+
+.section-white p {
+  font-size: 16px;
+}
+
+.button-learn {
+  float: right;
+  background-color: #26A682;
+  border-radius: 40px;
+  width: 146px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7f7ff;
+  margin: 20px 0px 20px 20px;
+  text-decoration: none;
+  box-shadow: 0px 10px 10px 2px grey;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.container.graduate-desktop {
+  margin-bottom: 0px;
+}
+
+.section-black {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #333131;
+  margin: 0px;
+  margin-top: 110px;
+  padding-left: 36.5px;
+  padding-right: 36.5px;
+}
+
+.woman {
+  margin-bottom: 28px;
+  border-radius: 300px;
+  width: 50%;
+  border: #f7f7ff solid 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.section-black h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f7f7ff;
+  text-align: center;
+  line-height: 35px;
+}
+
+.section-black p {
+  color: #f7f7ff;
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 5px;
+}
+
+.drinking {
+  background: url(../images/entertainment.jpg) no-repeat center;
+  background-size: cover;
+  height: 250px;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.discover1 {
+  padding: 30px 30px;
+  width: auto;
+}
+
+.discover1 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  margin-bottom: 0px;
+}
+
+.discover1 h3 {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.discover1 p {
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+/***********************************************************
+                        Animation 
+ **********************************************************/
+
+/* Add animation for buttons */
+.button-get:hover {
+  background-color: #7ED9BF;
+}
+
+.button-get:active {
+  background-color: #7D70BA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-learn:hover {
+  background-color: #7ED9BF
+}
+
+.button-learn:active {
+  background-color: #7D70BA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add animation for scrolldown buttons */
+.scrolldown {
+  position: relative;
+  animation-name: scroll-down;
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+/* Add animation for top buttons */
+.top {
+  position: relative;
+  animation-name: scroll-up;
+  animation: scroll-up 2s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    top: -30px;
+    opacity: 0;
+  }
+}
+
+/* when you move your mouse on the social media icons they became out, and they became bigger */
+.instagram,
+.twitter,
+.youtube,
+.facebook {
+  transition: all .2s ease-in-out;
+}
+
+.instagram:hover,
+.twitter:hover,
+.youtube:hover,
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+/* add pulse to attract user attention to icons buttons*/
+#bowling,
+#rock-climbing,
+#fitness-center,
+#indoor-court {
+  box-shadow: 0 0 0 0 rgba(38, 166, 130, 1);
+  height: 69px;
+  width: 114px;
+  overflow: visible;
+  transform: scale(1);
+  animation: pulse 3s infinite;
+}
+
+#bowling:hover,
+#rock-climbing:hover,
+#fitness-center:hover,
+#indoor-court:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(38, 166, 130, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(38, 166, 130, 0);
+  }
+
+  100% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 0 rgba(38, 166, 130, 0);
+  }
+}
+
+/***********************************************************
+                        Mobile 
+ **********************************************************/
+/* use @media to apply the following code to the rest of the code */
+/* when the screen size is less than 599px wide, set all of items that include main braces */
+@media only screen and (max-width: 599px) {
+
+  .mobile-logo {
+    display: inline-flex;
+    max-width: 100px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  /*dont show desktop and tablet logo on mobile*/
+  .tablet-logo,
+  .desktop-logo {
+    display: none;
+  }
+
+  .rapper {
+    padding: 0px 36.5px;
+  }
+
+  .rapper h1 {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 36.5px 0px;
+  }
+
+  .rapper p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .logobackground {
+    background-color: #333131;
+    text-align: center;
+  }
+
+  .main-nav {
+    display: grid;
+  }
+
+  /* use grid to change the position of items: home, about and contact on mobile size*/
+  .nav-list {
+    display: grid;
+    grid-template-areas: "home"
+      "about"
+      "contact";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .home {
+    grid-area: home;
+    grid-row: 1;
+    font-size: 18px;
+    font-family: 'Raleway';
+  }
+
+  .about {
+    grid-area: about;
+    grid-row: 2;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .contact {
+    grid-area: contact;
+    grid-row: 3;
+    font-size: 16px;
+    font-family: 'Raleway';
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-items: center;
+  }
+
+  .section-black p {
+    color: #f7f7ff;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 20px 0px;
+  }
+
+  ul li a {
+    background-color: #333131;
+    color: #f7f7ff;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  ul li a:hover {
+    background-color: #333131;
+    color: #f7f7ff;
+    font-weight: bold;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0em;
+  }
+
+  .container1 {
+    margin: 0 auto;
+    padding: 0em;
+  }
+
+
+  header.main-nav {
+    background: #333131;
+  }
+
+  .masthead {
+    background: #333131;
+  }
+
+  .container {
+    margin: 0px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 20px 0px;
+    line-height: 32px;
+  }
+
+  .button-get {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: #26A682;
+    width: auto;
+    border-radius: 40px;
+    margin: 37.5px;
+    height: 50px;
+    border: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f7f7ff;
+    text-decoration: none;
+    box-shadow: 0px 10px 10px 2px gray;
+  }
+
+  .discover {
+    width: 80%;
+    margin: 38px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+
+  /*dont show scroll-down on mobile*/
+  .scrollview {
+    display: none;
+  }
+
+  .graduate {
+    background: url(../images/school.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin: 0%;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-style: italic;
+    margin: 30px 0px 20px 0px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 10px 0px;
+    color: #26A682;
+  }
+
+  .section-white {
+    padding: 0px 37.5px;
+  }
+
+  .section-white h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .section-white h3 {
+    font-size: 24px;
+  }
+
+  .section-white p {
+    font-size: 16px;
+  }
+
+  .button-learn {
+    float: right;
+    background-color: #26A682;
+    border-radius: 40px;
+    width: 146px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7f7ff;
+    margin: 20px 0px 20px 20px;
+    text-decoration: none;
+    box-shadow: 0px 10px 10px 2px grey;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container.graduate-desktop {
+    margin-bottom: 0px;
+  }
+
+  /* .container:not(.graduate){
+    margin: 0 auto;
+    padding: 0em;
+} */
+
+
+  .section-black {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #333131;
+    margin: 0px;
+    margin-top: 110px;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+  }
+
+
+  .woman {
+    margin-bottom: 28px;
+    border-radius: 300px;
+    width: 50%;
+    border: #f7f7ff solid 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .section-black h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: #f7f7ff;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .section-black p {
+    color: #f7f7ff;
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 5px;
+  }
+
+  .drinking {
+    background: url(../images/entertainment.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  .discover1 {
+    padding: 30px 30px;
+    width: auto;
+  }
+
+  .discover1 h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .discover1 h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .discover1 p {
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+
+  .rapper p {
+    font-size: 20px;
+  }
+
+  .top {
+    height: 22.23px;
+  }
+
+  .backtop {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+}
+
+/*****************************************
+                    Tablet
+*****************************************/
+/* when the screen size is betweeen 600pc and 780px, set all of items that include main braces */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  /*dont show mobile and desktop logo on tablet*/
+  .mobile-logo,
+  .desktop-logo {
+    display: none;
+  }
+
+  .tablet-logo {
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 80px;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(3, 75px);
+    margin-right: 5%;
+  }
+
+  .rapper {
+    margin: 50px 60px;
+    margin-bottom: 25px;
+  }
+
+  .rapper h1 {
+    font-size: 72px;
+    line-height: 85px;
+    font-weight: bold;
+  }
+
+  .rapper p {
+    line-height: 24px;
+    line-height: 29px;
+    margin-bottom: 0px;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 25px 60px;
+  }
+
+  svg :not(.top) {
+    margin: 0px 30px 20px 30px;
+  }
+
+  .discover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+  .scrollview {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0px;
+  }
+
+  .scroll {
+    line-height: 5px;
+    grid-row: 1;
+    white-space: nowrap;
+    margin: 0%;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .scrolldown {
+    height: 25.93px;
+    transform: rotate(180deg);
+    text-align: center;
+  }
+
+  .section-white {
+    padding: 0px 80px 0px 60px;
+  }
+
+  .section-white h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .section-white h3 {
+    font-size: 32px;
+  }
+
+  .section-white p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  .section-black {
+    display: grid;
+    flex-direction: column;
+    grid-template-areas: "woman only"
+      "dijanelle only";
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 50px;
+  }
+
+  .woman {
+    grid-area: woman;
+    width: 63%;
+    height: auto;
+    margin-left: 40px;
+    margin-bottom: 0px;
+  }
+
+  .dijanelle {
+    grid-area: dijanelle;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .section-black p {
+    font-size: 24px;
+  }
+
+  .only {
+    grid-area: only;
+    margin: 0px 30px 0px 20px;
+  }
+
+  .drinking {
+    height: 200px;
+  }
+
+  .discover1 {
+    padding: 0px 80px 0px 60px;
+  }
+
+  .discover1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 0px 20px 0px;
+  }
+
+  .discover1 h3 {
+    font-size: 32px;
+    color: #26A682;
+  }
+
+  .discover1 p {
+    margin: 20px 0px;
+  }
+
+  .button-learn {
+    float: right;
+    background-color: #26A682;
+    width: auto;
+    border-radius: 50px;
+    padding: 5px 40px;
+    border: 0px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #f7f7ff;
+    text-decoration: none;
+    box-shadow: 0px 10px 10px 2px grey;
+    margin-bottom: 20px;
+  }
+
+  .button-get {
+    background-color: #26A682;
+    color: #F2F2F2;
+    border-radius: 50px;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 30%;
+    white-space: nowrap;
+  }
+
+  .graduate {
+    background: url(../images/school.jpg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+    background-position: 0% 67%;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+
+  .follow {
+    font-size: 24px;
+  }
+
+  .top {
+    height: 22.23px;
+    margin-right: 15px;
+  }
+
+  .backtop {
+    margin-top: 10px;
+    font-size: 9px;
+    margin-right: 5px;
+  }
+
+}
+
+/***********************************************************
+                    Desktop
+**********************************************************/
+/* when the screen size is more than 769px wide, set all of items that include main braces */
+@media screen and (min-width: 769px) {
+
+  /*dont show mobile and tablet logo on desktop*/
+  .mobile-logo,
+  .tablet-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    text-decoration: none;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-left: 150%;
+  }
+
+  .rapper h1 {
+    margin: 80px 0px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .p1 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .nav-list {
+    height: 75px;
+    margin-right: 5%;
+  }
+
+  .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    padding-bottom: 0px;
+  }
+
+  .rapper {
+    padding-right: 120px;
+    padding-left: 25px;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    column-gap: 25px;
+    justify-items: center;
+    margin: 50px 0px 20px;
+  }
+
+  .button-get {
+    margin: 20px 30px;
+    padding: 10px 50px;
+    float: left;
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+  .scrollview {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0px;
+  }
+
+  .scroll {
+    line-height: 5px;
+    grid-row: 1;
+    white-space: nowrap;
+    margin: 0%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .scrolldown {
+    height: 49.79px;
+    transform: rotate(180deg);
+    text-align: center;
+  }
+
+  .graduate-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    padding: 70px 0px;
+  }
+
+  .graduate {
+    background: url(../images/school.jpg) no-repeat center;
+    display: grid;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin-left: 140px;
+  }
+
+  .button-learn {
+    margin-top: 100px;
+    padding: 5px 30px;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .section-white {
+    grid-column: 2;
+    margin-right: 100px;
+  }
+
+  .section-black {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .woman {
+    margin-right: 0px;
+    width: 60%;
+  }
+
+  .dijanelle {
+    margin: auto;
+    white-space: nowrap;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .section-black p {
+    font-size: 24px;
+    line-height: 35px;
+    align-self: center;
+    margin: 0px;
+    margin-right: 50px;
+  }
+
+  .drinking-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 70px;
+  }
+
+  .discover1 {
+    margin-left: 70px;
+    margin-right: 20px;
+    padding: 0px;
+    grid-column: 1;
+  }
+
+  .drinking {
+    background: url(../images/entertainment.jpg) no-repeat center;
+    grid-column: 2;
+    grid-row: 1;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin-right: 139px;
+  }
+
+  .viewbox {
+    margin-right: 20px;
+  }
+
+  .follow {
+    font-size: 24px;
+    margin: 10px 0px;
+  }
+
+  .top {
+    height: 49.79px;
+  }
+
+  .backtop {
+    margin-top: 50px;
+    font-size: 16px;
+
+  }
+}
